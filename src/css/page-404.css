@@ -1,0 +1,83 @@
+:root {
+  --start-gradient-color: #730505;
+  --end-gradient-color: #0c0b0b;
+}
+
+.error {
+  padding-top: 278px;
+  padding-bottom: 189px;
+
+  background-image: url(../images/desktop/404/iron-man.png),
+    radial-gradient(
+      75.97% 258.93% at 61.53% 47.37%,
+      var(--start-gradient-color) 0%,
+      var(--end-gradient-color) 100%
+    );
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: url(../images/desktop/404/iron-man-desk@2x.png),
+      radial-gradient(
+        75.97% 258.93% at 61.53% 47.37%,
+        var(--start-gradient-color) 0%,
+        var(--end-gradient-color) 100%
+      );
+  }
+}
+
+.error-container {
+  width: 1440px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.error-text {
+  margin: 0 0 16px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.error-title {
+  margin: 0 0 16px;
+
+  font-weight: 500;
+  font-size: 150px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+
+  color: #fafafa;
+}
+
+.error-message {
+  margin: 0 0 40px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #fafafa;
+}
+
+.back-home {
+  display: block;
+  width: 85px;
+  padding: 12px 24px;
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: #fafafa;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  border-radius: 1000px;
+}
