@@ -1,1 +1,4 @@
-/* @import '../node_modules/modern-normalize/modern-normalize.css'; */
+@import '/node_modules/modern-normalize/modern-normalize.css';
+@import './randomCharacters.css';
+@import './hero-comics.css';
+@import './lastComics.css';
