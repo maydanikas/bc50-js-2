@@ -1,6 +1,9 @@
+
+
 .lastComics {
   height: 100%;
   background-color: var(--end-gradient-color);
+  margin-bottom: 50px;
 }
 
 .lastComics-uppertitle {
@@ -16,7 +19,6 @@
   text-transform: uppercase;
   padding-bottom: 64px;
   color: var(--light-font-color);
-
 }
 
 @media screen and (max-width: 480px) {
@@ -25,7 +27,6 @@
     line-height: 32px;
     padding-bottom: 44px;
   }
-
 }
 
 
@@ -57,10 +58,24 @@
 
 }
 
+@media screen and (max-width: 768px) {
+  .lastComics-list {
+    width: 100%;
+    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 56vw);
+  }
+}
+
 .lastComics-item {
-  list-style: none;
   height: 100%;
   width: 31.111vw;
+}
+
+@media screen and (max-width: 768px) {
+  .lastComics-item {
+    width: 58.333vw;
+  }
 }
 
 
@@ -73,8 +88,6 @@
   .lastComics-img {
     width: 58.333vw;
     height: 63.151vw;
-    position: relative;
-    overflow: hidden;
   }
 }
 
@@ -97,9 +110,7 @@
   .lastComics-span {
     padding-top: 14px;
   }
-
 }
-
 
 .lastComics-date {
   font-style: normal;
@@ -146,7 +157,6 @@
 
 @media screen and (max-width: 768px) {
   .lastComics-container-btn {
-    display: subgrid;
     display: flex;
     flex-direction: inherit;
     justify-content: center;
@@ -159,6 +169,7 @@
 
 @media screen and (max-width: 480px) {
   .lastComics-container-btn {
+    display: initial;
     gap: 14px;
     padding-top: 20px;
     padding-bottom: 80px;
@@ -166,7 +177,6 @@
 }
 
 .lastComics-scroll-btn {
-
   background-color: transparent;
   border: none;
   cursor: pointer;
