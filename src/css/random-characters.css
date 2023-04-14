@@ -236,6 +236,10 @@ body {
   color: #4b50ad;
 }
 
+.characters-item:hover,
+.characters-item:focus {
+  color: #4b50ad;
+}
 /*  чомусь не вставляється по нормальному зробила через інлайн стиль
 .character-info {
   display: flex;
