@@ -1,16 +1,26 @@
 <header id="header" class="header sticky">
-    <div class="header__conteiner">
-        <a class="header__logo" href="/src/index.html"><svg class="icon icon-adress-link" width="202"
+    <div class="conteiner header__conteiner">
+        <a class="header__logo logo" href="./index.html">
+            <svg class="icon icon-search" width="202"
                 height="31">
-                <use xlink:href="/src/images/svg/sprite.svg#icon-logo"></use>
+                <use xlink:href="./images/svg/sprite.svg#icon-logo"></use>
             </svg>
         </a>
 
-        </a>
-        <button class=" header__btn " type="button">
+        <form class="search-form" id="search-form">
             <svg class="icon-search" width="18" height="18">
-                <use xlink:href="/src/images/svg/sprite.svg#icon-search"></use>
-            </svg>SEARCH
-        </button>
+                <use xlink:href="./images/svg/sprite.svg#icon-search"></use>
+            </svg>
+            <input
+            class=" header__input "
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="SEARCH"
+            required
+            style="color: white;"
+          />
+          </form>
+       
     </div>
 </header>
