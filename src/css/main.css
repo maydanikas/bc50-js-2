@@ -2,12 +2,16 @@
 @import'/src/css/header.css';
 @import './randomCharacters.css';
 @import './hero-comics.css';
-@import './lastComics.css';
+@import './last-comics.css';
 @import './page-404.css';
 @import './vars.css';
 @import './hero-characters.css';
 @import './modal-comics.css';
+
 @import './modal-characters.css';
+
+@import './footer.css';
+
 
 body {
   font-family: 'Poppins', sans-serif;
