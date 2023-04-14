@@ -3,7 +3,7 @@
     justify-content: space-between;
     background: transparent; 
     position: relative;
-    padding: 24px 32px 0 32px;
+    padding: 10px 32px 10px 32px;
 }
 @media screen and (max-width: 768px) {
     .header__conteiner {
@@ -24,11 +24,10 @@
     position: relative;
 }
 .header.sticky {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
-    /* background-color: #34387F; */
-    z-index: 50;
+    background: linear-gradient(to bottom, #34387f 0%, #ff99ff 100%);
+    z-index: 100;
   }
 
 .header__input{
@@ -49,7 +48,7 @@
     background: transparent;
     border-color: dimgrey;
     border-radius: 24px;
-    /* transition: background-color .15s cubic-bezier(1,-.14,1,1.29),color .15s cubic-bezier(1,-.14,1,1.29); */
+    transition: background-color .15s cubic-bezier(1,-.14,1,1.29),color .15s cubic-bezier(1,-.14,1,1.29);
 }
 
 input::placeholder{
@@ -57,10 +56,10 @@ input::placeholder{
   font-family: 'Poppins';   
 }
 
-/* .header__btn:hover{
+.header__input:hover{
     box-shadow: 0px 2px 1px rgba(109, 108, 108, 0.801), 1px 4px 4px rgba(0, 0, 0, 0.06), 2px 4px 6px rgba(0, 0, 0, 0.16);
     transform: scale(1.01);
-} */
+}
 
 .header__icon-search{
     color: #fafafa;
