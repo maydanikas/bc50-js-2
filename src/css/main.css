@@ -1,5 +1,18 @@
 @import '/node_modules/modern-normalize/modern-normalize.css';
+@import'/src/css/header.css';
 @import './randomCharacters.css';
 @import './hero-comics.css';
 @import './last-comics.css';
 @import './page-404.css';
+@import './vars.css';
+@import './hero-characters.css';
+@import './modal-comics.css';
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--praimery-bg-color);
+}
+
+li {
+  list-style: none;
+}
