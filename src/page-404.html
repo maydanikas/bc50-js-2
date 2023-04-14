@@ -1,24 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./js/index.js"></script>
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/main.css" />
-  <script type="module" src="./js/index.js"></script>
-  <title>Document</title>
-</head>
-
-<body>
-  <section class="error">
-    <div class="error-container">
-      <p class="error-text">Web-based platform</p>
-      <h1 class="error-title">404 page</h1>
-      <p class="error-message">Oops! That page can`t be found.</p>
-      <a class="back-home" href="#">Back home</a>
-    </div>
-  </section>
-</body>
-
+  <body>
+    <header id="header" class="header sticky">
+      <div class="header__container">
+        <a class="header__logo" href="/src/index.html"
+          ><svg class="icon icon-adress-link" width="202" height="31">
+            <use xlink:href="/src/images/svg/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <section class="error">
+      <div class="error-container">
+        <div class="error-wrapper">
+          <p class="error-text">Web-based platform</p>
+          <h1 class="error-title">404 page</h1>
+          <p class="error-message">Oops! That page can`t be found.</p>
+          <a class="back-home" href="./index.html">Back home</a>
+        </div>
+        <div class="error-img-wrapper">
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/404/iron-man.png         1x,
+                ./images/desktop/404/iron-man-desk@2x.png 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/404/error-tab.png    1x,
+                ./images/tablet/404/error-tab@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/mobile/404/error-mob.png    1x,
+                ./images/mobile/404/error-mob@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              class="error-img"
+              src="./images/desktop/404/iron-man.png"
+              alt=""
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
