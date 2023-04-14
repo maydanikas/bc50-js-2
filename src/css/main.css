@@ -6,7 +6,13 @@
 @import './page-404.css';
 @import './vars.css';
 @import './hero-characters.css';
+@import './modal-comics.css';
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--praimery-bg-color);
+}
+
+li {
+  list-style: none;
 }
