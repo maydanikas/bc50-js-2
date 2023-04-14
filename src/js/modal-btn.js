@@ -9,5 +9,4 @@ elements.closeModalBtn.addEventListener("click", toggleModal);
 
 function toggleModal() {
   elements.modal.classList.toggle("is-hidden");
-  
 }
