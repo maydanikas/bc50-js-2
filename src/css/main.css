@@ -1,6 +1,6 @@
 @import '/node_modules/modern-normalize/modern-normalize.css';
-@import'/src/css/header.css';
-@import './randomCharacters.css';
+@import '/src/css/header.css';
+@import './random-characters.css';
 @import './hero-comics.css';
 @import './last-comics.css';
 @import './page-404.css';
