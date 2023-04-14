@@ -1,12 +1,62 @@
-.comics {
-    position: absolute;
-    color: aliceblue;
-}
 .section-comics {
-    background-color: #0C0B0B;
-    width: 100%;
-    height: 780px;
+    background-image: url(../images/desktop/Characters/batman.png),
+    linear-gradient(90.55deg, rgba(12, 11, 11, 0) 78.74%, #0C0B0B 96%), 
+    linear-gradient(1.59deg, #0C0B0B 2.15%, 
+    rgba(12, 11, 11, 0) 32.65%), 
+    linear-gradient(84.2deg, #0C0B0B 4.87%, 
+    rgba(12, 11, 11, 0) 15.93%), 
+    linear-gradient(180deg, #0C0B0B 0%, 
+    rgba(12, 11, 11, 0) 72.35%);
 }
-.img {
-    
+
+.container-comics {
+    width: 1440px;
 }
+
+.comics-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+}
+.comics-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 150px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: var(#fafafa);
+}
+
+.comics-description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: var(#fafafa);
+}
+
+.back {
+    display: block;
+    width: 85px;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: var(#fafafa);
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 1000px;
+}
+
+
