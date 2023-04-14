@@ -1,0 +1,74 @@
+.hero-characters {
+  background-color: #0c0b0b;
+}
+
+.hero-characters-subtitle {
+  font-family: 'Poppins';
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.hero-characters-title {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.hero-characters-text {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fafafa;
+}
+
+.btn-hero {
+  font-family: 'Poppins';
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #fafafa;
+  background-color: #0c0b0b;
+}
+
+.hero-characters-circle {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fafafa;
+}
+
+.hero-characters-arrow-svg {
+  fill: #34387f;
+}
+
+.hero-characters-line-svg {
+  fill: rgba(250, 250, 250, 0.15);
+}
+
+.hero-characters-description-subtitle {
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.hero-characters-description-text {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.5);
+}

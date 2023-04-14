@@ -4,7 +4,8 @@
 @import './lastComics.css';
 @import './page-404.css';
 @import './vars.css';
-
+@import './hero-characters.css';
 body {
   font-family: 'Poppins', sans-serif;
 }
+
