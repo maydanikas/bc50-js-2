@@ -165,10 +165,7 @@
 
 }
 
-* {
 
-  /* outline: 1px dashed red; */
-}
 
 .modal-comics-characters .item {
   display: flex;
@@ -225,9 +222,4 @@
   flex-direction: column;
   justify-content: left;
   gap: 8px;
-}
-
-@media screen {
-  max-width: ;
-
 }

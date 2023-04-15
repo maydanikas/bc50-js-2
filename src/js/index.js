@@ -1,3 +1,4 @@
-import './modal-btn.js';
-import './modal-slider.js';
+import './modal-btn';
+import './modal-slider';
+import './header-color.js';
 import Fetch from './fetchMarvel';

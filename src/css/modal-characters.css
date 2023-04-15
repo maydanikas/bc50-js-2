@@ -1,40 +1,48 @@
-/* --------- Reset CSS --------- */
-/* body {
-  font-family: 'Poppins', sans-serif;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-} */
-
 /* --------- Modile --------- */
+<<<<<<< HEAD
 .backdrop {
   position: absolute;
 
   top: 0;
   width: 100%;
+=======
+.backdrop-modal-characters {
+  position: fixed;
+  inset: 0;
+>>>>>>> main
 
-  background-color: hsla(235, 92%, 5%, 0.877);
+  display: flex;
+  overflow-y: auto;
+  cursor: pointer;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: rgba(3, 5, 41, 0.778);
 }
 
-.modal {
-  min-width: 325px;
-  margin: 0 auto;
+.modal-characters {
+  position: relative;
+  min-width: 335px;
+  margin: auto;
+  cursor: default;
+
+  z-index: 1050;
+
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 20px;
   padding-right: 20px;
 
+<<<<<<< HEAD
   position: relative;
 
   background-color: #0C0B0B;
+=======
+  background: #0c0b0b;
+>>>>>>> main
 }
 
 .modal-close {
@@ -50,6 +58,7 @@ ul {
   border: none;
 }
 
+<<<<<<< HEAD
 .container-modal {
   width: 295px;
   margin: 0 auto;
@@ -78,6 +87,10 @@ ul {
 .container-img-max img {
   margin-top: 6px;
   border-radius: 8px;
+=======
+.modal-close svg:is(:hover, :focus, :active) {
+  cursor: pointer;
+>>>>>>> main
 }
 
 .icon-modal-close {
@@ -87,28 +100,64 @@ ul {
   fill: rgb(255, 255, 255);
 }
 
-.container-about-char {
+.container-modal-characters {
+  width: 295px;
+}
+
+.modal-gallery {
+  margin-bottom: 16px;
+}
+
+.container-img-max {
+  margin-top: 6px;
+}
+
+.container-img-max:is(:hover, :focus, :active) {
+  cursor: pointer;
+}
+
+.container-img-max img {
+  border-radius: 8px;
+}
+
+.container-img-min {
+}
+
+.img-list {
+  margin-top: 6px;
+  display: flex;
+  gap: 8px;
+}
+
+.img-item:is(:hover, :focus, :active) {
+  cursor: pointer;
+}
+
+.container-modal-about-char {
   padding: 32px 16px;
 
   border-radius: 8px;
   color: white;
   background-color: #171717;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> main
 }
 
-.about-char {
+.modal-about-char {
   margin-bottom: 32px;
 }
 
-.about-char-title {
+.modal-char-title {
   margin-top: 4px;
 
   font-weight: 500;
   font-size: 18px;
   line-height: 1.33;
 
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .date-comics-modal {
@@ -124,10 +173,13 @@ ul {
   font-size: 14px;
   line-height: 1.3;
 
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
-.comics-list-title {
+.container-modal-list-comics {
+}
+
+.modal-comics-list-title {
   margin-bottom: 16px;
 
   font-weight: 500;
@@ -136,17 +188,24 @@ ul {
   align-items: center;
   letter-spacing: -0.02em;
 
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
-.comics-list {
+.modal-comics-list {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
 }
 
+.modal-comics-item:is(:hover, :focus, :active) {
+  cursor: pointer;
+}
+
 .comics-img-container {
   margin-bottom: 16px;
+}
+
+.comics-desc-container {
 }
 
 .comics-name {
@@ -158,7 +217,7 @@ ul {
   align-items: center;
   letter-spacing: -0.02em;
 
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .actress {
@@ -170,17 +229,14 @@ ul {
 }
 
 .is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  display: none;
 }
 
 /* --------- Tablet --------- */
-
 @media screen and (min-width: 768px) {
-
-  .modal {
+  .modal-characters {
     width: 600px;
+<<<<<<< HEAD
     margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -196,12 +252,34 @@ ul {
     min-width: 536px;
     margin: none;
   }
+=======
+  }
+
+  .container-modal-characters {
+    width: 100%;
+  }
+
+  .modal-gallery {
+    display: flex;
+    gap: 8px;
+  }
+
+  .img-list {
+    flex-direction: column;
+  }
+
+  /* .container-modal-characters {
+   min-width: 536px; 
+   margin: none;
+  } */
+>>>>>>> main
 
   .icon-modal-close {
     width: 28px;
     height: 27px;
   }
 
+<<<<<<< HEAD
   .modal-gallery {
     flex-wrap: nowrap;
   }
@@ -211,6 +289,9 @@ ul {
   }
 
   .comics-list {
+=======
+  .modal-comics-list {
+>>>>>>> main
     gap: 19px;
   }
 
@@ -219,8 +300,53 @@ ul {
     height: 200px;
   }
 
-  .comics-list-title {
+  .modal-comics-list-title {
     font-size: 14px;
   }
 
+  .container-img-max img {
+    width: 332px;
+  }
+}
+
+/* --------- DESC --------- */
+
+@media screen and (min-width: 1200px) {
+  .modal-characters {
+    width: 1000px;
+    padding: 64px 32px;
+  }
+
+  .container-modal-characters {
+    display: flex;
+    gap: 16px;
+  }
+
+  .container-modal-about-char {
+    width: 588px;
+  }
+
+  .modal-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .img-list {
+    flex-direction: row;
+  }
+
+  .modal-comics-list {
+    gap: 16px;
+  }
+
+  .comics-img-container {
+    width: 174px;
+  }
+
+  .modal-comics-list-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.12;
+  }
 }
