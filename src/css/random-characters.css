@@ -1,11 +1,35 @@
+/*
+@media screen and (min-width: 375px) {
+  .container {
+    width: 365px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 704px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1406px;
+  }
+} */
+
+/* Используй только три медиа правила который выit и уэе в них вставляй свои стили */
+
 :root {
-  --praimery-text-color: #fafafa;
+  /* --light-font-color: #fafafa; */
   --secondary-text-color: rgba(250, 250, 250, 0.5);
-  --praimery-bg-color: #0c0b0b;
+  /* --praimery-bg-color: #0c0b0b; */
   /*
-  --backdrop-color: rgba(94, 99, 99, 0.7);
+
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
+
 
 /* @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -90,6 +114,7 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   margin-bottom: 44px;
+  color: var(--light-font-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -123,6 +148,7 @@
   line-height: 1.3;
   letter-spacing: -0.02em;
   margin-bottom: 14px;
+  color: var(--light-font-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -168,9 +194,22 @@
   }
 }
 
+/* style="display: flex; flex-direction: row-reverse; flex-wrap: wrap" */
 @media screen and (min-width: 1280px) {
   .all-characters-button {
     margin-top: 64px;
+  }
+
+  .characters-list {
+    width: 848px;
+    height: 614px;
+  }
+
+  .characters-info {
+    /* Class added */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 }
 
@@ -178,7 +217,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
-  color: var(--praimery-text-color);
+  color: var(--light-font-color);
 }
 
 .characters-item:hover .characters-small-title,
@@ -195,13 +234,14 @@
   flex-direction: row-reverse;
 } */
 
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
   .random-characters-box {
     display: flex;
   }
-}
+} */
 
 @media screen and (min-width: 1280px) {
+
   .characters-list {
     width: 848px;
     height: 614px;

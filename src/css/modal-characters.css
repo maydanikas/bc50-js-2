@@ -75,8 +75,7 @@
   border-radius: 8px;
 }
 
-.container-img-min {
-}
+.container-img-min {}
 
 .img-list {
   margin-top: 6px;
@@ -126,8 +125,7 @@
   color: #fafafa;
 }
 
-.container-modal-list-comics {
-}
+.container-modal-list-comics {}
 
 .modal-comics-list-title {
   margin-bottom: 16px;
@@ -155,8 +153,7 @@
   margin-bottom: 16px;
 }
 
-.comics-desc-container {
-}
+.comics-desc-container {}
 
 .comics-name {
   margin-bottom: 4px;
@@ -202,7 +199,7 @@
   }
 
   /* .container-modal-characters {
-   min-width: 536px; 
+   min-width: 536px;
    margin: none;
   } */
 
