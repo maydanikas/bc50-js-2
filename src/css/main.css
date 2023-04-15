@@ -13,7 +13,6 @@
 
 @import './footer.css';
 
-
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--praimery-bg-color);
@@ -21,4 +20,11 @@ body {
 
 li {
   list-style: none;
+}
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
