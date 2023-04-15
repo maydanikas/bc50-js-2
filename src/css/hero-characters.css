@@ -1,6 +1,4 @@
 .container-hero-characters {
-  /*  width: 100%;
-  margin: 0 auto; */
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -34,7 +32,7 @@
   color: rgba(255, 255, 255, 0.7);
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.285;
   text-transform: uppercase;
   margin-bottom: 14px;
 }
@@ -44,7 +42,7 @@
   font-size: 44px;
   line-height: 44px;
   letter-spacing: -0.02em;
-  color: #fafafa;
+  color: var(--light-font-color);
   margin-bottom: 16px;
 }
 
@@ -52,18 +50,21 @@
   font-family: 'Poppins';
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
-  color: #fafafa;
+  line-height: 1.285;
+  color: var(--light-font-color);
   margin-bottom: 20px;
 }
 
+.hero-characters-buttons {
+  display: flex;
+}
 .btn-hero {
   font-family: 'Poppins';
   font-weight: 500;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   text-transform: uppercase;
-  color: #fafafa;
+  color: var(--light-font-color);
   background-color: #0c0b0b;
   margin-bottom: 40px;
   outline: none;
@@ -107,9 +108,9 @@
   font-family: 'Poppins';
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.166;
   letter-spacing: -0.02em;
-  color: #fafafa;
+  color: var(--light-font-color);
 }
 
 .hero-characters-description-text {
@@ -117,7 +118,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.166;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.5);
   width: 125px;
@@ -166,8 +167,8 @@
   font-family: 'Poppins';
   font-weight: 500;
   font-size: 16px;
-  line-height: 18px;
-  color: #fafafa;
+  line-height: 1.125;
+  color: var(--light-font-color);
   text-transform: uppercase;
 }
 
@@ -196,7 +197,7 @@
 @media screen and (min-width: 768px) {
   .hero-characters-subtitle {
     font-size: 18px;
-    line-height: 29px;
+    line-height: 1.611;
     margin-bottom: 16px;
   }
 
@@ -214,7 +215,7 @@
 
   .btn-hero {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.285;
     padding: 12px 24px;
   }
 
@@ -231,7 +232,7 @@
 
   .hero-characters-circle-text {
     font-size: 24px;
-    line-height: 24px;
+    line-height: 1;
   }
   .hero-characters-arrow-svg {
     width: 32px;
