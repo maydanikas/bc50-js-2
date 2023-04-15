@@ -11,17 +11,22 @@ body {
 
 /* ================================== MOBILE ================================= */
 
-/* .error-header {
-    width: 375px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+.error-header {
+  width: 375px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-  .err-head-container {
-    position: absolute;
-    top: 20px;
-  } */
+.err-head-container {
+  position: absolute;
+  top: 20px;
+}
+
+.logo-err {
+  width: 98px;
+  height: 15px;
+}
 
 .error {
   padding-top: 96px;
@@ -101,7 +106,7 @@ body {
 /* ========================== TABLET ================================== */
 
 @media screen and (min-width: 768px) {
-  /* .error-header {
+  .error-header {
     width: 768px;
     padding-left: 32px;
     padding-right: 32px;
@@ -109,7 +114,12 @@ body {
 
   .err-head-container {
     top: 24px;
-  } */
+  }
+
+  .logo-err {
+    width: 202px;
+    height: 31px;
+  }
 
   .error {
     padding-top: 146px;
@@ -155,9 +165,9 @@ body {
 /* ============================= DESKTOP ============================= */
 
 @media screen and (min-width: 1440px) {
-  /* .error-header {
+  .error-header {
     width: 1440px;
-  } */
+  }
 
   .error {
     padding-top: 278px;
