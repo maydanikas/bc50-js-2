@@ -8,17 +8,5 @@
 @import './vars.css';
 @import './hero-characters.css';
 @import './modal-comics.css';
-
 @import './modal-characters.css';
-
 @import './footer.css';
-
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--praimery-bg-color);
-}
-
-li {
-  list-style: none;
-}

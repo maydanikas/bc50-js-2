@@ -1,3 +1,28 @@
+/*
+@media screen and (min-width: 375px) {
+  .container {
+    width: 365px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 704px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1406px;
+  }
+} */
+
+/* Используй только три медиа правила который выit и уэе в них вставляй свои стили */
+
+
+
 :root {
   --praimery-text-color: #fafafa;
   --secondary-text-color: rgba(250, 250, 250, 0.5);
@@ -39,6 +64,7 @@
 }
 
 @media screen and (min-width: 480px) {}
+
 
 @media screen and (min-width: 768px) {}
 
@@ -82,6 +108,8 @@
     width: 1376px;
   }
 }
+
+
 
 .characters-title {
   font-weight: 500;
@@ -167,10 +195,24 @@
   }
 }
 
+/* style="display: flex; flex-direction: row-reverse; flex-wrap: wrap" */
 @media screen and (min-width: 1280px) {
   .all-characters-button {
     margin-top: 64px;
   }
+
+  .characters-list {
+    width: 848px;
+    height: 614px;
+  }
+
+  .characters-info {
+    /* Class added */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
 }
 
 .button-text {
@@ -199,15 +241,10 @@
   flex-direction: row-reverse;
 } */
 
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
   .random-characters-box {
     display: flex;
   }
-}
+} */
 
-@media screen and (min-width: 1280px) {
-  .characters-list {
-    width: 848px;
-    height: 614px;
-  }
-}
+@media screen and (min-width: 1280px) {}
