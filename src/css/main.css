@@ -1,7 +1,12 @@
 @import '/node_modules/modern-normalize/modern-normalize.css';
+<<<<<<< Updated upstream
 @import '/src/css/reset.css';
 @import '/src/css/header.css';
 @import './random-characters.css';
+=======
+@import '/src/css/header.css';
+@import './randomCharacters.css';
+>>>>>>> Stashed changes
 @import './hero-comics.css';
 @import './last-comics.css';
 @import './page-404.css';
@@ -22,9 +27,50 @@ li {
   list-style: none;
 }
 
+<<<<<<< Updated upstream
 .section {
   padding-top: 80px;
   padding-bottom: 80px;
   margin-left: auto;
   margin-right: auto;
+=======
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+>>>>>>> Stashed changes
 }
