@@ -1,4 +1,3 @@
-@import './modal-characters/modal-tablet.css';
 /* --------- Modile --------- */
 .backdrop-modal-characters {
   position: fixed;
@@ -13,7 +12,7 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  background-color: rgba(3, 5, 41, 0.778); 
+  background-color: rgba(3, 5, 41, 0.778);
 }
 
 .modal-characters {
@@ -29,7 +28,7 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  background: #0C0B0B;
+  background: #0c0b0b;
 }
 
 .modal-close {
@@ -73,11 +72,10 @@
 }
 
 .container-img-max img {
- border-radius: 8px;
+  border-radius: 8px;
 }
 
 .container-img-min {
-  
 }
 
 .img-list {
@@ -92,7 +90,7 @@
 
 .container-modal-about-char {
   padding: 32px 16px;
-  
+
   border-radius: 8px;
   color: white;
   background-color: #171717;
@@ -109,7 +107,7 @@
   font-size: 18px;
   line-height: 1.33;
 
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .date-comics-modal {
@@ -118,18 +116,17 @@
   font-size: 14px;
   line-height: 1.3;
 
-  color: rgba(250, 250, 250, 0.5);  
+  color: rgba(250, 250, 250, 0.5);
 }
 
 .about-char-description {
   font-size: 14px;
   line-height: 1.3;
 
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .container-modal-list-comics {
-
 }
 
 .modal-comics-list-title {
@@ -141,7 +138,7 @@
   align-items: center;
   letter-spacing: -0.02em;
 
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .modal-comics-list {
@@ -154,13 +151,11 @@
   cursor: pointer;
 }
 
-
 .comics-img-container {
   margin-bottom: 16px;
 }
 
 .comics-desc-container {
-
 }
 
 .comics-name {
@@ -172,7 +167,7 @@
   align-items: center;
   letter-spacing: -0.02em;
 
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .actress {
@@ -227,19 +222,16 @@
 
   .modal-comics-list-title {
     font-size: 14px;
-  } 
+  }
 
   .container-img-max img {
     width: 332px;
-   }
-
+  }
 }
-
 
 /* --------- DESC --------- */
 
 @media screen and (min-width: 1200px) {
-
   .modal-characters {
     width: 1000px;
     padding: 64px 32px;

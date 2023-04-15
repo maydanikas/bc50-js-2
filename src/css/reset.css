@@ -49,10 +49,10 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+/* body {
   background-color: var(--praimery-bg-color);
   color: var(--light-font-color);
   margin: 0;
 
   font-family: 'Poppins', sans-serif;
-}
+} */
