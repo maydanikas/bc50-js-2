@@ -22,13 +22,14 @@
 /* Используй только три медиа правила который выit и уэе в них вставляй свои стили */
 
 :root {
-  --praimery-text-color: #fafafa;
+  /* --light-font-color: #fafafa; */
   --secondary-text-color: rgba(250, 250, 250, 0.5);
-  --praimery-bg-color: #0c0b0b;
+  /* --praimery-bg-color: #0c0b0b; */
   /*
-  --backdrop-color: rgba(94, 99, 99, 0.7);
+
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
+
 
 /* @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -113,6 +114,7 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   margin-bottom: 44px;
+  color: var(--light-font-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -146,6 +148,7 @@
   line-height: 1.3;
   letter-spacing: -0.02em;
   margin-bottom: 14px;
+  color: var(--light-font-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -214,18 +217,13 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
-  color: var(--praimery-text-color);
+  color: var(--light-font-color);
 }
 
-.characters-text:hover,
-.characters-text:focus,
-.characters-small-title:hover,
-.characters-small-title:focus {
-  color: #4b50ad;
-}
-
-.characters-item:hover,
-.characters-item:focus {
+.characters-item:hover .characters-small-title,
+.characters-item:focus .characters-small-title,
+.characters-item:hover .characters-text,
+.characters-item:focus .characters-text {
   color: #4b50ad;
 }
 
@@ -243,4 +241,9 @@
 } */
 
 @media screen and (min-width: 1280px) {
+
+  .characters-list {
+    width: 848px;
+    height: 614px;
+  }
 }
