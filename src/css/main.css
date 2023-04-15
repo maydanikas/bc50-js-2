@@ -8,7 +8,11 @@
 @import './vars.css';
 @import './hero-characters.css';
 @import './modal-comics.css';
+
+@import './hero-spiderman.css';
+
 @import './gallary-comics.css';
+
 
 @import './modal-characters.css';
 @import './footer.css';
