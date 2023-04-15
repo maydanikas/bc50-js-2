@@ -1,15 +1,7 @@
 /* --------- Modile --------- */
-<<<<<<< HEAD
-.backdrop {
-  position: absolute;
-
-  top: 0;
-  width: 100%;
-=======
 .backdrop-modal-characters {
   position: fixed;
   inset: 0;
->>>>>>> main
 
   display: flex;
   overflow-y: auto;
@@ -36,13 +28,7 @@
   padding-left: 20px;
   padding-right: 20px;
 
-<<<<<<< HEAD
-  position: relative;
-
-  background-color: #0C0B0B;
-=======
   background: #0c0b0b;
->>>>>>> main
 }
 
 .modal-close {
@@ -58,39 +44,8 @@
   border: none;
 }
 
-<<<<<<< HEAD
-.container-modal {
-  width: 295px;
-  margin: 0 auto;
-  height: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
-}
-
-.modal-gallery {
-  margin-bottom: 16px;
-
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.img-list {
-  margin-top: 6px;
-  display: flex;
-  gap: 8px;
-}
-
-.container-img-max img {
-  margin-top: 6px;
-  border-radius: 8px;
-=======
 .modal-close svg:is(:hover, :focus, :active) {
   cursor: pointer;
->>>>>>> main
 }
 
 .icon-modal-close {
@@ -120,8 +75,7 @@
   border-radius: 8px;
 }
 
-.container-img-min {
-}
+.container-img-min {}
 
 .img-list {
   margin-top: 6px;
@@ -139,11 +93,6 @@
   border-radius: 8px;
   color: white;
   background-color: #171717;
-<<<<<<< HEAD
-
-
-=======
->>>>>>> main
 }
 
 .modal-about-char {
@@ -176,8 +125,7 @@
   color: #fafafa;
 }
 
-.container-modal-list-comics {
-}
+.container-modal-list-comics {}
 
 .modal-comics-list-title {
   margin-bottom: 16px;
@@ -205,8 +153,7 @@
   margin-bottom: 16px;
 }
 
-.comics-desc-container {
-}
+.comics-desc-container {}
 
 .comics-name {
   margin-bottom: 4px;
@@ -236,23 +183,6 @@
 @media screen and (min-width: 768px) {
   .modal-characters {
     width: 600px;
-<<<<<<< HEAD
-    margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    position: relative;
-
-    background-color: #0C0B0B;
-  }
-
-  .container-modal {
-    min-width: 536px;
-    margin: none;
-  }
-=======
   }
 
   .container-modal-characters {
@@ -269,29 +199,16 @@
   }
 
   /* .container-modal-characters {
-   min-width: 536px; 
+   min-width: 536px;
    margin: none;
   } */
->>>>>>> main
 
   .icon-modal-close {
     width: 28px;
     height: 27px;
   }
 
-<<<<<<< HEAD
-  .modal-gallery {
-    flex-wrap: nowrap;
-  }
-
-  .img-list {
-    flex-direction: column;
-  }
-
-  .comics-list {
-=======
   .modal-comics-list {
->>>>>>> main
     gap: 19px;
   }
 
