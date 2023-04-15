@@ -10,6 +10,7 @@ let MARVEL_KEYS = {
   PRIVAT,
   MD5,
 };
+
 console.log(MARVEL_KEYS);
 const instanse = axios.create({
   // url: 'user',
@@ -18,7 +19,7 @@ const instanse = axios.create({
     apikey: MARVEL_KEYS.PUBLICK,
     hash: MARVEL_KEYS.MD5,
     ts: 1,
-    limit: 3,
+    // limit: 3,
     dateDescriptor: 'thisMonth',
   },
   // onUploadProgress: e => console.log(111),

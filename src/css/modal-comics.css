@@ -1,5 +1,8 @@
 /* Borysenko V. Task#1 13hours. This css needs for _modal-comics.html */
 
+bod {
+  overscroll-behavior: contain;
+}
 
 .backdrop {
   position: fixed;
@@ -10,6 +13,8 @@
   /* background-color: hsla(237, 42%, 35%, 0.732); */
   background-color: #171717;
   z-index: 999;
+
+  overscroll-behavior: contain;
 }
 
 .modal {
