@@ -21,8 +21,6 @@
 
 /* Используй только три медиа правила который выit и уэе в них вставляй свои стили */
 
-
-
 :root {
   --praimery-text-color: #fafafa;
   --secondary-text-color: rgba(250, 250, 250, 0.5);
@@ -36,8 +34,6 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
 } */
-
-
 
 .chosen {
   color: #4b50ad;
@@ -63,12 +59,14 @@
   overflow: hidden;
 }
 
-@media screen and (min-width: 480px) {}
+@media screen and (min-width: 480px) {
+}
 
+@media screen and (min-width: 768px) {
+}
 
-@media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 1280px) {}
+@media screen and (min-width: 1280px) {
+}
 
 .section {
   padding-top: 80px;
@@ -108,8 +106,6 @@
     width: 1376px;
   }
 }
-
-
 
 .characters-title {
   font-weight: 500;
@@ -212,7 +208,6 @@
     flex-direction: column;
     align-items: flex-end;
   }
-
 }
 
 .button-text {
@@ -247,4 +242,5 @@
   }
 } */
 
-@media screen and (min-width: 1280px) {}
+@media screen and (min-width: 1280px) {
+}
