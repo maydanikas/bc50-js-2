@@ -11,392 +11,184 @@ body {
 
 /* ================================== MOBILE ================================= */
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .error {
-    padding-top: 96px;
-    padding-bottom: 536px;
-
-    background-image: radial-gradient(
-      75.97% 258.93% at 61.53% 47.37%,
-      var(--start-gradient-color) 0%,
-      var(--end-gradient-color) 100%
-    );
-    background-repeat: no-repeat;
-    background-position: right bottom;
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .box {
-      background-image: radial-gradient(
-        75.97% 258.93% at 61.53% 47.37%,
-        var(--start-gradient-color) 0%,
-        var(--end-gradient-color) 100%
-      );
-    }
-  }
-
-  /* @media screen and (min-width: 480px) and (max-width: 767px) {
-  .error {
-    padding-top: 151px;
-    padding-bottom: 578px;
-
-    background-image: url(../images/tablet/404/error-tab.png),
-      radial-gradient(
-        75.97% 258.93% at 61.53% 47.37%,
-        var(--start-gradient-color) 0%,
-        var(--end-gradient-color) 100%
-      );
-    background-repeat: no-repeat;
-    background-position: right bottom;
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .box {
-      background-image: url(../images/tablet/404/error-tab@2x.png),
-        radial-gradient(
-          75.97% 258.93% at 61.53% 47.37%,
-          var(--start-gradient-color) 0%,
-          var(--end-gradient-color) 100%
-        );
-    }
-  } */
-
-  .error-container {
-    position: relative;
-    width: 375px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .error-img {
-    position: absolute;
-    top: 212px;
-    right: 0px;
-    display: block;
-  }
-
-  .error-text {
-    margin: 0 0 16px;
-
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.3;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.7);
-  }
-
-  .error-title {
-    margin: 0 0 16px;
-
-    font-weight: 500;
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-
-    color: var(--light-font-color);
-  }
-
-  .error-message {
-    margin: 0 0 16px;
-    padding-bottom: 16px;
-
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.3;
-    letter-spacing: 0.02em;
-    color: var(--light-font-color);
-  }
-
-  .back-home {
-    display: block;
-    width: 113px;
-    padding: 10px 20px;
-    margin-bottom: 38px;
-
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.33;
-    text-transform: uppercase;
-    color: var(--light-font-color);
-    border: 1px solid rgba(250, 250, 250, 0.5);
-    border-radius: 1000px;
-  }
-}
-
-/* ========================== TABLET ================================== */
-
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .error {
-    padding-top: 146px;
-    padding-bottom: 578px;
-
-    background-image: radial-gradient(
-      75.97% 258.93% at 61.53% 47.37%,
-      var(--start-gradient-color) 0%,
-      var(--end-gradient-color) 100%
-    );
-    background-repeat: no-repeat;
-    background-position: right bottom;
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .box {
-      background-image: radial-gradient(
-        75.97% 258.93% at 61.53% 47.37%,
-        var(--start-gradient-color) 0%,
-        var(--end-gradient-color) 100%
-      );
-    }
-  }
-
-  /* @media screen and (min-width: 768px) and (max-width: 1439px) {
-  .error {
-    padding-top: 151px;
-    padding-bottom: 578px;
-
-    background-image: url(../images/tablet/404/error-tab.png),
-      radial-gradient(
-        75.97% 258.93% at 61.53% 47.37%,
-        var(--start-gradient-color) 0%,
-        var(--end-gradient-color) 100%
-      );
-    background-repeat: no-repeat;
-    background-position: 0 463px, 0;
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .box {
-      background-image: url(../images/tablet/404/error-tab@2x.png),
-        radial-gradient(
-          75.97% 258.93% at 61.53% 47.37%,
-          var(--start-gradient-color) 0%,
-          var(--end-gradient-color) 100%
-        );
-    }
-  } */
-
-  .error-container {
-    position: relative;
-    width: 768px;
-    margin: 0 auto;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-  .error-img {
-    position: absolute;
-    /* left: 635px;
-    top: 1px; */
-    top: 354px;
-    right: 5px;
-    display: block;
-  }
-
-  .error-text {
-    margin: 0 0 16px;
-
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.6;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.7);
-  }
-
-  .error-title {
-    margin: 0 0 16px;
-
-    font-weight: 500;
-    font-size: 140px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-
-    color: var(--light-font-color);
-  }
-
-  .error-message {
-    margin: 0 0 40px;
-    padding-bottom: 32px;
-
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: var(--light-font-color);
-  }
-
-  .back-home {
-    display: block;
-    width: 133px;
-    padding: 12px 24px;
-
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.3;
-    text-transform: uppercase;
-    color: var(--light-font-color);
-    border: 1px solid rgba(250, 250, 250, 0.5);
-    border-radius: 1000px;
-  }
-}
-
-/* =================== HEADER ==================================== */
-
-/* .header__container {
-  position: absolute;
-  width: 1440px;
+.error-header {
+  width: 375px;
   margin: 0 auto;
-  padding-left: 32px;
-  padding-right: 32px;
-  align-items: center;
-  background-color: transparent;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-@media screen and (min-width: 768px) {
-  .header__container {
-    max-width: 768px;
-  }
+
+.err-head-container {
+  position: absolute;
+  top: 20px;
 }
-@media screen and (min-width: 1440px) {
-  .header__container {
-    max-width: 1440px;
-  }
-} */
 
-/* .header.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: #34387F;
-  z-index: 50;
-} */
+.logo-err {
+  width: 98px;
+  height: 15px;
+}
 
-/* ============================= DESKTOP ============================= */
+.error {
+  padding-top: 96px;
+  padding-bottom: 536px;
+  min-height: 100vh;
 
-@media screen and (min-width: 1440px) {
-  .error {
-    padding-top: 278px;
-    padding-bottom: 189px;
-
-    background-image: radial-gradient(
-      75.97% 258.93% at 61.53% 47.37%,
-      var(--start-gradient-color) 0%,
-      var(--end-gradient-color) 100%
-    );
-    background-repeat: no-repeat;
-    background-position: right bottom;
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .box {
-      background-image: radial-gradient(
-        75.97% 258.93% at 61.53% 47.37%,
-        var(--start-gradient-color) 0%,
-        var(--end-gradient-color) 100%
-      );
-    }
-  }
-
-  /* .error {
-padding-top: 278px;
-padding-bottom: 189px;
-
-background-image: url(../images/desktop/404/iron-man.png),
-  radial-gradient(
+  background-image: radial-gradient(
     75.97% 258.93% at 61.53% 47.37%,
     var(--start-gradient-color) 0%,
     var(--end-gradient-color) 100%
   );
-background-repeat: no-repeat;
-background-position: 100% 100%, 0;
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
-@media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-.box {
-  background-image: url(../images/desktop/404/iron-man-desk@2x.png),
-    radial-gradient(
-      75.97% 258.93% at 61.53% 47.37%,
-      var(--start-gradient-color) 0%,
-      var(--end-gradient-color) 100%
-    );
+.error-container {
+  position: relative;
+  width: 375px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-} */
+
+.error-img {
+  position: absolute;
+  top: 218px;
+  right: 0px;
+  display: block;
+}
+
+.error-text {
+  margin-bottom: 16px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.error-title {
+  margin-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+
+  color: var(--light-font-color);
+}
+
+.error-message {
+  margin-bottom: 16px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: var(--light-font-color);
+}
+
+.back-home {
+  display: block;
+  width: 113px;
+  padding: 10px 20px;
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: var(--light-font-color);
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  border-radius: 1000px;
+}
+
+/* ========================== TABLET ================================== */
+
+@media screen and (min-width: 768px) {
+  .error-header {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .err-head-container {
+    top: 24px;
+  }
+
+  .logo-err {
+    width: 202px;
+    height: 31px;
+  }
+
+  .error {
+    padding-top: 146px;
+    padding-bottom: 578px;
+  }
 
   .error-container {
-    position: relative;
-    display: flex;
-    width: 1440px;
-    margin: 0 auto;
+    width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
 
   .error-img {
-    position: absolute;
-    top: -275px;
+    top: 314px;
     right: 5px;
-    display: block;
   }
 
   .error-text {
-    margin: 0 0 16px;
-
     font-size: 18px;
     line-height: 1.6;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.7);
   }
 
   .error-title {
-    margin: 0 0 16px;
-
-    font-weight: 500;
-    font-size: 150px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-
-    color: var(--light-font-color);
+    font-size: 140px;
   }
 
   .error-message {
-    margin: 0 0 40px;
+    margin-bottom: 32px;
 
     font-size: 16px;
     line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: var(--light-font-color);
   }
 
   .back-home {
-    display: block;
     width: 133px;
     padding: 12px 24px;
 
-    text-decoration: none;
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.3;
-    text-transform: uppercase;
-    color: var(--light-font-color);
-    border: 1px solid rgba(250, 250, 250, 0.5);
-    border-radius: 1000px;
+  }
+}
+
+/* ============================= DESKTOP ============================= */
+
+@media screen and (min-width: 1440px) {
+  .error-header {
+    width: 1440px;
+  }
+
+  .error {
+    padding-top: 278px;
+    padding-bottom: 189px;
+  }
+
+  .error-container {
+    display: flex;
+    min-width: 1440px;
+  }
+
+  .error-img {
+    top: -274px;
+    right: -5px;
+  }
+
+  .error-title {
+    font-size: 150px;
+  }
+
+  .error-message {
+    margin-bottom: 40px;
   }
 }

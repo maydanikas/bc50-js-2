@@ -1,3 +1,13 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 .container-hero-characters {
   width: 100%;
   margin: 0 auto;
@@ -29,8 +39,9 @@
 
 .hero-characters {
   background-color: #0c0b0b;
-  padding-top: 40px;
   padding-bottom: 40px;
+  position: relative;
+  z-index: -1;
 }
 
 .hero-characters-subtitle {
@@ -91,10 +102,7 @@
 }
 
 .wrapper-black-pantera {
-  margin-left: 98px;
-}
-.hero-characters-arrow-svg {
-  fill: #34387f;
+  margin-left: auto;
 }
 
 .hero-characters-line-svg {
@@ -102,6 +110,7 @@
   width: 237px;
   height: 6px;
   display: inline-block;
+  margin-bottom: 16px;
 }
 
 .hero-characters-description {
@@ -126,6 +135,7 @@
   line-height: 14px;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.5);
+  width: 125px;
 }
 
 .box-black-pantera {
@@ -134,13 +144,18 @@
   background-color: #171717;
   background-image: url(../images/hero-characters-img/line-white.png);
   background-repeat: no-repeat;
+  background-position: 0px 5px;
   position: relative;
+  margin-bottom: 14px;
 }
 
 .hero-characters-arrow-svg {
   position: absolute;
   right: 14px;
   bottom: 16px;
+  fill: #34387f;
+  width: 24px;
+  height: 24px;
 }
 
 .hero-characters-circle {
@@ -173,4 +188,140 @@
 
 .pantera-black-img {
   margin-left: 35px;
+}
+
+.box-black-pantera::after {
+  content: '';
+  position: absolute;
+  top: 190px;
+  width: 260px;
+  height: 234px;
+  background: linear-gradient(
+    180deg,
+    #34387f 36.46%,
+    rgba(52, 56, 127, 0) 100%
+  );
+  filter: blur(47px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-characters-subtitle {
+    font-size: 18px;
+    line-height: 29px;
+    margin-bottom: 16px;
+  }
+
+  .hero-characters-title {
+    width: 538px;
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  .hero-characters-text {
+    font-size: 16px;
+    width: 473px;
+    margin-bottom: 32px;
+  }
+
+  .btn-hero {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 12px 24px;
+  }
+
+  .box-black-pantera {
+    width: 336px;
+    background-position: right 100px;
+    margin-bottom: 16px;
+  }
+
+  .hero-characters-circle {
+    width: 144px;
+    height: 144px;
+  }
+
+  .hero-characters-circle-text {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .hero-characters-arrow-svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .pantera-black-img {
+    margin-left: 75px;
+    margin-top: 107px;
+  }
+
+  .hero-characters-img {
+    flex-direction: row;
+    align-items: end;
+  }
+
+  .hero-characters-line-svg {
+    width: 336px;
+    height: 9px;
+    margin-bottom: 16px;
+  }
+
+  .hero-characters-description {
+    column-gap: 84px;
+  }
+
+  .hero-characters-description-text {
+    width: 195px;
+  }
+
+  .box-black-pantera::after {
+    top: 340px;
+    width: 332px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-characters-title {
+    width: 527px;
+  }
+
+  .hero-characters-text {
+    width: 527px;
+  }
+
+  .container-wrapper-hero-characters {
+    display: flex;
+    column-gap: 145px;
+  }
+
+  .box-black-pantera {
+    width: 352px;
+  }
+  .hero-characters-img {
+    column-gap: 32px;
+  }
+
+  .box-black-pantera {
+    background-image: url(../images/hero-characters-img/line-desktop.png);
+  }
+
+  .pantera-black-img {
+    margin-top: 123px;
+    margin-left: 95px;
+  }
+
+  .wrapper-black-pantera {
+    margin-bottom: 110px;
+  }
+
+  .hero-characters-content {
+    margin-top: 210px;
+  }
+
+  .box-black-pantera::after {
+    top: 250px;
+  }
 }

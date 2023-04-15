@@ -26,7 +26,9 @@
 .header.sticky {
     position: sticky;
     top: 0;
-    background: linear-gradient(to bottom, #34387f 0%, #ff99ff 100%);
+    background-color: #34387f;
+    opacity: 0.5;
+    /* background: linear-gradient(to bottom, #34387f 0%, #ff99ff 100%); */
     z-index: 100;
   }
 
