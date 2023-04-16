@@ -9,10 +9,10 @@ Marvel.getLastThreeComics('/comics', {
   },
 })
   .then(res => {
-    // console.log(res);
     const respJSONed = res.data.data.results;
     // console.log(response.data.results);
     // console.log(respJSONed);
+    console.log(respJSONed);
     const hbsObjRandom = respJSONed.map(element => ({
       title: element.title,
       id: element.id,
