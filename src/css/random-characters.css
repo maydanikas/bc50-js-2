@@ -23,11 +23,6 @@
 }
 
 /* ========================mobile============================ */
-.container {
-  /* width: 100%; */
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
 @media screen and (min-width: 375px) {
   .container {
@@ -39,7 +34,7 @@
 
 .section {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
   /* width: 1376px; */
@@ -67,12 +62,18 @@
 
 .characters-image {
   margin-bottom: 32px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 32px;
   /* width: 335px;
   height: 335px; */
 }
+
 .characters-image-container {
   flex-shrink: 0;
 }
+
 .characters-small-title {
   font-weight: 500;
   font-size: 18px;
@@ -106,6 +107,14 @@
   border-radius: 1000px;
   margin-top: 20px;
   cursor: pointer;
+  width: 170px;
+  height: 42px;
+}
+
+.all-characters-button:hover,
+.all-characters-button:focus {
+  background-color: #34387f;
+  border: transparent;
 }
 
 .button-text {
@@ -121,15 +130,24 @@
 .characters-item:focus .characters-text {
   color: #4b50ad;
 }
+
 /* ============================tablet=============================== */
 @media screen and (min-width: 768px) {
   .container {
     width: 704px;
   }
 
+  .random-characters-container {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   .section {
     padding-top: 128px;
-    padding-bottom: 128px;
+    padding-bottom: 88px;
   }
 
   .character-title {
@@ -137,7 +155,8 @@
     line-height: 1;
     margin-bottom: 64px;
   }
-  /* 
+
+  /*
   .characters-image {
     width: 704px;
     height: 704px;
@@ -159,12 +178,16 @@
     margin-right: 0px;
   }
 }
+
 /* ============================desktop================================ */
 @media screen and (min-width: 1440px) {
   .container {
     width: 1406px;
   }
 
+  .random-characters-container {
+    max-width: 1440px;
+  }
   /* .random-characters-box {
     margin: 0;
   } */
@@ -172,21 +195,32 @@
   .characters-container-info {
     display: flex;
     flex-direction: row;
+    flex-shrink: 0;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 32px;
   }
 
   .characters-image {
     margin-bottom: 0px;
-    margin-right: 32px;
+    margin-right: 0px;
     /* width: 496px;
     height: 704px; */
   }
 
   .all-characters-button {
-    margin-right: 30px;
+    left: auto;
+    margin-top: 44px;
   }
 
   .characters-list {
     width: 848px;
     height: 614px;
+    margin-left: 32px;
+  }
+
+  .characters-item {
+    padding-bottom: 26px;
+    padding-top: 26px;
   }
 }
