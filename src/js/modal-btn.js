@@ -5,11 +5,7 @@ const elements = {
   backDrop: document.querySelector('[data-backdrop]'),
 };
 
-<<<<<<< HEAD
-// elements.openModalBtn.addEventListener('click', openModal);
-=======
 // elements.openModalBtn.addEventListener("click", openModal);
->>>>>>> main
 elements.closeModalBtn.addEventListener('click', () => {
   deleteListenerModal();
 });
