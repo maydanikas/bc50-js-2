@@ -5,7 +5,14 @@
       <svg class="filter-lupa-icon">
         <use href="./images/svg/sprite.svg#icon-search"></use>
       </svg>
-      <input class="filter-input" type="text" name="searchQuery" autocomplete="off" placeholder="Enter text" required />
+      <input
+        class="filter-input"
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Enter text"
+        required
+      />
     </form>
   </div>
 
@@ -36,3 +43,50 @@
     <input type="text" id="datepicker" name="datepicker" />
   </form>
 </div>
+
+<!-- Characters filters -->
+
+<section class="filters-section">
+  <div class="filters-container">
+    <form class="filters-form">
+      <div class="input-wrapper">
+        <label class="filters-input-field">
+          <span class="filters-input-desc">Comics</span>
+          <input
+            class="filters-input"
+            id="modal-input"
+            type="text"
+            name="comics-search"
+            placeholder="Enter text"
+          />
+        </label>
+        <label class="filters-input-field">
+          <span class="filters-input-desc">Name Starts With</span>
+          <input
+            class="filters-input"
+            id="name-start-search"
+            type="text"
+            name="name-start-search"
+            placeholder="Enter text"
+          />
+        </label>
+      </div>
+      <div class="select-wrapper">
+        <label class="filters-select-field"
+          ><span class="filters-input-desc">Order by</span
+          ><select id="order" name="order" class="filters-select">
+            <option value="">Name</option>
+            <option value="" selected>Modified</option>
+          </select></label
+        >
+        <label class="filters-select-field"
+          ><span class="filters-input-desc">Date</span
+          ><select id="date" name="date" class="filters-select">
+            <option value="" selected>10/03/23</option>
+            <option value="">12/06/22</option>
+          </select></label
+        >
+      </div>
+    </form>
+  </div>
+</section>
