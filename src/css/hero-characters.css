@@ -36,6 +36,7 @@
   text-transform: uppercase;
   margin-bottom: 14px;
 }
+
 .hero-characters-title {
   font-family: 'Poppins';
   font-weight: 500;
@@ -58,6 +59,7 @@
 .hero-characters-buttons {
   display: flex;
 }
+
 .btn-hero {
   font-family: 'Poppins';
   font-weight: 500;
@@ -145,11 +147,9 @@
 }
 
 .hero-characters-circle {
-  background: radial-gradient(
-    81.15% 81.15% at 50% 18.85%,
-    #34387f 0%,
-    #171717 100%
-  );
+  background: radial-gradient(81.15% 81.15% at 50% 18.85%,
+      #34387f 0%,
+      #171717 100%);
   border-radius: 50%;
   width: 90px;
   height: 90px;
@@ -183,11 +183,9 @@
   top: 235px;
   width: 260px;
   height: 234px;
-  background: linear-gradient(
-    180deg,
-    #34387f 36.46%,
-    rgba(52, 56, 127, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      #34387f 36.46%,
+      rgba(52, 56, 127, 0) 100%);
   filter: blur(47px);
   left: 50%;
   transform: translateX(-50%);
@@ -234,6 +232,7 @@
     font-size: 24px;
     line-height: 1;
   }
+
   .hero-characters-arrow-svg {
     width: 32px;
     height: 32px;
@@ -283,6 +282,8 @@
   .container-wrapper-hero-characters {
     display: flex;
     column-gap: 145px;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .box-black-pantera {
@@ -297,6 +298,7 @@
     margin-bottom: 60px;
     padding-bottom: 0px;
   }
+
   .box-black-pantera {
     background-position: right 118px;
     background-image: url(../images/hero-characters-img/line-desktop.png);
@@ -313,5 +315,6 @@
 
   .hero-characters-content {
     margin-top: 210px;
+    margin-right: auto;
   }
 }
