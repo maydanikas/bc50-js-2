@@ -173,6 +173,10 @@
   .characters-container-info {
     display: flex;
     flex-direction: row;
+    flex-shrink: 0;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 32px;
   }
 
   .characters-image {
