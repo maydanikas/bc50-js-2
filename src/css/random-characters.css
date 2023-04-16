@@ -23,11 +23,7 @@
 }
 
 /* ========================mobile============================ */
-.container {
-  /* width: 100%; */
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 
 @media screen and (min-width: 375px) {
   .container {
@@ -74,9 +70,11 @@
   /* width: 335px;
   height: 335px; */
 }
+
 .characters-image-container {
   flex-shrink: 0;
 }
+
 .characters-small-title {
   font-weight: 500;
   font-size: 18px;
@@ -131,6 +129,7 @@
 .characters-item:focus .characters-text {
   color: #4b50ad;
 }
+
 /* ============================tablet=============================== */
 @media screen and (min-width: 768px) {
   .container {
@@ -155,7 +154,8 @@
     line-height: 1;
     margin-bottom: 64px;
   }
-  /* 
+
+  /*
   .characters-image {
     width: 704px;
     height: 704px;
@@ -177,6 +177,7 @@
     margin-right: 0px;
   }
 }
+
 /* ============================desktop================================ */
 @media screen and (min-width: 1440px) {
   .container {
@@ -193,6 +194,10 @@
   .characters-container-info {
     display: flex;
     flex-direction: row;
+    flex-shrink: 0;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 32px;
   }
 
   .characters-image {
