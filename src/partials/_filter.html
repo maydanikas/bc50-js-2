@@ -1,6 +1,38 @@
 <div>
-  <h3>Filter</h3>
-  <form action="">
-    <input type="text" />
+  <div>
+    <label class="filter-top-text" for="format">Title Starts With</label>
+    <form action="">
+      <svg class="filter-lupa-icon">
+        <use href="./images/svg/sprite.svg#icon-search"></use>
+      </svg>
+      <input class="filter-input" type="text" name="searchQuery" autocomplete="off" placeholder="Enter text" required />
+    </form>
+  </div>
+
+  <div>
+    <label class="filter-top-text" for="format">Format</label>
+    <select name="format" id="format">
+      <option value="1">Comic</option>
+      <option value="2">Magazine</option>
+      <option value="3">Trade paperback</option>
+      <option value="4">Hardcover</option>
+      <option value="5">Digest</option>
+      <option value="6">Graphic novel</option>
+      <option value="6">Digital comic</option>
+      <option value="6">Infinite comic</option>
+    </select>
+  </div>
+
+  <div>
+    <label class="filter-top-text" for="format">Title</label>
+    <select name="title" id="title">
+      <option value="1">Title</option>
+      <option value="2">On Sale Date</option>
+    </select>
+  </div>
+
+  <form>
+    <label class="filter-top-text" for="datepicker">Start Year</label>
+    <input type="text" id="datepicker" name="datepicker" />
   </form>
 </div>
