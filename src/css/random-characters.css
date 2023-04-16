@@ -1,43 +1,5 @@
-/*
-@media screen and (min-width: 375px) {
-  .container {
-    width: 365px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 704px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 1406px;
-  }
-} */
-
-/* Используй только три медиа правила который выit и уэе в них вставляй свои стили */
-
 :root {
-  /* --light-font-color: #fafafa; */
   --secondary-text-color: rgba(250, 250, 250, 0.5);
-  /* --praimery-bg-color: #0c0b0b; */
-  /*
-
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
-}
-
-
-/* @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-} */
-
-.chosen {
-  color: #4b50ad;
 }
 
 .is-hidden {
@@ -60,13 +22,19 @@
   overflow: hidden;
 }
 
-@media screen and (min-width: 480px) {
+/* ========================mobile============================ */
+.container {
+  /* width: 100%; */
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 375px) {
+  .container {
+    width: 365px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .section {
@@ -77,71 +45,34 @@
   /* width: 1376px; */
 }
 
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 128px;
-    padding-bottom: 128px;
-  }
-}
-
-.container {
-  width: 100%;
-  width: 335px;
-  /* margin-left: auto; */
-  /* привет . твой маржин мешает */
+.random-characters-box {
+  margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 704px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 1376px;
-  }
 }
 
 .characters-title {
   font-weight: 500;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.14;
   letter-spacing: -0.02em;
   margin-bottom: 44px;
   color: var(--light-font-color);
 }
 
-@media screen and (min-width: 768px) {
-  .character-title {
-    font-size: 44px;
-    line-height: 1;
-    margin-bottom: 64px;
-  }
+.characters-container-info {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
 }
 
 .characters-image {
   margin-bottom: 32px;
+  /* width: 335px;
+  height: 335px; */
 }
-
-@media screen and (min-width: 1280px) {
-  .characters-image {
-    margin-bottom: 0px;
-    margin-right: 32px;
-    /* width: 496px;
-    height: 704px; */
-  }
-}
-
 .characters-image-container {
   flex-shrink: 0;
 }
-
 .characters-small-title {
   font-weight: 500;
   font-size: 18px;
@@ -151,14 +82,6 @@
   color: var(--light-font-color);
 }
 
-@media screen and (min-width: 768px) {
-  .characters-small-title {
-    font-size: 24px;
-    line-height: 1;
-    margin-bottom: 16px;
-  }
-}
-
 .characters-text {
   font-weight: 400;
   font-size: 14px;
@@ -166,17 +89,14 @@
   color: var(--secondary-text-color);
 }
 
-@media screen and (min-width: 768px) {
-  .characters-text {
-    font-size: 16px;
-    line-height: 1.1;
-  }
-}
-
 .characters-item {
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   padding-bottom: 32px;
   padding-top: 32px;
+}
+
+.all-characters-button-container {
+  text-align: end;
 }
 
 .all-characters-button {
@@ -188,35 +108,10 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
-  .all-characters-button {
-    margin-top: 32px;
-  }
-}
-
-/* style="display: flex; flex-direction: row-reverse; flex-wrap: wrap" */
-@media screen and (min-width: 1280px) {
-  .all-characters-button {
-    margin-top: 64px;
-  }
-
-  .characters-list {
-    width: 848px;
-    height: 614px;
-  }
-
-  .characters-info {
-    /* Class added */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-}
-
 .button-text {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.28;
   color: var(--light-font-color);
 }
 
@@ -226,21 +121,69 @@
 .characters-item:focus .characters-text {
   color: #4b50ad;
 }
-
-/*  чомусь не вставляється по нормальному зробила через інлайн стиль
-.character-info {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
-} */
-
-/* @media screen and (min-width: 1280px) {
-  .random-characters-box {
-    display: flex;
+/* ============================tablet=============================== */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 704px;
   }
-} */
 
-@media screen and (min-width: 1280px) {
+  .section {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  .character-title {
+    font-size: 44px;
+    line-height: 1;
+    margin-bottom: 64px;
+  }
+  /* 
+  .characters-image {
+    width: 704px;
+    height: 704px;
+  } */
+
+  .characters-small-title {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  .characters-text {
+    font-size: 16px;
+    line-height: 1.1;
+  }
+
+  .all-characters-button {
+    margin-top: 32px;
+    margin-right: 0px;
+  }
+}
+/* ============================desktop================================ */
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1406px;
+  }
+
+  /* .random-characters-box {
+    margin: 0;
+  } */
+
+  .characters-container-info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .characters-image {
+    margin-bottom: 0px;
+    margin-right: 32px;
+    /* width: 496px;
+    height: 704px; */
+  }
+
+  .all-characters-button {
+    margin-right: 30px;
+  }
 
   .characters-list {
     width: 848px;
