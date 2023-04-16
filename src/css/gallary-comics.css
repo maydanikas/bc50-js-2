@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: center;
   gap: 10.667vw;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -34,14 +33,16 @@
 
 @media screen and (min-width: 768px) {
   .gallary-comics-container {
-    width: 43.750vw;
+    /* width: 43.750vw; */
+    width: 332px;
+    height: 485px;
   }
-
 }
 
 @media screen and (min-width: 1440px) {
   .gallary-comics-container {
-    width: 23.056vw;
+    /* width: 23.056vw; */
+    width: 332px;
   }
 }
 
@@ -53,24 +54,24 @@
 
 @media screen and (min-width: 768px) {
   .gallary-comics-img {
-    width: 43.750vw;
+    width: 43.75vw;
     height: 57.943vw;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .gallary-comics-img {
-    width: 23.056vw;
-    height: 30.903vw;
+    /* width: 23.056vw; */
+    width: 332px;
+    /* height: 30.903vw; */
   }
 }
-
 
 .gallary-comics-data {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
-  font-size: 4.800vw;
+  font-size: 4.8vw;
   letter-spacing: -0.02em;
   color: var(--gallary-comics-data);
   justify-content: right;
@@ -92,7 +93,6 @@
     line-height: 1.667vw;
     padding-top: 1.111vw;
     padding-bottom: 0.556vw;
-
   }
 }
 
@@ -110,12 +110,9 @@
   }
 }
 
-
-
 @media screen and (min-width: 1440px) {
   .gallary-comics-name {
     font-size: 1.111vw;
-    line-height: 1.250vw;
-
+    line-height: 1.25vw;
   }
 }
