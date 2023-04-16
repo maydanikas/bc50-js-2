@@ -50,7 +50,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* body {
+body {
   background-color: var(--praimery-bg-color);
   color: var(--light-font-color);
   margin: 0;
@@ -60,9 +60,12 @@ html {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
 }
+
 
 /*! Этими правилимами прошу всех пользоваться */
 
@@ -86,4 +89,3 @@ html {
     width: 1406px;
   }
 } */
-
