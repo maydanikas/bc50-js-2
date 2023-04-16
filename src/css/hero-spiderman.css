@@ -1,74 +1,67 @@
 @media screen and (min-width:375px) {
     .section-comics-spiderman {
-    /* width: 100%; */
-    /* height: 509px; */
-    background-image: url(/src/images/desktop/Characters/spiderman-jump.mobile.png); 
-    /* background-repeat: no-repeat; */
-    /* background-position: right bottom; */
-    background-size: cover;
-    background-position: center;
+        background-image: url(/src/images/desktop/Characters/spiderman-jump.mobile.png); 
+        background-size: cover;
+        background-position: center;
 }
     .container-comics-spiderman {
-    /* width: 335px; */
-    padding-top: 172px;
-    padding-left: 20px;
-    padding-right: 20px;
+        position: relative;
+        padding-top: 172px;
+        padding-left: 20px;
+        padding-right: 20px;
 }
     .comics-text-spiderman {
-    font-family: 'Poppins';
-    font-size: 14px;
-    line-height: 1.3;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 14px;
+        font-family: 'Poppins';
+        font-size: 14px;
+        line-height: 1.3;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 14px;
 
 }
     .comics-title-spiderman {
-    font-family: 'Poppins';
-    font-weight: 500;
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    color: #fafafa;
-    margin-bottom: 16px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        color: #fafafa;
+        margin-bottom: 16px;
 
 }
     .comics-description-spiderman {
-     font-family: 'Poppins';
-    /* columns: auto; */
-    padding-left: 0;
-    font-size: 14px;
-    line-height: 1.3;
-    display: flex;
+        font-family: 'Poppins';
+        padding-left: 0;
+        font-size: 14px;
+        line-height: 1.3;
+        display: flex;
         align-items: center;
         letter-spacing: 0.02em;
-         color: #fafafa;
-    padding-bottom: 150px;
+        color: #fafafa;
+        padding-bottom: 150px;
 }
     .back-spiderman {
-    position: absolute;
-    color: rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(250, 250, 250, 0.5);
-    border-radius: 1000px;
-    bottom: -60px;
-    right: 20px;
-    padding: 10px 20px;
-    height: 36px;
-    font-size: 12px;
-    line-height: 1.33;
-    display: flex;
+        position: absolute;
+        color: rgba(255, 255, 255, 0.7);
+        border: 1px solid rgba(250, 250, 250, 0.5);
+        border-radius: 1000px;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        height: 36px;
+        font-size: 12px;
+        line-height: 1.33;
+        display: flex;
+        color: #fafafa;
     }
 
 }
 @media screen and (min-width:768px) {
     .section-comics-spiderman {
-        background-image: url(/src/images/desktop/Characters/spiderman-jump.tablet.jpg); 
+        background-image: url(/src/images/desktop/Characters/spiderman-jump.tablet.png); 
         background-color: var(--praimery-bg-color);
         background-size: cover;
-        
-        /* height: 780px; */
         padding-top: 0;
-        
     }
 
     .container-comics-spiderman {
@@ -100,23 +93,20 @@
         line-height: 1.25;
         color: #fafafa;
         margin-left: 100px;
-        
     }
 
     .back-spiderman {
         position: absolute;
         right: 32px;
-        bottom: -275px;
+        bottom: 32px;
     }
 } 
 @media screen and (min-width:1440px) {
     .section-comics-spiderman {
-        
+        /* height: 100vh; */
         background-image: url(/src/images/desktop/Characters/spider-jump.png); 
         background-repeat: no-repeat;
         background-size: cover;
-        
-   
     }
 
     .container-comics-spiderman {
@@ -128,7 +118,6 @@
     .comics-text-spiderman {
         color: rgba(255, 255, 255, 0.7);;
         margin-bottom: 16px;
-
     }
 
     .comics-title {
@@ -136,74 +125,10 @@
         line-height: 1.5;
     }
 
-    /* .comics-description {
-
-    }  */
-
     .back-spiderman {
         position: absolute;
-        bottom: -250px;
+        bottom: 64px;
     }
 }
 
     
-
-
-
-
-
-
-
-/* .section-comics {
-    height: 780px;
-    padding-top: 278px;
-    padding-bottom: 271px;
-
-    background-image: url(../images/desktop/Characters/batman.png);
-    
-    background-repeat: no-repeat;
-    background-position: right bottom;
-}
-
-.container-comics {
-    width: 1440px;
-    padding-left: 32px;
-    padding-right: 32px;
-}
-
-.comics-text {
-    
-    
-}
-.comics-title {
-   
-    
-}
-
-.comics-description {
-    font-family: 'Poppins';
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: var(--light-font-color);
-    padding-left: 88px;
-    margin-top: 16px;
-    margin-bottom: 157px;
-    columns: 2;
-}
-
-.back {
-    position: absolute;
-    right: 32px;
-    bottom: 0px;
-    
-    padding: 12px 24px;
-
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.3;
-    text-transform: uppercase;
-    
-    
-} */
