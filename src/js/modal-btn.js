@@ -1,20 +1,19 @@
-
 const elements = {
-  openModalBtn: document.querySelector("[data-modal-open]"),
-  closeModalBtn: document.querySelector("[data-modal-close]"),
-  modal: document.querySelector("[data-modal]"),
-  backDrop: document.querySelector("[data-backdrop]"),
+  openModalBtn: document.querySelector('[data-modal-open]'),
+  closeModalBtn: document.querySelector('[data-modal-close]'),
+  modal: document.querySelector('[data-modal]'),
+  backDrop: document.querySelector('[data-backdrop]'),
 };
 
-elements.openModalBtn.addEventListener("click", openModal);
-elements.closeModalBtn.addEventListener("click", () => {
+// elements.openModalBtn.addEventListener('click', openModal);
+elements.closeModalBtn.addEventListener('click', () => {
   deleteListenerModal();
 });
 
 function openModal() {
-  elements.modal.classList.toggle("is-hidden");
+  elements.modal.classList.toggle('is-hidden');
 
-  listenerModal()
+  listenerModal();
 }
 
 function closeModal(event) {
@@ -22,20 +21,19 @@ function closeModal(event) {
     deleteListenerModal();
   }
 
-  if(event.target === elements.backDrop) {
+  if (event.target === elements.backDrop) {
     deleteListenerModal();
   }
-
 }
 
 function listenerModal() {
-  document.addEventListener('keydown', closeModal)
-  elements.backDrop.addEventListener("click", closeModal)
+  document.addEventListener('keydown', closeModal);
+  elements.backDrop.addEventListener('click', closeModal);
 }
 
 function deleteListenerModal() {
-    elements.modal.classList.add("is-hidden");
+  elements.modal.classList.add('is-hidden');
 
-    document.removeEventListener('keydown', closeModal);
-    elements.backDrop.removeEventListener("click", closeModal)
+  document.removeEventListener('keydown', closeModal);
+  elements.backDrop.removeEventListener('click', closeModal);
 }

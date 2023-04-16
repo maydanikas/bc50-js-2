@@ -13,9 +13,8 @@ let MARVEL_KEYS = {
 
 console.log(MARVEL_KEYS);
 const instanse = axios.create({
-  // url: 'user',
   validateStatus: function (status) {
-    return status >= 200 && status <= 305; // default
+    return status >= 200 && status < 300; // default
   },
   baseURL: 'http://gateway.marvel.com/v1/public',
   // headers: {
@@ -29,23 +28,23 @@ const instanse = axios.create({
   },
   // onUploadProgress: e => console.log(111),
   // onDownloadProgress: function (progressEvent) {
-  //   // Do whatever you want with the native progress event
+  // Do whatever you want with the native progress event
   //   console.log(222);
   // },
   // transformResponse: [
   //   function (data) {
-  //     // const response = JSON.parse(data);
-  //     // const responjeJSONed = response.data.results;
-  //     // // console.log(response.data.results);
-  //     // const hbsObjRandom = responjeJSONed.map(element => ({
-  //     //   title: element.title,
-  //     //   id: element.id,
-  //     //   urlImg: element.images[0].path + '.' + element.images[0].extension,
-  //     // }));
-  //     // console.log('data', hbsObjRandom);
-  //     // const newRes = Object.entries(response.data.results);
-  //     // // console.log(newRes);
-  //     // return hbsObjRandom;
+  // const response = JSON.parse(data);
+  // const responjeJSONed = response.data.results;
+  // console.log(response.data.results);
+  // const hbsObjRandom = responjeJSONed.map(element => ({
+  //   title: element.title,
+  //   id: element.id,
+  //   urlImg: element.images[0].path + '.' + element.images[0].extension,
+  // }));
+  // console.log('data', hbsObjRandom);
+  // const newRes = Object.entries(response.data.results);
+  // console.log(newRes);
+  // return hbsObjRandom;
   //     return data;
   //   },
   // ],
@@ -60,6 +59,9 @@ const instanse = axios.create({
 
 export default class Marvel {
   static getLastThreeComics(url = '/comics', options = {}) {
+    return instanse(url, options);
+  }
+  static getRandomCharacter(url = '/characters', options = {}) {
     return instanse(url, options);
   }
 }
