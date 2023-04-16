@@ -37,9 +37,12 @@ header{
 .sticky {
    position: sticky;
     background-color: #34387f;
-    opacity: 0.8;
+    opacity: 0.5;
     /* background: linear-gradient(to bottom, #34387f 0%, #ff99ff 100%); */
     z-index: 1;
+  }
+  .header__input.sticky{
+    background-color: black;
   }
 
 .header__input{
@@ -50,7 +53,7 @@ header{
     font-family: Montserrat,sans-serif;
     font-size: 14px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.28571;
     position: relative;  
     display: flex;
@@ -69,7 +72,7 @@ input::placeholder{
 }
 
 .header__input:hover{
-  box-shadow: inset 0 -3em 3em rgba(52, 56, 127, 1), 0 0 0 1px rgba(52, 56, 127, 1),
+  box-shadow:none 0 0 0 1px rgba(52, 56, 127, 1),
   0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     transform: scale(1.01);
 }
