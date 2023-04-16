@@ -26,9 +26,6 @@ const instanse = axios.create({
     apikey: MARVEL_KEYS.PUBLICK,
     hash: MARVEL_KEYS.MD5,
     ts: 1,
-
-    limit: 3,
-    dateDescriptor: 'thisMonth',
   },
   // onUploadProgress: e => console.log(111),
   // onDownloadProgress: function (progressEvent) {
@@ -62,19 +59,7 @@ const instanse = axios.create({
 // }
 
 export default class Marvel {
-  static getLastThreeComics() {
-    return instanse('/comics', {
-      // baseURL: 'asdasd',
-      //   validateStatus: function (status) {
-      //     return status >= 200 && status <= 305; // default
-      //   },
-      //   url: '/ccc',
-      // }).then(res => {
-      //   console.log(res);
-      //   if (res.data.statys === 304) {
-      //     console.log('Dima ti prav');
-      //   }
-      //   return res;
-    });
+  static getLastThreeComics(url = '/comics', options = {}) {
+    return instanse(url, options);
   }
 }
