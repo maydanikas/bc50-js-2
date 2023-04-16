@@ -216,11 +216,5 @@
   .characters-list {
     width: 848px;
     height: 614px;
-    margin-left: 32px;
-  }
-
-  .characters-item {
-    padding-bottom: 26px;
-    padding-top: 26px;
   }
 }
