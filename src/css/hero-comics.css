@@ -5,6 +5,7 @@
         margin-right: auto;
     }
      .hero-batman {
+        height: 780px;
         background-image: url(/src/images/mobile/batman.mobile.png); 
         background-repeat: no-repeat;
         background-size: cover;
