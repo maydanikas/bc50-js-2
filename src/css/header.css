@@ -1,11 +1,12 @@
-
-
-
 header{
+  /* position: fixed; */
   position: absolute;
   top: 0;
   width: 100%;
 }
+/* .fixed{
+  position: fixed;
+} */
 
 .header__conteiner{
   /* position: sticky; */
@@ -13,16 +14,19 @@ header{
     justify-content: space-between;
     background: transparent; 
     position: relative;
-    padding: 10px 32px 10px 32px;
+    padding: 24.5px 32px 10px 32px;
 }
 @media screen and (max-width: 768px) {
     header {
       max-width: 480px;
+      padding-bottom: 44px;
     }
   }
   @media screen and (max-width: 1200px) {
     header {
       max-width: 768px;
+      padding-bottom: 70px;
+      position:relative;
     }
   }
   @media screen and (max-width: 1200px) {
@@ -34,12 +38,15 @@ header{
     position: relative;
     z-index: 1;
 }
-.sticky {
+header.sticky {
    position: sticky;
-    background-color: #34387f;
-    opacity: 0.5;
+   /* background:hsla(242, 78%, 20%, 0.395); */
+   
+    background:radial-gradient(81.15% 81.15% at 50% 18.85%, rgba(52, 56, 127, 0.5) 0%,rgba(23, 23, 23, 0.5) 100%);
+    /* opacity: 15; */
     /* background: linear-gradient(to bottom, #34387f 0%, #ff99ff 100%); */
     z-index: 1;
+    
   }
   .header__input.sticky{
     background-color: black;
@@ -87,3 +94,7 @@ input::placeholder{
 /* .header__logo{
     padding-top: 5px;
 } */
+.icon__home{
+  position: relative;
+  z-index: 2;
+}
