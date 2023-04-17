@@ -21,6 +21,7 @@ Marvel.getRandomCharacter('/characters', {
       respJSONed[rand].thumbnail.path +
       '.' +
       respJSONed[rand].thumbnail.extension;
-    refs.IndexRandomCharacter.dataset.id = respJSONed[rand].id;
+    refs.IndexRandomCharacter.id = respJSONed[rand].id;
+    console.log(respJSONed[rand]);
   })
   .catch(res => console.dir(res));
