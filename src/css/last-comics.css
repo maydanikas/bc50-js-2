@@ -2,19 +2,19 @@
 
   font-style: normal;
   font-weight: 500;
-  font-size: 3.056vw;
+  font-size: 44px;
 
   align-items: center;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  padding-bottom: 4.444vw;
+  padding-bottom: 64px;
   color: var(--light-font-color);
 }
 
 @media screen and (max-width: 480px) {
   .lastComics-uppertitle {
-    font-size: 5.833vw;
-    padding-bottom: 9.167vw;
+    font-size: 28px;
+    padding-bottom:44px;
   }
 }
 
@@ -36,90 +36,88 @@
 
 .lastComics-list {
   display: flex;
-  align-items: center;
-  /* justify-content: center; */
-  column-gap: 1.111vw;
-  margin-bottom: 8.889vw;
+   /* align-items: center; */
+   /* justify-content: center; */
+  column-gap: 16px;
+  margin-bottom: 127px;
 } @media screen and (max-width: 768px) {
   .lastComics-list {  
-    column-gap: 2.083vw;
     overflow-x: auto;
     margin-bottom: 0;
   }
 }
 
+.lastComics-list::-webkit-scrollbar {
+  display: none;
+}
+
 .lastComics-item {
-  width: 31.111vw;
-  height: 40.625vw;
+  width: 448px;
   cursor: pointer;
 } @media screen and (max-width: 768px) {
   .lastComics-item {
       display: initial;
       flex-shrink: 0;
       flex-basis: auto;
-      width: 58.333vw;
-      height: 76.172vw;
+      width: 448px;
   }
 } @media screen and (max-width: 480px) {
   .lastComics-item {
-    width: 87.297vw;
-    height: 117.297vw;
+    width: 323px;
   }
 }
 
 
 .lastComics-img {
-  width: 31.111vw;
-  height:36.042vw;
+  width: 448px;
+  border-radius: 8px;
 } @media screen and (max-width: 768px) {
   .lastComics-img {
-    width: 58.333vw;
-    height: 67.578vw;
+    width: 448px;
   }
 } @media screen and (max-width: 480px) {
   .lastComics-img {
-    width: 87.297vw;
-    height: 101.081vw;
+    width: 323px;
   }
 }
 
 .lastComics-span {
   display: flex;
   flex-direction: column;
-  padding-top: 1.111vw;
+  padding-top: 16px;
 } @media screen and (max-width: 480px) {
   .lastComics-span {
-    padding-top: 2.917vw;
+    padding-top: 14px;
   }
 }
 
 .lastComics-date {
   font-style: normal;
   font-weight: 500;
-  font-size: 1.667vw;
+  font-size: 24px;
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;
-  padding-bottom: 0.556vw;
+  padding-bottom: 8px;
 
   color: var(--light-font-color);
 } @media screen and (max-width: 480px) {
   .lastComics-date {
-    padding-bottom: 0.833vw;
-    font-size: 3.750vw;
+    padding-bottom: 4px;
+    font-size: 18px;
   }
 }
 
 .lastComics-name {
   font-style: normal;
   font-weight: 400;
-  font-size: 1.111vw;
+  font-size: 16px;
   align-items: center;
 
   color: rgba(250, 250, 250, 0.5);
 } @media screen and (max-width: 480px) {
   .lastComics-name {
-    font-size: 2.917vw;
+    font-size: 14px;
   }
 }
 
@@ -133,15 +131,15 @@
     flex-direction: inherit;
     justify-content: center;
     align-items: center;
-    gap: 2.083vw;
-    padding-top: 4.167vw;
-    padding-bottom: 16.667vw;
+    gap:16px;
+    padding-top: 32px;
+    padding-bottom: 128px;
   }
 } @media screen and (max-width: 480px) {
   .lastComics-container-btn {
-    gap: 2.917vw;
-    padding-top: 4.167vw;
-    padding-bottom: 16.667vw;
+    gap: 14px;
+    padding-top: 20px;
+    padding-bottom: 80px;
   }
 }
 
@@ -152,11 +150,10 @@
     border: none;
     cursor: pointer;
 
-    width: 5.729vw;
-    height: 5.729vw;
+    width: 44px;
+    height: 44px;
 
     border: 1px solid #fafafa;
-    opacity: 0.3;
     border-radius: 50%;
 
     background: transparent url("../images/svg/Vector-11.svg") no-repeat center;
@@ -172,8 +169,8 @@
 } @media screen and (max-width: 480px) {
   .lastComics-scroll-btn {
     background: transparent url("../images/svg/Vector-11.svg") no-repeat center/50%;
-    width: 8.533vw;
-    height: 8.533vw;
+    width: 32px;
+    height: 32px;
   }  .lastComics-scroll-btn:focus {
      background: #34387F url("../images/svg/Vector-11-white.svg") no-repeat center/50%;
      border-color: #34387F;
@@ -184,7 +181,7 @@
    }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .lastComics-scroll {
       width: 5.729vw;
       height: 5.729vw;
@@ -194,7 +191,7 @@
     width: 6.667vw;
     height: 6.667vw;
   }
-}
+} */
 
 /* @media(max-width:768px) {
   .slides-container {
