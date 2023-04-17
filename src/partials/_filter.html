@@ -60,9 +60,9 @@
             placeholder="Enter text"
           />
           <button type="submit" class="search-comics-btn">
-            <!-- <svg class="icon icon-search" width="18" height="18">
-              <use href="symbol-defs.svg#icon-search"></use>
-            </svg> -->
+            <svg class="icon icon-search" width="18" height="18">
+              <use href="./images/svg/sprite.svg#icon-search"></use>
+            </svg>
           </button>
         </label>
         <label class="filters-input-field">
@@ -75,9 +75,9 @@
             placeholder="Enter text"
           />
           <button type="submit" class="search-name-btn">
-            <!-- <svg class="icon icon-search" width="18" height="18">
-              <use href="symbol-defs.svg#icon-search"></use>
-            </svg> -->
+            <svg class="icon icon-search" width="18" height="18">
+              <use href="./images/svg/sprite.svg#icon-search"></use>
+            </svg>
           </button>
         </label>
       </div>
@@ -85,6 +85,11 @@
         <div class="wrapper filters-select-field">
           <span class="filters-input-desc">Order by</span>
           <div class="pseudoselect filters-select">Name</div>
+          <button type="submit" class="search-format-btn">
+            <svg class="icon icon-search" width="18" height="18">
+              <use href="./images/svg/sprite.svg#icon-chevron-down"></use>
+            </svg>
+          </button>
           <ul class="characters-options-list">
             <li class="characters-list-item options" name="name">Name</li>
             <li class="characters-list-item options" name="modified">
@@ -110,13 +115,16 @@
   let opened = false;
   selectEl.addEventListener('click', () => {
     if (opened === false) {
+      selectEl.style.backgroundColor = '#34387F';
       listItemsEl.style.visibility = 'visible';
       listItemsEl.addEventListener('click', e => {
         selectEl.innerHTML = `${e.target.textContent}`;
         listItemsEl.style.visibility = '';
+        selectEl.style.backgroundColor = '#171717';
         opened = !opened;
       });
     } else {
+      selectEl.style.backgroundColor = '#171717';
       listItemsEl.style.visibility = '';
     }
 
