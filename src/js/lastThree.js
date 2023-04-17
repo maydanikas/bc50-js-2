@@ -1,5 +1,6 @@
 import Marvel from './fetchMarvel';
 import Handlebars from '../hbs/lastThreeComics.hbs';
+import HBSmodal from '../hbs/_modalComics.hbs';
 import refs from './refs';
 
 Marvel.getLastThreeComics('/comics', {
@@ -31,3 +32,62 @@ Marvel.getLastThreeComics('/comics', {
     // console.log(res);
   })
   .catch(res => console.dir(res));
+
+refs.indexLastComics.addEventListener('click', onClickLastComics, {
+  // capture: true,
+  // useCapture: true,
+});
+
+function onClickLastComics(e) {
+  refs.indexComicsModal.classList.remove('is-hidden');
+  Marvel.getComicById(e.target.dataset.id)
+    .then(
+      ({
+        data: {
+          data: { results },
+        },
+      }) => results[0]
+    )
+    .then(res => {
+      console.log(res);
+      return res;
+    })
+    .then(
+      ({
+        id,
+        title,
+        prices,
+        format,
+        thumbnail: { path, extension },
+        ups,
+        digitalId,
+        pageCount,
+        creators,
+        dates,
+      }) => ({
+        id,
+        title,
+        prices: prices[0].price,
+        format,
+        creatorsName: creators.items[0].name,
+        creatorsRole: creators.items[0].role,
+        // thumbnail,
+        path,
+        extension,
+        ups,
+        digitalId,
+        pageCount,
+        dates: new Date(dates[1].date).getFullYear(),
+      })
+    )
+    .then(res => {
+      refs.indexComicsModalOpenRenderHbs.innerHTML = HBSmodal(res);
+      return res;
+    })
+    .then(console.log)
+    .then(() => {
+      // console.log('theb');
+      // console.log('close');
+    });
+  // console.log('111');
+}

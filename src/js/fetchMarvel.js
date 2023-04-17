@@ -74,4 +74,8 @@ export default class Marvel {
       },
     });
   }
+  static getComicById(id = '11111', options = {}) {
+    console.log(id);
+    return instanse(`/comics/${id}`, options);
+  }
 }
