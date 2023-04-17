@@ -119,18 +119,13 @@
 
 
 @media screen and (min-width: 1440px) {
-    .container {
-        width: 1440px;
-    }
-
     .hero-batman {
-        /* height: 100vh; */
+        
         background-image: url(/src/images/desktop/Comics/batman.png); 
         background-repeat: no-repeat;
         background-size: auto;
         background-position: right;
-        background-color: #0C0B0B;
-    
+        
     }
     
     .comics-batman-subtitle {
@@ -157,6 +152,7 @@
         height: 42px;
         font-size: 14px;
         line-height: 1.29;
+        right: -125px;
     }
 }
 

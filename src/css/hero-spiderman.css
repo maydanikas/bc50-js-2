@@ -121,14 +121,14 @@
 
     @media screen and (min-width: 1440px) {
     .container {
-        min-width: 1440px;
+        width: 1440px;
     }
     .hero-spiderman {
         height: 100vh;
         background-image: url(/src/images/desktop/Characters/spider-jump.png); 
         background-repeat: no-repeat;
-        background-size: auto;
-        background-position: right;
+        background-size: cover;
+        
     }
     
     .comics-spiderman-subtitle {
@@ -157,7 +157,7 @@
         height: 42px;
         font-size: 14px;
         line-height: 1.29;
-        right: 0;
-        bottom: -75px;
+        right: -125px;
+        bottom: -100px;
     }
 }
