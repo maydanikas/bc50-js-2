@@ -25,6 +25,7 @@ const instanse = axios.create({
     apikey: MARVEL_KEYS.PUBLICK,
     hash: MARVEL_KEYS.MD5,
     ts: 1,
+    // events: 1,
   },
   // onUploadProgress: e => console.log(111),
   // onDownloadProgress: function (progressEvent) {
@@ -63,5 +64,14 @@ export default class Marvel {
   }
   static getRandomCharacter(url = '/characters', options = {}) {
     return instanse(url, options);
+  }
+  static getIndexSearch({ nameStartsWith = '', limit = 32 }) {
+    console.log(nameStartsWith);
+    return instanse('/characters', {
+      params: {
+        ...(nameStartsWith && { nameStartsWith }),
+        ...(limit && { limit }),
+      },
+    });
   }
 }
