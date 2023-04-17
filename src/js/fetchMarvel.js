@@ -62,6 +62,7 @@ export default class Marvel {
   static getLastThreeComics(url = '/comics', options = {}) {
     return instanse(url, options);
   }
+
   static getRandomCharacter(url = '/characters', options = {}) {
     return instanse(url, options);
   }
