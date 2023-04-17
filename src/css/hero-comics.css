@@ -1,11 +1,11 @@
-@media screen and (min-width: 375px) {
+
     .container {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
     }
-     .hero-batman {
-        height: 780px;
+     .hero-batman { 
+        /* padding-left: 20px;
+        padding-right: 20px; */
         background-image: url(/src/images/mobile/batman.mobile.png); 
         background-repeat: no-repeat;
         background-size: cover;
@@ -29,21 +29,18 @@
         color: rgba(255, 255, 255, 0.7);
     }
     .batman-title {
-        box-sizing: border-box;
-        display: flex;
         font-weight: 500;
         font-size: 60px;
-        line-height: 1.67;
-    }
-    .comics-batman-title {
+        line-height: 1;
+        letter-spacing: -0.02em;
         color: #fafafa;
-        text-align: center;
-        margin-bottom: 25px;
     }
+    
     .batman-description {
         font-size: 16px;
         line-height: 1.83;
         margin-bottom: 121px;
+        letter-spacing: 0.02em;
         
     }
     .comics-batman-description {
@@ -55,8 +52,8 @@
         position: absolute;
         display: block;
         margin-right: 1px;
-        left: 244px;
-        top: 453px;
+        right: 0px;
+        top: 380px;
         color: #fafafa;
         width: 110px;
         height: 36px;
@@ -73,15 +70,12 @@
         background-color: #34387F;
         border: none;
     }
-}
+
 
 
 
 @media screen and (min-width: 768px) {
-    .container {
-        width: 704px;
-    }
-
+  
     .hero-batman {
         background-position: right;
         background-repeat: no-repeat;
@@ -105,12 +99,10 @@
 
     .batman-description {
         width: 469px;
-    }
-
-    .comics-batman-desc {
         font-size: 16px;
         line-height: 1.83;
     }
+
 
     .home-btn {
         width: 131px;
@@ -118,8 +110,8 @@
         font-size: 14px;
         line-height: 1.86;
         position: absolute;
-        left: 605px;
-        top: 706px;
+        right: -40px;
+        top: 520px;
 
     }
 }
@@ -128,7 +120,7 @@
 
 @media screen and (min-width: 1440px) {
     .hero-batman {
-        
+        height: 780px;
         background-image: url(/src/images/desktop/Comics/batman.png); 
         background-repeat: no-repeat;
         background-size: auto;
@@ -155,11 +147,13 @@
         line-height: 1.5;
         margin-bottom: 16px;
     }
-    .comics-batman-desc {
-        font-size: 16px;
+
+    .batman-description{
+           font-size: 16px;
         line-height: 1.25;
         margin-left: 120px;
     }
+    
     .home-btn {
         position: absolute;
         width: 131px;
