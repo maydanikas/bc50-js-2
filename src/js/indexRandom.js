@@ -1,6 +1,6 @@
 import Marvel from './fetchMarvel';
 // import Handlebars from '../hbs/randomCharacter.hbs';
-import refs from './refs';
+import refs from './refs.js';
 
 Marvel.getRandomCharacter('/characters', {
   params: {
@@ -25,3 +25,10 @@ Marvel.getRandomCharacter('/characters', {
     console.log(respJSONed[rand]);
   })
   .catch(res => console.dir(res));
+
+// Тест UL на target
+console.log(111);
+console.log(refs.indexRandomUlReg);
+refs.indexRandomUlReg.addEventListener('click', () => {
+  console.log('ok');
+});
