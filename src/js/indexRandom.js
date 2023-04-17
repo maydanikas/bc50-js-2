@@ -11,12 +11,8 @@ Marvel.getRandomCharacter('/characters', {
 })
   .then(res => {
     let rand = Math.floor(Math.random() * res.data.data.results.length);
-    // console.log(rand);
-    console.log(res.data.data.results[rand]);
-    // rand = 19;
     const respJSONed = res.data.data.results;
     console.log(respJSONed[rand]);
-    // console.log(Handlebars(respJSONed[rand].stories.items));
     refs.IndexRandomCharacter.src =
       respJSONed[rand].thumbnail.path +
       '.' +

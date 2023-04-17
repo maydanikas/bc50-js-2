@@ -65,6 +65,13 @@ export default class Marvel {
   static getRandomCharacter(url = '/characters', options = {}) {
     return instanse(url, options);
   }
+  // Marvel.getLastThreeComics('/comics', {
+  //   params: {
+  //     limit: 3,
+  //     dateDescriptor: 'thisMonth',
+  //   },
+  // })
+
   static getIndexSearch({ nameStartsWith = '', limit = 32 }) {
     console.log(nameStartsWith);
     return instanse('/characters', {
