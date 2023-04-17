@@ -94,32 +94,9 @@
         </div>
         <label class="filters-select-field"
           ><span class="filters-input-desc">Date</span
-          ><select id="date" name="date" class="filters-select">
-            <option value="" class="options">10/03/23</option>
-            <option value="" class="options">12/06/22</option>
-          </select></label
-        >
+          ><input id="search-date" type="date" class="filters-select" placeholder="12/06/2022">
+        </label>
       </div>
     </form>
   </div>
 </section>
-
-<script>
-  const selectEl = document.querySelector('.pseudoselect');
-  const listItemsEl = document.querySelector('.characters-options-list');
-  let opened = false;
-  selectEl.addEventListener('click', () => {
-    if (opened === false) {
-      listItemsEl.style.visibility = 'visible';
-      listItemsEl.addEventListener('click', e => {
-        selectEl.innerHTML = `${e.target.textContent}`;
-        listItemsEl.style.visibility = '';
-        opened = !opened;
-      });
-    } else {
-      listItemsEl.style.visibility = '';
-    }
-
-    opened = !opened;
-  });
-</script>
