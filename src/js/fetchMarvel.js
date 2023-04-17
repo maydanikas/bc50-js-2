@@ -1,8 +1,8 @@
 import md5 from 'md5';
 import axios from 'axios';
 
-const PUBLICK = 'd2e2b1d23bf2e2b9b5d5d8680b0991ef';
-const PRIVAT = '34a66ff63aaa72e5c7be28541438f8f13058553b';
+const PUBLICK = '2bfe5cf47c7cf21dd68f8ab2867b6081';
+const PRIVAT = '2adbeb35b1c16579945054958cad4a05b2a2e914';
 const TS = 1;
 const MD5 = md5(TS + PRIVAT + PUBLICK);
 let MARVEL_KEYS = {

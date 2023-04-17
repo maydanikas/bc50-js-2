@@ -81,7 +81,7 @@ function onClickLastComics(e) {
       })
     )
     .then(res => {
-      refs.indexComicsModalOpenRenderHbs.innerHTML = HBSmodal(res);
+      refs.indexComicsModal.innerHTML = HBSmodal(res);
       return res;
     })
     .then(console.log)
