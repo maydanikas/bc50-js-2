@@ -1,34 +1,28 @@
-.filter-top-text {
-  font-size: 12px;
-  line-height: 1.17;
-  color: rgba(250, 250, 250, 0.3);
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
-.filter-lupa-icon {
-  width: 18px;
-  height: 18px;
+/* ==================== SEARCH BUTTON ==================== */
+
+.search-comics-btn,
+.search-name-btn {
+  position: absolute;
+  transform: translate(-50px, 7px);
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
-.filter-input {
-  font-size: 14px;
-  line-height: 1.29;
+.input-wrapper {
+  position: relative;
 }
-
-@media screen and (min-width: 768px) {
-  .filter-top-text {
-    font-size: 14px;
-    line-height: 1.29;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-}
-
-/* ================== Characters filters ====================== */
+/* ================================================ */
 
 .filters-section {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .filters-container {
@@ -52,19 +46,19 @@
   display: block;
   margin-bottom: 4px;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.4;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
   color: rgba(250, 250, 250, 0.3);
 }
 
 .filters-input {
   width: 100%;
   height: 48px;
-  padding: 24px 14px;
+  padding: 14px 24px;
 
-  font-size: 16px;
-  line-height: 1.25;
+  font-size: 14px;
+  line-height: 1.28;
   background-color: #171717;
   border: 2px solid #34387f;
   border-radius: 100px;
@@ -90,10 +84,11 @@
 
 .filters-select {
   width: 100%;
-  height: 48px;
+  height: 50px;
+  padding: 14px 24px;
 
-  font-size: 16px;
-  line-height: 1.25;
+  font-size: 14px;
+  line-height: 1.28;
   background-color: #171717;
   border: 2px solid #34387f;
   border-radius: 100px;
@@ -114,26 +109,63 @@
   .filters-select-field {
     width: 100%;
   }
+
+  .filters-input {
+    width: 100%;
+  }
 }
 
-select {
-  font-size: 16px;
-  width: 100%;
-  height: 48px;
-  padding: 14px 12px;
-
-  font-size: 16px;
-  line-height: 1.25;
-  background-color: var(--white-color);
-  border: 1px solid var(--dark-green);
-  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+.options {
+  font-size: 12px;
+  line-height: 1.16;
+  color: #fafafa;
+  background-color: #171717;
   border-radius: 30px;
-  outline: none;
 }
 
-option {
+/* ========================= CUSTOM SELECT========================= */
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.characters-options-list {
+  position: absolute;
+  transform: translate(0px, 73px);
+  width: 100%;
+  visibility: hidden;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border-radius: 16px;
+  background-color: #171717;
+  cursor: pointer;
+
+  overflow-x: hidden;
+}
+
+.characters-list-item {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  padding: 14px 24px 0 24px;
+  margin-bottom: 8px;
+
+  color: rgba(250, 250, 250, 0.3);
+}
+.characters-list-item:hover,
+.characters-list-item:focus {
   color: #fafafa;
 }
+
+/* ====================================================== */
+
+/* ====================== TABLET ======================= */
 
 @media screen and (min-width: 768px) {
   .filters-container {
@@ -155,11 +187,64 @@ option {
     gap: 8px;
   }
 
-  .filters-input-field {
+  /* .filters-input-field {
     width: 180px;
+  } */
+
+  .filters-input {
+    height: 50px;
+    font-size: 16px;
+    line-height: 1.12;
+  }
+
+  .filters-input::placeholder {
+    font-size: 16px;
+    line-height: 1.12;
+  }
+
+  .filters-select {
+    height: 52px;
+    font-size: 16px;
+    line-height: 1.12;
+    cursor: pointer;
   }
 
   .filters-select-field {
     width: 180px;
+  }
+
+  .characters-options-list {
+    transform: translate(0px, 75px);
+  }
+
+  .options {
+    font-size: 16px;
+    line-height: 1.12;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .filters-input-field {
+    width: 180px;
+  }
+}
+
+/* ============================ DESKTOP ================================ */
+
+@media screen and (min-width: 1440px) {
+  .filters-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .filters-form {
+    width: 861px;
+    margin: 0 auto;
+  }
+
+  .comics-search {
+    width: 268px;
   }
 }
