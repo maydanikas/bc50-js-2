@@ -54,8 +54,8 @@
         position: absolute;
         display: block;
         margin-right: 1px;
-        bottom: 25px;
-        right: -20px;
+        left: 244px;
+        top: 453px;
         color: #fafafa;
         width: 110px;
         height: 36px;
@@ -88,6 +88,9 @@
         background-image: url(/src/images/tablet/batman.tablet.png); 
         background-color: #0C0B0B;
     }
+    .batman-box{
+        position: relative;
+    }
 
     .comics-batman-subtitle {
         line-height: 1.6;
@@ -113,6 +116,10 @@
         height: 42px;
         font-size: 14px;
         line-height: 1.86;
+        position: absolute;
+        left: 605px;
+        top: 706px;
+
     }
 }
 
@@ -127,6 +134,11 @@
         background-position: right;
         
     }
+
+    .batman-box{
+        position: relative;
+    }
+
     
     .comics-batman-subtitle {
         text-transform: uppercase;
@@ -148,11 +160,13 @@
         margin-left: 120px;
     }
     .home-btn {
+        position: absolute;
         width: 131px;
         height: 42px;
         font-size: 14px;
         line-height: 1.29;
-        right: -125px;
+        left: 1277px;
+        top: 674px;
     }
 }
 
