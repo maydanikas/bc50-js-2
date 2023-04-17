@@ -1,0 +1,14 @@
+{{#each this}}
+  <li class='lastComics-item'>
+    <img
+      data-id='{{this.id}}'
+      class='lastComics-img'
+      src='{{this.urlImg}}'
+      alt=''
+    />
+    <div class='lastComics-span'>
+      <p class='lastComics-date'>{{this.title}}</p>
+      <p class='lastComics-name'>{{this.creators}}</p>
+    </div>
+  </li>
+{{/each}}
