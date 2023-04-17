@@ -23,7 +23,7 @@
 }
 
 .madal-close {
-  position: absolute;
+  position: relative;
   top: 14px;
   right: 14px;
 
