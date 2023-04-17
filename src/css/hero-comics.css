@@ -1,123 +1,163 @@
-@media screen and (min-width:375px) {
-    .section-comics {
-        width: 100%;
-        height: 461px;
-        background-image: url(../images/mobile/batman.mobile.png); 
-        background-repeat: no-repeat;
-        background-position: right bottom;
+@media screen and (min-width: 375px) {
+    .container {
+        width: 365px;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .container-comics {
-        position: relative;
-        width: 335px;
-        padding-top: 172px;
-        padding-left: 20px;
-        padding-right: 20px;
-}
-    .comics-text {
-        font-family: 'Poppins';
-        font-size: 14px;
-        line-height: 1.3;
-        text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.7);
+     .hero-batman {
+        background-image: url(/src/images/mobile/batman.mobile.png); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #0C0B0B;
+    }
 
-}
-    .comics-title {
-        font-family: 'Poppins';
+    .batman-box {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+    } 
+
+    .comics-batman-subtitle {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.86;
+        margin-top: 61px;
+        margin-bottom: 16px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .batman-title {
+        box-sizing: border-box;
+        display: flex;
         font-weight: 500;
         font-size: 60px;
-        line-height: 1;
-        letter-spacing: -0.02em;
+        line-height: 1.67;
+    }
+    .comics-batman-title {
         color: #fafafa;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .batman-description {
+        font-size: 16px;
+        line-height: 1.83;
+        margin-bottom: 121px;
+        
+    }
+    .comics-batman-description {
+        color: #fafafa;
+        font-weight: 400;
+    }
 
-}
-    .comics-description {
-        font-family: 'Poppins';
-        padding-left: 0;
-        font-size: 14px;
-        line-height: 1.3;
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.02em;
-        color: #fafafa;
-        margin: 0;
-}
-    .back {
+    .home-btn {
         position: absolute;
-        color: rgba(255, 255, 255, 0.7);
-        border: 1px solid rgba(250, 250, 250, 0.5);
-        border-radius: 1000px;
-        bottom: -110px;
+        display: block;
+        margin-right: 1px;
+        bottom: 25px;
         right: -20px;
-        padding: 10px 20px;
+        color: #fafafa;
+        width: 110px;
         height: 36px;
+        border-radius: 1000px;
+        background-color: transparent;
         font-size: 12px;
         line-height: 1.33;
-        display: flex;
-        color: #fafafa;
+        text-transform: uppercase;
+        border: 1px solid rgba(250,250,250,.5);
     }
 
+    .home-btn:hover,
+    .home-btn:focus {
+        background-color: #34387F;
+        border: none;
+    }
 }
-@media screen and (min-width:768px) {
-    .section-comics {
-        background-image: url(../images/tablet/batman.tablet.png);
-        background-color: var(--praimery-bg-color);
-        height: 780px;
-        padding-top: 0;
+
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 704px;
     }
 
-    .container-comics {
-        width: 768px;
-        padding-left: 20px;
-        padding-top: 212px;
-        padding-bottom: 251px;
+    .hero-batman {
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-image: url(/src/images/tablet/batman.tablet.png); 
+        background-color: #0C0B0B;
     }
 
-    .comics-text {
-        color: rgba(255, 255, 255, 0.7);
+    .comics-batman-subtitle {
+        line-height: 1.6;
+        margin-top: 91px;
+        margin-bottom: 16px;
+    }
+
+    .batman-title {
+        font-size: 128px;
+    }
+
+    .batman-description {
+        width: 469px;
+    }
+
+    .comics-batman-desc {
+        font-size: 16px;
+        line-height: 1.83;
+    }
+
+    .home-btn {
+        width: 131px;
+        height: 42px;
+        font-size: 14px;
+        line-height: 1.86;
+    }
+}
+
+
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;
+    }
+
+    .hero-batman {
+        /* height: 100vh; */
+        background-image: url(/src/images/desktop/Comics/batman.png); 
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: right;
+        background-color: #0C0B0B;
+    
+    }
+    
+    .comics-batman-subtitle {
+        text-transform: uppercase;
+        font-weight: 400;
         font-size: 18px;
         line-height: 1.6;
-        margin-bottom: 16px;
+        margin-top: 223px;
+        margin-bottom: 27px;
     }
 
-    .comics-title {
-        font-size: 100px;
-        line-height: 1;
+    .batman-title {
+        font-size: 150px;
+        line-height: 1.5;
         margin-bottom: 16px;
-        color: #fafafa;
     }
-
-    .comics-description {
+    .comics-batman-desc {
         font-size: 16px;
         line-height: 1.25;
-        color: #fafafa;
-        margin-left: 100px;
+        margin-left: 120px;
     }
-
-    .back {
-        right: 32px;
-        bottom: -120px;
-    }
-}
-
-@media screen and (min-width:1440px) {
-    .section-comics {
-        background-image: url(../images/desktop/Comics/batman.png);
-        background-repeat: no-repeat;
-    }
-
-    .container-comics {
-        min-width: 1440px;
-        padding-left: 32px;
-    }
-
-    .comics-text {
-        color: rgba(255, 255, 255, 0.7);;
-    }
-
-    .back {
-        bottom: 75px;
-        right: -60px;
+    .home-btn {
+        width: 131px;
+        height: 42px;
+        font-size: 14px;
+        line-height: 1.29;
     }
 }
 
-    
+     
