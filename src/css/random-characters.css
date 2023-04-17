@@ -26,7 +26,7 @@
 
 @media screen and (min-width: 375px) {
   .container {
-    width: 365px;
+    max-width: 365px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -64,14 +64,18 @@
   .characters-image {
     width: 335px;
     margin-bottom: 32px;
-    object-fit:cover;
+    object-fit: cover;
     margin-right: 32px;
   }
-} @media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 768px) {
   .characters-image {
     width: 704px;
   }
-} @media screen and (min-width: 1440px) {
+}
+
+@media screen and (min-width: 1440px) {
   .characters-image {
     width: 496px;
   }
@@ -148,7 +152,7 @@
 /* ============================tablet=============================== */
 @media screen and (min-width: 768px) {
   .container {
-    width: 704px;
+    max-width: 704px;
   }
 
   .random-characters-container {
@@ -196,12 +200,15 @@
 /* ============================desktop================================ */
 @media screen and (min-width: 1440px) {
   .container {
-    width: 1406px;
+    max-width: 100%;
+    /* width: 100%; */
+
   }
 
   .random-characters-container {
     max-width: 1440px;
   }
+
   /* .random-characters-box {
     margin: 0;
   } */

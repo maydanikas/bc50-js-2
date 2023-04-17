@@ -18,12 +18,13 @@ function onSearchInput(e) {
         );
         preRender.length = 16;
         return preRender.map(({ name, thumbnail: { path, extension } }) => ({
-          name,
+          name: name.split('(')[0],
           path,
           extension,
         }));
       })
       .then(res => {
+        console.log(res);
         refs.indexSearchResult.innerHTML = HBS(res);
       })
       .then(console.log)
