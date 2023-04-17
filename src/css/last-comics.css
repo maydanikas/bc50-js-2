@@ -1,3 +1,8 @@
+.lastComics {
+  height: 100%;
+  background-color: var(--end-gradient-color);
+}
+
 .lastComics-uppertitle {
 
   font-style: normal;
@@ -31,23 +36,26 @@
 
 .lastComics-header {
   display: flex;
+  padding: 0 2.222vw 0 2.222vw;
   justify-content: space-between;
 }
 
 .lastComics-list {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
-  column-gap: 1.111vw;
-  margin-bottom: 8.889vw;
-} @media screen and (max-width: 768px) {
-  .lastComics-list {  
-    column-gap: 2.083vw;
-    overflow-x: auto;
-    margin-bottom: 0;
-  }
+  justify-content: center;
+  gap: 1.111vw;
+
 }
 
+/* @media screen and (max-width: 768px) {
+  .lastComics-list {
+    height: 100%;
+    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 56vw);
+  }
+} */
 
 .lastComics-item {
   width: 31.111vw;
@@ -55,16 +63,13 @@
   cursor: pointer;
 } @media screen and (max-width: 768px) {
   .lastComics-item {
-      display: initial;
-      flex-shrink: 0;
-      flex-basis: auto;
-      width: 58.333vw;
-      height: 76.172vw;
+    width: 58.333vw;
+    height: 76.172vw;
   }
 } @media screen and (max-width: 480px) {
   .lastComics-item {
-    width: 87.297vw;
-    height: 117.297vw;
+    width: 58.333vw;
+    height: 76.172vw;
   }
 }
 
@@ -79,8 +84,8 @@
   }
 } @media screen and (max-width: 480px) {
   .lastComics-img {
-    width: 87.297vw;
-    height: 101.081vw;
+    width: 67.292vw;
+    height: 77.917vw;
   }
 }
 
@@ -147,42 +152,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .lastComics-scroll-btn {
-    display: grid;
-    place-content: center;
+.lastComics-scroll-btn {
+    background-color: transparent;
     border: none;
     cursor: pointer;
-
-    width: 5.729vw;
-    height: 5.729vw;
-
-    border: 1px solid #fafafa;
-    opacity: 0.3;
-    border-radius: 50%;
-
-    background: transparent url("../images/svg/Vector-11.svg") no-repeat center;
   }
-  
-  .lastComics-scroll-btn:focus{
-      background: #34387F url("../images/svg/Vector-11-white.svg") no-repeat center;
-      border-color: #34387F;
-    }
-    .lastComics-scroll-btn--right{
-      transform: rotate(180deg);
-    }
-} @media screen and (max-width: 480px) {
-  .lastComics-scroll-btn {
-    background: transparent url("../images/svg/Vector-11.svg") no-repeat center/50%;
-    width: 8.533vw;
-    height: 8.533vw;
-  }  .lastComics-scroll-btn:focus {
-     background: #34387F url("../images/svg/Vector-11-white.svg") no-repeat center/50%;
-     border-color: #34387F;
-   }
-  
-   .lastComics-scroll-btn--right {
-     transform: rotate(180deg);
-   }
 }
 
 @media screen and (max-width: 768px) {
@@ -198,26 +172,16 @@
 }
 
 
-/* @media(max-width:768px) {
+@media(max-width:768px) {
   .slides-container {
-    overflow-x: scroll;
+    overflow: scroll;
     scroll-behavior: smooth;
 }
 }
 
 @media(max-width:768px) {
   .slide {
-    flex: 1 0 100%;
+    flex: 1 0 80%;
 
   }
 }
-
-.slides-container {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.slides-container::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-} */

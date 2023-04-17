@@ -1,6 +1,3 @@
-// const lastComicsModalEl = document.querySelector('.lastComics-item');
-// console.log(lastComicsModalEl);
-
 export function sliderGalleryComics() {
   const slidesContainer = document.getElementById('slides-container');
   const slide = document.querySelector('.slide');
