@@ -7,5 +7,5 @@ export default {
   indexComicsModal: document.querySelector('[data-comisc-modal]'),
   indexComicsModalOpenRenderHbs: document.querySelector('.modal-comics'),
   indexComicsModalCloseBtnRef: document.querySelector('[data-modal-close]'),
-  indexRandomUlReg: document.querySelector('.characters-list'),
+  indexRandomUlRef: document.querySelector('#characters-list-index-renndom'),
 };
