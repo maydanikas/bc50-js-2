@@ -16,8 +16,8 @@
   </head>
 
   <body>
-    <header id="header" class="header error-header">
-      <div class="header__container err-head-container">
+    <header id="header" class="error-header-container">
+      <div class="error-header-wrapper">
         <a class="header__logo" href="/src/index.html"
           ><svg class="icon icon-adress-link logo-err" width="202" height="31">
             <use xlink:href="/src/images/svg/sprite.svg#icon-logo"></use>
@@ -37,29 +37,15 @@
           <picture>
             <source
               srcset="
-                ./images/desktop/404/iron-man.png         1x,
-                ./images/desktop/404/iron-man-desk@2x.png 2x
+                ./images/desktop/404/iron-man-origin.png    1x,
+                ./images/desktop/404/iron-man-origin@2x.png 2x
               "
-              media="(min-width: 1440px)"
-            />
-            <source
-              srcset="
-                ./images/tablet/404/error-tab.png    1x,
-                ./images/tablet/404/error-tab@2x.png 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./images/mobile/404/error-mob.png    1x,
-                ./images/mobile/404/error-mob@2x.png 2x
-              "
-              media="(max-width: 767px)"
+              media="(min-width: 375px)"
             />
             <img
               class="error-img"
-              src="./images/desktop/404/iron-man.png"
-              alt=""
+              src="./images/desktop/404/iron-man-origin.png "
+              alt="iron-man"
             />
           </picture>
         </div>

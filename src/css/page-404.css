@@ -1,25 +1,23 @@
 @import './vars.css';
 
-/* :root {
-  --start-gradient-color: #730505;
-  --end-gradient-color: #0c0b0b;
-} */
-
 body {
   font-family: 'Poppins', sans-serif;
 }
 
 /* ================================== MOBILE ================================= */
 
-.error-header {
-  width: 375px;
+.error-header-container {
+  position: relative;
+  width: 100%;
+  max-width: 375px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.err-head-container {
+.error-header-wrapper {
   position: absolute;
+  z-index: 20;
   top: 20px;
 }
 
@@ -29,6 +27,8 @@ body {
 }
 
 .error {
+  position: fixed;
+  inset: 0;
   padding-top: 96px;
   padding-bottom: 536px;
   min-height: 100vh;
@@ -39,22 +39,31 @@ body {
     var(--end-gradient-color) 100%
   );
   background-repeat: no-repeat;
-  background-position: right bottom;
 }
 
 .error-container {
   position: relative;
-  width: 375px;
+  max-width: 375px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.error-img {
+.error-img-wrapper {
   position: absolute;
-  top: 218px;
-  right: 0px;
+  transform: scale(1.5) translate(10px, 165px);
+  width: 100%;
+  max-width: 375px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.error-img {
   display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .error-text {
@@ -103,16 +112,22 @@ body {
   border-radius: 1000px;
 }
 
+.back-home:hover,
+.back-home:focus {
+  background-color: rgba(250, 250, 250, 0.1);
+}
+
 /* ========================== TABLET ================================== */
 
 @media screen and (min-width: 768px) {
-  .error-header {
-    width: 768px;
+  .error-header-container {
+    width: 100%;
+    max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
 
-  .err-head-container {
+  .error-header-wrapper {
     top: 24px;
   }
 
@@ -127,14 +142,15 @@ body {
   }
 
   .error-container {
-    width: 768px;
+    max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
 
-  .error-img {
-    top: 314px;
-    right: 5px;
+  .error-img-wrapper {
+    transform: scale(1.2) translate(20px, 90px);
+    width: 100%;
+    max-width: 768px;
   }
 
   .error-text {
@@ -165,8 +181,9 @@ body {
 /* ============================= DESKTOP ============================= */
 
 @media screen and (min-width: 1440px) {
-  .error-header {
-    width: 1440px;
+  .error-header-container {
+    width: 100%;
+    max-width: 1440px;
   }
 
   .error {
@@ -179,9 +196,10 @@ body {
     min-width: 1440px;
   }
 
-  .error-img {
-    top: -274px;
-    right: -5px;
+  .error-img-wrapper {
+    transform: scale(1.1) translate(600px, -200px);
+    width: 100%;
+    max-width: 805px;
   }
 
   .error-title {

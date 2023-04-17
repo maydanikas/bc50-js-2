@@ -8,10 +8,13 @@
 @import './vars.css';
 @import './hero-characters.css';
 @import './modal-comics.css';
+@import './hero-spiderman.css';
+@import './gallary-comics.css';
+@import './characters-card.css';
 
 @import './modal-characters.css';
-
 @import './footer.css';
+@import './filter.css';
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -53,11 +56,4 @@ button {
   cursor: pointer;
   border: none;
   background-color: transparent;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
