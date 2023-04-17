@@ -1,7 +1,4 @@
-/* .characters-page {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
+/* 
 
 .characters-container {
   width: 100%;
@@ -69,7 +66,7 @@
   .characters-page-item {
     flex-basis: calc((100% - 32px * 3) / 4);
   }
-} */
+} */ 
 
 
 .characters-container {
@@ -143,10 +140,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .characters-page-img {
+
     /* width: 340px; */
   }
-}
+
 
 @media screen and (min-width: 1440px) {
   .characters-page-img {
