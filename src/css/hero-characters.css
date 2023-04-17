@@ -1,28 +1,3 @@
-.container-hero-characters {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-@media screen and (min-width: 375px) {
-  .container-hero-characters {
-    width: 365px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container-hero-characters {
-    width: 734px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container-hero-characters {
-    width: 1406px;
-  }
-}
-
 .hero-characters {
   padding-bottom: 40px;
 }
@@ -252,6 +227,8 @@
   .hero-characters-img {
     flex-direction: row;
     align-items: end;
+    column-gap: 32px;
+    flex-shrink: 0;
   }
 
   .hero-characters-line-svg {
@@ -288,7 +265,7 @@
     display: flex;
     column-gap: 145px;
     justify-content: space-between;
-    /* width: 100%; */
+    /*  width: 100%; */
   }
 
   .box-black-pantera {
