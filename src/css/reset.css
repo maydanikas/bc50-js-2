@@ -59,7 +59,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   padding-left: 32px;
   padding-right: 32px;
@@ -89,6 +89,6 @@ body {
 } */
 @media screen and (min-width: 1440px) {
   .container {
-    width: 1406px;
+    width: 1440px;
   }
 }
