@@ -16,7 +16,7 @@ const instanse = axios.create({
   validateStatus: function (status) {
     return status >= 200 && status < 300; // default
   },
-  baseURL: 'http://gateway.marvel.com/v1/public',
+  baseURL: 'https://gateway.marvel.com/v1/public',
   // headers: {
   //   Accept: '*/*',
   //   'if-none-match': '55c5b724939cab90eaba75151c431c4a1b1d93cd',
