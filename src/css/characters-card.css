@@ -75,7 +75,6 @@
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-
 }
 
 .characters-container {
@@ -96,7 +95,7 @@
     flex-wrap: wrap;
     gap: 32px;
     padding-top: 64px;
-    padding-bottom: 64px
+    padding-bottom: 64px;
   }
 }
 
@@ -140,7 +139,6 @@
   }
 }
 
-
 .characters-page-img {
   width: 332px;
   height: 445px;
@@ -148,10 +146,8 @@
 }
 
 @media screen and (min-width: 768px) {
-
   /* width: 340px; */
 }
-
 
 @media screen and (min-width: 1440px) {
   .characters-page-img {
