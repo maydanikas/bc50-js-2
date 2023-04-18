@@ -11,6 +11,7 @@
   overscroll-behavior: contain;
 }
 
+<<<<<<< HEAD
 .modal {
   position: relative;
   left: 0;
@@ -51,13 +52,15 @@
 
 
 
+=======
+>>>>>>> borysenko
 .modal-comics {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1000px;
-  height: 842px;
+  max-width: 1000px;
+  max-height: 842px;
 
   padding-top: 64px;
   padding-bottom: 64px;
@@ -70,8 +73,41 @@
   margin-left: auto;
   display: flex;
   gap: 16px;
+  cursor: pointer;
 
 }
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 28px;
+  height: 28px;
+  /* z-index: 2; */
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  /* background-color: transparent; */
+
+
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 1;
+  stroke: white;
+  fill: white
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -228,4 +264,17 @@
   width: 1px;
   height: 1px;
   display: none;
+}
+
+
+
+.super-close {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  color: red;
+}
+
+body {
+  overflow-y: auto;
 }
