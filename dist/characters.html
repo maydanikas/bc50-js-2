@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head><link rel="stylesheet" href="/index.f6b10141.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Characters</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.fb37cf7d.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.bbade058.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.d883dc1a.png">
+
+  <link rel="mask-icon" href="/safari-pinned-tab.db28b65c.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/characters.34df27b5.css">
+</head>
+
+<body>
+  <header id="header" class="header  ">
+    
+    <div class="conteiner header__conteiner  ">
+        <a class="header__logo logo" href="/index.html">
+            <svg class="icon icon__home" width="202" height="31">
+                <use xlink:href="/sprite.15147c25.svg#icon-logo"></use>
+            </svg>
+        </a>
+
+        <form class="header__search-form" id="search-form">
+            <a href="#">
+            <svg class="header__icon-search" width="18" height="18">
+                <use xlink:href="/sprite.15147c25.svg#icon-search"></use>
+            </svg>
+        </a>
+            <input class=" header__input " type="text" name="searchQuery" autocomplete="off" placeholder="SEARCH" required="">
+          </form>
+        </div>
+    
+</header>
+  <section class="section-comics-spiderman">
+  <div class="container-comics-spiderman">
+    <p class="comics-text-spiderman">WEB-BASED PLATFORM</p>
+    <h1 class="comics-title-spiderman">Characters</h1>
+    <p class="comics-description-spiderman">With over 70,000 characters in the Marvel Multiverse, <br> is the most complete public listing in existence.</p>
+    <a href="/index.html" class="back-spiderman">BACK HOME</a>
+  </div>
+</section>
+
+  <section class="characters-page">
+  <!-- <div>
+  <div>
+    <label class="filter-top-text" for="format">Title Starts With</label>
+    <form action="">
+      <svg class="filter-lupa-icon">
+        <use href="./images/svg/sprite.svg#icon-search"></use>
+      </svg>
+      <input
+        class="filter-input"
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Enter text"
+        required
+      />
+    </form>
+  </div>
+
+  <div>
+    <label class="filter-top-text" for="format">Format</label>
+    <select name="format" id="format">
+      <option value="1">Comic</option>
+      <option value="2">Magazine</option>
+      <option value="3">Trade paperback</option>
+      <option value="4">Hardcover</option>
+      <option value="5">Digest</option>
+      <option value="6">Graphic novel</option>
+      <option value="6">Digital comic</option>
+      <option value="6">Infinite comic</option>
+    </select>
+  </div>
+
+  <div>
+    <label class="filter-top-text" for="format">Title</label>
+    <select name="title" id="title">
+      <option value="1">Title</option>
+      <option value="2">On Sale Date</option>
+    </select>
+  </div>
+
+  <form>
+    <label class="filter-top-text" for="datepicker">Start Year</label>
+    <input type="text" id="datepicker" name="datepicker" />
+  </form>
+</div> -->
+
+<!-- Characters filters -->
+
+<section class="filters-section">
+  <div class="filters-container">
+    <form class="filters-form">
+      <div class="input-wrapper">
+        <label class="filters-input-field">
+          <span class="filters-input-desc">Comics</span>
+          <input class="filters-input comics-search" id="comics-search" type="text" name="comics-search" placeholder="Enter text">
+          <button type="submit" class="search-comics-btn">
+            <!-- <svg class="icon icon-search" width="18" height="18">
+              <use href="symbol-defs.svg#icon-search"></use>
+            </svg> -->
+          </button>
+        </label>
+        <label class="filters-input-field">
+          <span class="filters-input-desc">Name Starts With</span>
+          <input class="filters-input" id="name-start-search" type="text" name="name-start-search" placeholder="Enter text">
+          <button type="submit" class="search-name-btn">
+            <!-- <svg class="icon icon-search" width="18" height="18">
+              <use href="symbol-defs.svg#icon-search"></use>
+            </svg> -->
+          </button>
+        </label>
+      </div>
+      <div class="select-wrapper">
+        <div class="wrapper filters-select-field">
+          <span class="filters-input-desc">Order by</span>
+          <div class="pseudoselect filters-select">Name</div>
+          <ul class="characters-options-list">
+            <li class="characters-list-item options" name="name">Name</li>
+            <li class="characters-list-item options" name="modified">
+              Modified
+            </li>
+          </ul>
+        </div>
+        <label class="filters-select-field"><span class="filters-input-desc">Date</span><select id="date" name="date" class="filters-select">
+            <option value="" class="options">10/03/23</option>
+            <option value="" class="options">12/06/22</option>
+          </select></label>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script>const selectEl = document.querySelector(".pseudoselect");
+const listItemsEl = document.querySelector(".characters-options-list");
+let opened = false;
+selectEl.addEventListener("click", ()=>{
+    if (opened === false) {
+        listItemsEl.style.visibility = "visible";
+        listItemsEl.addEventListener("click", (e)=>{
+            selectEl.innerHTML = `${e.target.textContent}`;
+            listItemsEl.style.visibility = "";
+            opened = !opened;
+        });
+    } else listItemsEl.style.visibility = "";
+    opened = !opened;
+});
+
+</script>
+
+  <div class="characters-container container">
+      <div class="characters-page-div">
+        <img class="characters-page-img" src="/gallery-comics.192070ef.png" alt="">
+        <p class="characters-page-name">Black Widow</p>
+      </div>
+      <div class="characters-page-div">
+        <img class="characters-page-img" src="/gallery-comics.192070ef.png" alt="">
+        <p class="characters-page-name">Nebula</p>
+      </div>
+      <div class="characters-page-div">
+        <img class="characters-page-img" src="/gallery-comics.192070ef.png" alt="">
+        <p class="characters-page-name">Maria Hill</p>
+      </div>
+      <div class="characters-page-div">
+        <img class="characters-page-img" src="/gallery-comics.192070ef.png" alt="">
+        <p class="characters-page-name">Black Widow</p>
+      </div>
+      <div class="characters-page-div&quot;">
+        <img class="characters-page-img" src="/gallery-comics.192070ef.png" alt="">
+        <p class="characters-page-name">Nebula</p>
+      </div>
+      <div class="characters-page-div">
+        <img class="characters-page-img" src="/gallery-comics.192070ef.png" alt="">
+        <p class="characters-page-name">Maria Hill</p>
+      </div>
+      <div class="characters-page-div">
+        <img class="characters-page-img" src="/gallery-comics.192070ef.png" alt="">
+        <p class="characters-page-name">Black Widow</p>
+      </div>
+      <div class="characters-page-div">
+        <img class="characters-page-img" src="/gallery-comics.192070ef.png" alt="">
+        <p class="characters-page-name">Nebula</p>
+      </div>
+      <div class="characters-page-div">
+        <img class="characters-page-img" src="/gallery-comics.192070ef.png" alt="">
+        <p class="characters-page-name">Maria Hill</p>
+      </div>
+      <div class="characters-page-div">
+        <img class="characters-page-img" src="/gallery-comics.192070ef.png" alt="">
+        <p class="characters-page-name">Black Widow</p>
+      </div>
+      <div class="characters-page-div">
+        <img class="characters-page-img" src="/gallery-comics.192070ef.png" alt="">
+        <p class="characters-page-name">Nebula</p>
+      </div>
+      <div class="characters-page-div">
+        <img class="characters-page-img" src="/gallery-comics.192070ef.png" alt="">
+        <p class="characters-page-name">Maria Hill</p>
+      </div>
+      <div class="characters-page-div">
+        <img class="characters-page-img" src="/gallery-comics.192070ef.png" alt="">
+        <p class="characters-page-name">Black Widow</p>
+      </div>
+      <div class="characters-page-div">
+        <img class="characters-page-img" src="/gallery-comics.192070ef.png" alt="">
+        <p class="characters-page-name">Nebula</p>
+      </div>
+      <div class="characters-page-div">
+        <img class="characters-page-img" src="/gallery-comics.192070ef.png" alt="">
+        <p class="characters-page-name">Maria Hill</p>
+      </div>
+      <div class="characters-page-div">
+        <img class="characters-page-img" src="/gallery-comics.192070ef.png" alt="">
+        <p class="characters-page-name">Maria Hill</p>
+      </div>
+  </div>
+</section>
+
+<!-- <section class="characters-page">
+  <include src="./partials/_filter.html"></include>
+  <div class="characters-container container">
+    <div class="characters-page-div">
+      <ul class="characters-page-list">
+        <li class="characters-page-item">
+          <div class="image-thumb">
+            <img
+              class="characters-page-img"
+              src="/src/images/desktop/Characters/Black Widow.png"
+              alt=""
+            />
+          </div>
+          <div class="characters-page-span">
+            <p class="characters-page-name">Black Widow</p>
+          </div>
+        </li>
+        <li class="characters-page-item">
+          <div class="image-thumb">
+            <img
+              class="characters-page-img"
+              src="/src/images/desktop/Characters/Nebula.png"
+              alt=""
+            />
+          </div>
+          <div class="characters-page-span">
+            <p class="characters-page-name">Nebula</p>
+          </div>
+        </li>
+        <li class="characters-page-item">
+          <div class="image-thumb">
+            <img
+              class="characters-page-img"
+              src="/src/images/desktop/Characters/Maria Hill.png"
+              alt=""
+            />
+          </div>
+          <div class="characters-page-span">
+            <p class="characters-page-name">Maria Hill</p>
+          </div>
+        </li>
+        <li class="characters-page-item">
+          <div class="image-thumb">
+            <img
+              class="characters-page-img"
+              src="/src/images/desktop/Characters/Ajak.png"
+              alt=""
+            />
+          </div>
+          <div class="characters-page-span">
+            <p class="characters-page-name">Ajak</p>
+          </div>
+        </li>
+        <li class="characters-page-item">
+          <div class="image-thumb">
+            <img
+              class="characters-page-img"
+              src="/src/images/desktop/Characters/Attuma.png"
+              alt=""
+            />
+          </div>
+          <div class="characters-page-span">
+            <p class="characters-page-name">Attuma</p>
+          </div>
+        </li>
+        <li class="characters-page-item">
+          <div class="image-thumb">
+            <img
+              class="characters-page-img"
+              src="/src/images/desktop/Characters/Moon Knight.png"
+              alt=""
+            />
+          </div>
+          <div class="characters-page-span">
+            <p class="characters-page-name">Moon Knight</p>
+          </div>
+        </li>
+        <li class="characters-page-item">
+          <div class="image-thumb">
+            <img
+              class="characters-page-img"
+              src="/src/images/desktop/Characters/Doctor Strange.png"
+              alt=""
+            />
+          </div>
+          <div class="characters-page-span">
+            <p class="characters-page-name">Doctor Strange</p>
+          </div>
+        </li>
+        <li class="characters-page-item">
+          <div class="image-thumb">
+            <img
+              class="characters-page-img"
+              src="/src/images/desktop/Characters/Captain America.png"
+              alt=""
+            />
+          </div>
+          <div class="characters-page-span">
+            <p class="characters-page-name">Captain America</p>
+          </div>
+        </li>
+        <li class="characters-page-item">
+          <div class="image-thumb">
+            <img
+              class="characters-page-img"
+              src="/src/images/desktop/Characters/Agent Mobius.png"
+              alt=""
+            />
+          </div>
+          <div class="characters-page-span">
+            <p class="characters-page-name">Agent Mobius</p>
+          </div>
+        </li>
+        <li class="characters-page-item">
+          <div class="image-thumb">
+            <img
+              class="characters-page-img"
+              src="/src/images/desktop/Characters/Aneka.png"
+              alt=""
+            />
+          </div>
+          <div class="characters-page-span">
+            <p class="characters-page-name">Aneka</p>
+          </div>
+        </li>
+        <li class="characters-page-item">
+          <div class="image-thumb">
+            <img
+              class="characters-page-img"
+              src="/src/images/desktop/Characters/Yelena.png"
+              alt=""
+            />
+          </div>
+          <div class="characters-page-span">
+            <p class="characters-page-name">Yelena</p>
+          </div>
+        </li>
+        <li class="characters-page-item">
+          <div class="image-thumb">
+            <img
+              class="characters-page-img"
+              src="/src/images/desktop/Characters/Druig.png"
+              alt=""
+            />
+          </div>
+          <div class="characters-page-span">
+            <p class="characters-page-name">Druig</p>
+          </div>
+        </li>
+        <li class="characters-page-item">
+          <div class="image-thumb">
+            <img
+              class="characters-page-img"
+              src="/src/images/desktop/Characters/Groot.png"
+              alt=""
+            />
+          </div>
+          <div class="characters-page-span">
+            <p class="characters-page-name">Groot</p>
+          </div>
+        </li>
+        <li class="characters-page-item">
+          <div class="image-thumb">
+            <img
+              class="characters-page-img"
+              src="/src/images/desktop/Characters/Spider-man.jpg"
+              alt=""
+            />
+          </div>
+          <div class="characters-page-span">
+            <p class="characters-page-name">Spider-man</p>
+          </div>
+        </li>
+        <li class="characters-page-item">
+          <div class="image-thumb">
+            <img
+              class="characters-page-img"
+              src="/src/images/desktop/Characters/Bron-Char.png"
+              alt=""
+            />
+          </div>
+          <div class="characters-page-span">
+            <p class="characters-page-name">Bron-Char</p>
+          </div>
+        </li>
+        <li class="characters-page-item">
+          <div class="image-thumb">
+            <img
+              class="characters-page-img"
+              src="/src/images/desktop/Characters/Leapfrog.png"
+              alt=""
+            />
+          </div>
+          <div class="characters-page-span">
+            <p class="characters-page-name">Leapfrog</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section> -->
+
+  <!-- /* Borysenko V. Task#1 13hours. This css needs modal-comics.css */ -->
+
+<div data-comics-modal="" class="backdrop js-backdrop is-hidden"></div>
+
+  <div class="backdrop-modal-characters js-backdrop is-hidden" data-modal="" data-backdrop="">
+  <div class="modal-characters js-modal">
+      <button type="button" class="modal-close js-modal-close" data-modal-close="">
+        <svg class="icon-modal-close js-icon-modal-close">
+          <use href="/sprite.f14d31f7.svg#icon-close">
+        </use></svg>
+      </button>
+      <div class="container-modal-characters">
+        <div class="modal-gallery">
+          <div class="container-img-max js-img-max-conteiner">
+            <img class="js-img-max" src="/modal-img-bg-2x.842e32ab.jpg" alt="" width="295" height="387">
+          </div>
+          <div class="container-img-min">
+            <ul class="img-list js-img-list">
+              <li class="img-item">
+                <img class="js-img-min" src="/pop-up4.a99505a0.png" alt="" width="80" height="80">
+              </li>
+              <li class="img-item">
+                <img class="js-img-min" src="/pop-up5.eb5e7a58.png" alt="" width="80" height="80">
+              </li>
+              <li class="img-item">
+                <img class="js-img-min" src="/pop-up6.3494fe22.png" alt="" width="80" height="80">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container-modal-about-char">
+          <div class="modal-about-char">
+            <h2 class="modal-char-title">Black Widow</h2>
+            <p class="date-comics-modal">
+              July 9, 2021
+            </p>
+            <p class="about-char-description">
+              A deadly assassin is closing in on Natasha Romanoff. Now Natasha must reunite with an unlikely group of spies from her past in order to survive and stop a lethal force from being unleashed on the world.
+            </p>
+          </div>
+          <div class="container-modal-list-comics">
+            <h3 class="modal-comics-list-title">List of comics</h3>
+            <ul class="modal-comics-list">
+              <li class="modal-comics-item">
+                <img class="comics-img-container" src="/black-window11.6b7cd91f.png" alt="" width="263px" height="263px">
+                <div class="comics-desc-container">
+                  <h3 class="comics-name">Black Widow (2020)</h3>
+                  <p class="actress">Kelly Thompson</p>
+                </div>
+              </li>
+              <li class="modal-comics-item">
+                <img class="comics-img-container" src="/black-widow.2.abe5c74f.png" alt="" width="263px" height="263px">
+                <div class="comics-desc-container">
+                  <h3 class="comics-name">Black Widow (2020</h3>
+                  <p class="actress">Kelly Thompson</p>
+                </div>
+              </li>
+              <li class="modal-comics-item">
+                <img class="comics-img-container" src="/black-window3.bd07e195.png" alt="" width="263px" height="263px">
+                <div class="comics-desc-container">
+                  <h3 class="comics-name">Black Widow (2020)</h3>
+                  <p class="actress">Kelly Thompson</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+  <section class="footer-section">
+  <footer class="footer">
+    <div class="footer-block">
+      <div class="footer-block-mobile">
+        <a href="/index.html" class="footer-logo">
+          <svg class="footer-logo-icon">
+            <use href="/sprite.15147c25.svg#icon-logo" class="footer-logo-img"></use>
+          </svg>
+        </a>
+
+        <ul class="footer-links">
+          <li>
+            <a class="footer-links-item" href="/characters.html">Characters</a>
+          </li>
+          <li><a class="footer-links-item" href="/comics.html">Comics</a></li>
+        </ul>
+      </div>
+
+      <ul class="footer-social">
+        <li>
+          <a href="https://www.facebook.com/marvelstudios/">
+            <svg class="footer-social-icon">
+              <use href="/sprite.15147c25.svg#icon-facebook" class="footer-"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/marvel/?hl=en">
+            <svg class="footer-social-icon">
+              <use href="/sprite.15147c25.svg#icon-instagram" class="footer-"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/Marvel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+            <svg class="footer-social-icon">
+              <use href="/sprite.15147c25.svg#icon-linkedin" class="footer-"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-privacy">
+      <span class="footer-privacy-text">Privacy Policy Public Offering Agreement</span>
+    </div>
+  </footer>
+</section>
+
+  <script src="/characters.739bf03c.js" defer=""></script>
+
+</body>
+
+</html>

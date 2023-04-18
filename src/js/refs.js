@@ -6,10 +6,7 @@ export default {
   indexLastComics: document.querySelector('#slides-container'),
   //!<=== Modal
   indexComicsModal: document.querySelector('[data-comics-modal]'),
-  indexComicsModalCloseBtnRef: document.querySelector(
-    '[data-modal-close-comics]'
-  ),
-  '#spec': document.querySelector('#spec'),
+  '#modalCloseBtn': null,
 
   ///!===> Modal
   indexComicsModalOpenRenderHbs: document.querySelector('.modal-comics'),
@@ -18,6 +15,6 @@ export default {
     const refreshed = Object.entries(this).forEach((key, value) => {
       return (this[key[0]] = key[1] ?? document.querySelector(key[0]));
     });
-    return { refreshed };
+    return console.warn('Refs was Refreshed!');
   },
 };
