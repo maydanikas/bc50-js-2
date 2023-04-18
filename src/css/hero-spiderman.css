@@ -1,9 +1,17 @@
 
-                                            /* ===============================MOBILE================================== */
-
-@media screen and (min-width: 375px) {
-     .hero-spiderman {
+         
+         
+         /* ===============================MOBILE================================== */
+      .container {
+        width: 100%;
+        max-width: 375px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
      
+        .hero-spiderman {
+        height: 509px;
         background-image: url(/src/images/desktop/Characters/spiderman-jump.mobile.png); 
         background-repeat: no-repeat;
         background-size: cover;
@@ -53,7 +61,7 @@
         display: block;
         margin-right: 1px;
         right: 0px;
-        top: 420px;
+        top: 450px;
         color: #fafafa;
         width: 110px;
         height: 36px;
@@ -70,7 +78,7 @@
         background-color: #34387F;
         border: none;
     }
-}
+
 
                                     /* ===============================TABLET==================================== */
 
@@ -84,6 +92,7 @@
         position: relative;
     }
     .hero-spiderman {
+        height: 780px;
         background-repeat: no-repeat;
         background-size: auto;
         background-position: right;
@@ -115,8 +124,8 @@
         font-size: 14px;
         line-height: 1.86;
         position: absolute;
-        right: -70px;
-        top: 485px;
+        left: 605px;
+        top: 706px;
     }
 }
                                 /* =================================DESKTOP====================================== */

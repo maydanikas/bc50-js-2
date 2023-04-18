@@ -1,15 +1,23 @@
 
     .container {
+        width: 100%;
+        max-width: 375px;
+        margin: 0 auto;
         padding-left: 20px;
         padding-right: 20px;
     }
      .hero-batman { 
-        /* padding-left: 20px;
-        padding-right: 20px; */
         background-image: url(/src/images/mobile/batman.mobile.png); 
         background-repeat: no-repeat;
-        background-size: cover;
-        background-color: #0C0B0B;
+        background-size: cover;        
+        background-position: center;  
+    }
+    .batman-section {
+        background: linear-gradient(90.55deg, rgba(12, 11, 11, 0) 78.74%, #0C0B0B 96%),
+        linear-gradient(1.59deg, #0C0B0B 2.15%, rgba(12, 11, 11, 0) 32.65%),
+        linear-gradient(84.2deg, #0C0B0B 4.87%, rgba(12, 11, 11, 0) 15.93%),
+        linear-gradient(180deg, #0C0B0B 0%, rgba(12, 11, 11, 0) 72.35%);
+
     }
 
     .batman-box {
@@ -77,12 +85,20 @@
 @media screen and (min-width: 768px) {
   
     .hero-batman {
+        height: 780px;
         background-position: right;
         background-repeat: no-repeat;
         background-size: auto;
         background-image: url(/src/images/tablet/batman.tablet.png); 
         background-color: #0C0B0B;
     }
+    /* .batman-section {
+        background: linear-gradient(90.55deg, rgba(12, 11, 11, 0) 78.74%, #0C0B0B 96%),
+        linear-gradient(1.59deg, #0C0B0B 2.15%, rgba(12, 11, 11, 0) 32.65%),
+        linear-gradient(84.2deg, #0C0B0B 4.87%, rgba(12, 11, 11, 0) 15.93%),
+        linear-gradient(180deg, #0C0B0B 0%, rgba(12, 11, 11, 0) 72.35%);
+
+    } */
     .batman-box{
         position: relative;
     }
@@ -110,8 +126,8 @@
         font-size: 14px;
         line-height: 1.86;
         position: absolute;
-        right: -40px;
-        top: 520px;
+        left: 580px;
+        top: 680px;
 
     }
 }
@@ -126,6 +142,13 @@
         background-size: auto;
         background-position: right;
         
+    }
+    .batman-section {
+        background: linear-gradient(90.55deg, rgba(12, 11, 11, 0) 78.74%, #0C0B0B 96%),
+        linear-gradient(1.59deg, #0C0B0B 2.15%, rgba(12, 11, 11, 0) 32.65%),
+        linear-gradient(84.2deg, #0C0B0B 4.87%, rgba(12, 11, 11, 0) 15.93%),
+        linear-gradient(180deg, #0C0B0B 0%, rgba(12, 11, 11, 0) 72.35%);
+
     }
 
     .batman-box{
