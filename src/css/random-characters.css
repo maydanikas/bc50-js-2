@@ -72,6 +72,7 @@
 @media screen and (min-width: 375px) {
   .characters-image {
     width: 335px;
+    height: 335px;
     margin-bottom: 32px;
     object-fit: cover;
     margin-right: 32px;
@@ -81,12 +82,14 @@
 @media screen and (min-width: 768px) {
   .characters-image {
     width: 704px;
+    height: 704px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .characters-image {
     width: 496px;
+    height: 704px;
   }
 }
 
