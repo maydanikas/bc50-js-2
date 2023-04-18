@@ -1,8 +1,8 @@
 import md5 from 'md5';
 import axios from 'axios';
 
-const PUBLICK = '6683bdd94e0b56fee033e6700e251d09';
-const PRIVAT = '2c4325bfdef42a53885ce646a6819186ba382527';
+const PUBLICK = '2bfe5cf47c7cf21dd68f8ab2867b6081';
+const PRIVAT = '2adbeb35b1c16579945054958cad4a05b2a2e914';
 const TS = 1;
 const MD5 = md5(TS + PRIVAT + PUBLICK);
 let MARVEL_KEYS = {
@@ -62,6 +62,7 @@ export default class Marvel {
   static getLastThreeComics(url = '/comics', options = {}) {
     return instanse(url, options);
   }
+
   static getRandomCharacter(url = '/characters', options = {}) {
     return instanse(url, options);
   }
