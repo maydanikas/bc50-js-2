@@ -223,8 +223,8 @@
   }
 
   .all-characters-button {
-    left: auto;
-    margin-top: 44px;
+    margin-top: 77px;
+    margin-bottom: 0 ;
   }
 
   .characters-list {

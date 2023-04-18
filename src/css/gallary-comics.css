@@ -57,7 +57,7 @@
     border-radius: 8px;
   }
 .gallary-comics-container img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 }
 
