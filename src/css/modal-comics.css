@@ -49,25 +49,6 @@
 
 }
 
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 1;
-  stroke: white;
-  fill: white
-}
-
-
-
-
-
-
-
-
-
-
-
 .modal-comics-preview {
   width: 332px;
   display: inline-block
@@ -230,8 +211,4 @@
   width: 28px;
   height: 28px;
   color: red;
-}
-
-body {
-  overflow-y: auto;
 }
