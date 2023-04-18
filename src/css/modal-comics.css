@@ -1,20 +1,19 @@
 /* Borysenko V. Task#1 13hours. This css needs for _modal-comics.html */
 
-
 .backdrop {
   position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
-  pointer-events: all;
-  /* background-color: hsla(237, 42%, 35%, 0.732); */
-  background-color: #171717;
-  z-index: 999;
+  background-color: #171717ba;
+  z-index: 1;
+
+  overscroll-behavior: contain;
 }
 
 .modal {
-  position: absolute;
-  left: 50%;
+  position: relative;
+  left: 0;
   min-width: 100%;
   height: 100%;
   background-color: black;
@@ -34,7 +33,6 @@
 
   width: 28px;
   height: 28px;
-
   background-color: transparent;
   border: none;
   fill: white;
@@ -48,6 +46,7 @@
   width: 20px;
   height: 20px;
   fill: white;
+  position: absolute;
 }
 
 
@@ -69,6 +68,8 @@
   border-radius: 8px;
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+  gap: 16px;
 
 }
 
@@ -142,8 +143,7 @@
   /* position: relative; */
   display: flex;
   gap: 16px;
-  justify-content: space-between;
-
+  justify-content: center
 }
 
 
@@ -222,4 +222,10 @@
   flex-direction: column;
   justify-content: left;
   gap: 8px;
+}
+
+.is-hidden {
+  width: 1px;
+  height: 1px;
+  display: none;
 }
