@@ -2,6 +2,7 @@ import Marvel from './fetchMarvel';
 import Handlebars from '../hbs/lastThreeComics.hbs';
 import HBSmodal from '../hbs/_modalComics.hbs';
 import refs from './refs';
+import '../images/svg/sprite.svg';
 
 Marvel.getLastThreeComics('/comics', {
   params: {
@@ -15,7 +16,11 @@ Marvel.getLastThreeComics('/comics', {
     const hbsObjRandom = respJSONed.map(element => ({
       title: element.title,
       id: element.id,
-      urlImg: element.images[0].path + '.' + element.images[0].extension,
+      urlImg:
+        element.images[0].path +
+        '/portrait_incredible' +
+        '.' +
+        element.images[0].extension,
       creators: element.creators.items[0].name,
     }));
     refs.IndexLastThreeComics.innerHTML = Handlebars(hbsObjRandom);
@@ -30,6 +35,9 @@ refs.indexLastComics.addEventListener('click', onClickLastComics, {
 
 function onClickLastComics(e) {
   refs.indexComicsModal.classList.remove('is-hidden');
+  document.body.style.overflowY = 'hidden';
+  refs.refresh();
+
   console.log('hiden');
   if (e.target.nodeName === 'IMG')
     Marvel.getComicById(e.target.dataset.id)
@@ -74,14 +82,23 @@ function onClickLastComics(e) {
       )
       .then(res => {
         refs.indexComicsModal.innerHTML = HBSmodal(res);
+        refs.refresh();
         return res;
       })
+      .then(() => refs.refresh())
       .then(() => {
         console.log(refs);
-
         refs.refresh();
         console.log(refs);
+        refs['#modalCloseBtn'].addEventListener('click', onComicsModalClose);
       })
       .catch(console.log);
 }
-// console.log('test', refs['.spec']);
+
+const onComicsModalClose = e => {
+  refs.indexComicsModal.classList.add('is-hidden');
+  document.body.style.overflowY = 'auto';
+  refs.indexComicsModal.innerHTML = '';
+  refs.console.log('click');
+  refs['#modalCloseBtn'] = null;
+};
