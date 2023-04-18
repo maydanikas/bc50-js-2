@@ -5,9 +5,19 @@ export default {
   indexSearchResult: document.querySelector('.characters-page-list'),
   indexLastComics: document.querySelector('#slides-container'),
   //!<=== Modal
-  indexComicsModal: document.querySelector('[data-comisc-modal]'),
+  indexComicsModal: document.querySelector('[data-comics-modal]'),
+  indexComicsModalCloseBtnRef: document.querySelector(
+    '[data-modal-close-comics]'
+  ),
+  '#spec': document.querySelector('#spec'),
+
   ///!===> Modal
   indexComicsModalOpenRenderHbs: document.querySelector('.modal-comics'),
-  indexComicsModalCloseBtnRef: document.querySelector('[data-modal-close]'),
   indexRandomUlRef: document.querySelector('#characters-list-index-renndom'),
+  refresh() {
+    const refreshed = Object.entries(this).forEach((key, value) => {
+      return (this[key[0]] = key[1] ?? document.querySelector(key[0]));
+    });
+    return { refreshed };
+  },
 };

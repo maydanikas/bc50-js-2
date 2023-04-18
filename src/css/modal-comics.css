@@ -22,18 +22,19 @@
   /* transform: translate(-50%, -50%); */
 }
 
-.madal-close {
+.modal-close {
   position: relative;
   top: 14px;
   right: 14px;
-
+  z-index: 2;
+  color: red;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  background-color: red;
   width: 28px;
   height: 28px;
-  background-color: transparent;
+  /* background-color: transparent; */
   border: none;
   fill: white;
   cursor: pointer;
@@ -46,13 +47,15 @@
   width: 20px;
   height: 20px;
   fill: white;
-  position: absolute;
+  position: relative;
+  color: white;
+  /* stroke: #0C0B0B; */
 }
 
 
 
 .modal-comics {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -228,4 +231,12 @@
   width: 1px;
   height: 1px;
   display: none;
+}
+
+
+
+.super-close {
+  width: 200px;
+  height: 200px;
+  color: red;
 }
