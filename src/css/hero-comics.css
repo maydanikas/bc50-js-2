@@ -61,7 +61,7 @@
 
 @media screen and (min-width:768px) {
     .section-comics {
-        
+        margin-top: -100px;
         background-image: url(../images/tablet/batman.tablet.png);
         background-color: var(--praimery-bg-color);
         height: 780px;
@@ -102,7 +102,7 @@
 
 @media screen and (min-width:1440px) {
     .section-comics {
-        margin-top: 0;
+        margin-top: -100px;
         background-image: url(../images/desktop/Comics/batman.png);
         background-repeat: no-repeat;
     }
