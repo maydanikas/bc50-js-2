@@ -1,0 +1,92 @@
+<div class='modal-comics'>
+  <svg
+    id='modalCloseBtn'
+    class='modal-close'
+    width='28'
+    height='28'
+    viewBox='0 0 28 28'
+    fill='white'
+    xmlns='http://www.w3.org/2000/svg'
+  >
+    <path
+      d='M21 7L7 21'
+      stroke='#FAFAFA'
+      stroke-width='2'
+      stroke-linecap='round'
+      stroke-linejoin='round'
+    ></path>
+    <path
+      d='M7 7L21 21'
+      stroke='#FAFAFA'
+      stroke-width='2'
+      stroke-linecap='round'
+      stroke-linejoin='round'
+    ></path>
+  </svg>
+  {{! <img class='modal-close' src='x.svg' width='16' alt='' /> }}
+  {{! <button type="button" id='spec'type="button" class="modal-close js-modal-close" data-modal-close-comics>
+
+      </button> }}
+
+  <div class='modal-comics-preview'>
+    <img class='modal-preview-img' src='{{this.path}}.{{extension}}' alt='' />
+    <ul class='modal-comics-preview-items'>
+      <li><img
+          class='items'
+          src='./images/desktop/pop up1/pop-up1.png'
+          alt=''
+        /></li>
+      <li><img
+          class='items'
+          src='./images/desktop/pop up1/pop-up2.png'
+          alt=''
+        /></li>
+      <li><img
+          class='items'
+          src='./images/desktop/pop up1/pop-up3.png'
+          alt=''
+        /></li>
+    </ul>
+  </div>
+  <div class='modal-comics-desc'>
+    <div class='desc'>
+      <h3 class='desc-title'>{{this.title}}</h3>
+      <span>{{this.creatorsName}}
+        |
+        {{this.dates}}</span>
+
+    </div>
+    <svg class='icon icon-x'><use xlink:href='#icon-x'></use></svg>
+    <p>In the most shocking issue of Chip Zdarsky and Marco Checchetto’s
+      landmark DAREDEVIL epic yet, Elektra finds herself at the center of an
+      international incident that threatens to put her, Matt Murdock and
+      everything they hold dear on a collision course with the Avengers – after
+      which, things may never be the same!</p>
+    <ul class='modal-comics-detials'>
+      <li>FORMAT<p>{{this.format}}</p></li>
+      <li>YEAR RELEASED<p>{{this.dates}}</p></li>
+      <li>PAGES<p>{{this.pageCount}}</p></li>
+      <li>PRICE<p>${{this.prices}}</p></li>
+    </ul>
+    <div class='modal-comics-creatorSection'>
+      <h3>Creator</h3>
+      <div class='desc'>
+        <img
+          width='60'
+          src='./images/desktop/pop up1/chip-zdarsky.png'
+          alt=''
+        />
+        <div class='writer'>
+          <span>{{this.creatorsRole}}</span>
+          <p>{{creatorsName}}</p>
+
+        </div>
+      </div>
+    </div>
+    <div class='modal-comics-characters'>
+      <h3>Characters</h3>
+      <ul class='items'>
+      </ul>
+    </div>
+  </div>
+</div>

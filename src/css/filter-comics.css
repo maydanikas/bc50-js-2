@@ -2,12 +2,23 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* ==================== SEARCH BUTTON ==================== */
+/* ======================= SEARCH ======================= */
 
-.search-comics-btn,
-.search-name-btn {
+.search-title-btn {
   position: absolute;
   transform: translate(-50px, 7px);
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.search-format-btn,
+.search-order-btn {
+  position: absolute;
+  transform: translate(110px, 30px);
   width: 40px;
   height: 40px;
   background-color: transparent;
@@ -19,9 +30,11 @@ body {
 .input-wrapper {
   position: relative;
 }
-/* ================================================ */
 
-.filters-section {
+/* ======================================================== */
+
+.filters-section-comics {
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 
@@ -78,12 +91,12 @@ body {
 }
 
 .select-wrapper {
+  position: relative;
   display: flex;
   gap: 8px;
 }
 
 .filters-select {
-  width: 100%;
   height: 50px;
   padding: 14px 24px;
 
@@ -123,13 +136,18 @@ body {
   border-radius: 30px;
 }
 
+.last-filter {
+  width: 156px;
+}
+
 /* ========================= CUSTOM SELECT========================= */
 
 .wrapper {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 12px;
 }
 
 .characters-options-list {
@@ -138,6 +156,7 @@ body {
   width: 100%;
   visibility: hidden;
   display: flex;
+  /* padding: 14px 24px; */
   flex-direction: column;
   border-radius: 16px;
   background-color: #171717;
@@ -159,12 +178,12 @@ body {
 .characters-list-item:focus {
   color: #fafafa;
 }
-/* ===================================================== */
+/* =======================================================*/
 
 /* ====================== TABLET ======================= */
 
 @media screen and (min-width: 768px) {
-  .filters-section {
+  .filters-section-comics {
     padding-top: 64px;
     padding-bottom: 64px;
   }
@@ -179,7 +198,7 @@ body {
   .filters-form {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 8px;
   }
 
@@ -200,6 +219,7 @@ body {
   }
 
   .filters-select {
+    width: 100%;
     height: 52px;
     font-size: 16px;
     line-height: 1.12;
@@ -207,22 +227,16 @@ body {
   }
 
   .filters-select-field {
-    width: 180px;
+    width: 160px;
   }
 
   .characters-options-list {
-    transform: translate(0px, 75px);
+    transform: translate(0px, 73px);
   }
 
   .options {
     font-size: 16px;
     line-height: 1.12;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .filters-input-field {
-    width: 180px;
   }
 }
 

@@ -1,20 +1,20 @@
 /* Borysenko V. Task#1 13hours. This css needs for _modal-comics.html */
 
-
 .backdrop {
   position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
-  pointer-events: all;
-  /* background-color: hsla(237, 42%, 35%, 0.732); */
-  background-color: #171717;
-  z-index: 999;
+  background-color: #171717ba;
+  z-index: 1;
+
+  overscroll-behavior: contain;
 }
 
+<<<<<<< HEAD
 .modal {
-  position: absolute;
-  left: 50%;
+  position: relative;
+  left: 0;
   min-width: 100%;
   height: 100%;
   background-color: black;
@@ -34,7 +34,6 @@
 
   width: 28px;
   height: 28px;
-
   background-color: transparent;
   border: none;
   fill: white;
@@ -48,17 +47,20 @@
   width: 20px;
   height: 20px;
   fill: white;
+  position: absolute;
 }
 
 
 
+=======
+>>>>>>> borysenko
 .modal-comics {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1000px;
-  height: 842px;
+  max-width: 1000px;
+  max-height: 842px;
 
   padding-top: 64px;
   padding-bottom: 64px;
@@ -69,8 +71,43 @@
   border-radius: 8px;
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+  gap: 16px;
+  cursor: pointer;
 
 }
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 28px;
+  height: 28px;
+  /* z-index: 2; */
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  /* background-color: transparent; */
+
+
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 1;
+  stroke: white;
+  fill: white
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -142,8 +179,7 @@
   /* position: relative; */
   display: flex;
   gap: 16px;
-  justify-content: space-between;
-
+  justify-content: center
 }
 
 
@@ -222,4 +258,23 @@
   flex-direction: column;
   justify-content: left;
   gap: 8px;
+}
+
+.is-hidden {
+  width: 1px;
+  height: 1px;
+  display: none;
+}
+
+
+
+.super-close {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  color: red;
+}
+
+body {
+  overflow-y: auto;
 }
