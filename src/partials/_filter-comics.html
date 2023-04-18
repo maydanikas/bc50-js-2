@@ -52,17 +52,18 @@
           </ul>
         </div>
       </div>
-      <label class="filters-select-field"
-        ><span class="filters-input-desc">Start Yeart</span
-        ><select
+      <div class="filters-select-field">
+        <span class="filters-input-desc">Start Year</span>
+        <input
+          type="number"
           id="start-year"
+          min="1900"
+          max="2023"
           name="start-year"
           class="filters-select last-filter"
-        >
-          <option value="" class="options">01/05/2018</option>
-          <option value="" class="options">12/06/2019</option>
-        </select></label
-      >
+          placeholder="Enter year"
+        />
+      </div>
     </form>
   </div>
 </section>

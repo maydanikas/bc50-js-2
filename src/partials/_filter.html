@@ -96,18 +96,25 @@
           </ul>
         </div>
         <div class="filters-select-field">
-          <span class="filters-input-desc">Date</span
-          ><select id="date" name="date" class="filters-select">
-            <option value="" class="options">10/03/23</option>
-            <option value="" class="options">12/06/22</option>
-          </select>
+          <span class="filters-input-desc">Date</span>
+          <input
+            type="date"
+            id="calendar"
+            name="search-date"
+            class="filters-select last-filter"
+            placeholder="Select date"
+          />
         </div>
       </div>
     </form>
   </div>
 </section>
 
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script>
+  const fp = flatpickr('#calendar', {});
+  // console.dir(fp);
+  fp.calendarContainer.style.backgroundColor = '#171717';
   const selectEl = document.querySelector('.pseudoselect');
   const listItemsEl = document.querySelector('.characters-options-list');
   const btnOrderEl = document.querySelector('.js-click-order');

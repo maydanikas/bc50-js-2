@@ -125,6 +125,17 @@ body {
   border-radius: 30px;
 }
 
+.icon-date {
+  position: absolute;
+  transform: translate(-35px, 20px);
+}
+
+.last-filter {
+  background-image: url(../images/svg/chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: 121px 15px;
+}
+
 /* ========================= CUSTOM SELECT========================= */
 
 .wrapper {

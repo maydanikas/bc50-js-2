@@ -138,6 +138,9 @@ body {
 
 .last-filter {
   width: 156px;
+  background-image: url(../images/svg/chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: 118px 15px;
 }
 
 /* ========================= CUSTOM SELECT========================= */
