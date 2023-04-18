@@ -4,8 +4,10 @@ export default {
   indexSearch: document.querySelector('.header__input '),
   indexSearchResult: document.querySelector('.characters-page-list'),
   indexLastComics: document.querySelector('#slides-container'),
+  //!<=== Modal
   indexComicsModal: document.querySelector('[data-comisc-modal]'),
+  ///!===> Modal
   indexComicsModalOpenRenderHbs: document.querySelector('.modal-comics'),
   indexComicsModalCloseBtnRef: document.querySelector('[data-modal-close]'),
-  indexRandomUlReg: document.querySelector('.characters-list'),
+  indexRandomUlRef: document.querySelector('#characters-list-index-renndom'),
 };
