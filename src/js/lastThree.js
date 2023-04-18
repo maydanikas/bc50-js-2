@@ -1,6 +1,7 @@
 import Marvel from './fetchMarvel';
 import Handlebars from '../hbs/lastThreeComics.hbs';
 import HBSmodal from '../hbs/_modalComics.hbs';
+import HBSCharacters from '../hbs/_modalComics_Characters.hbs';
 import refs from './refs';
 import '../images/svg/sprite.svg';
 
@@ -82,16 +83,14 @@ function onClickLastComics(e) {
       )
       .then(res => {
         refs.indexComicsModal.innerHTML = HBSmodal(res);
-        refs.refresh();
         return res;
       })
-      .then(() => refs.refresh())
-      .then(() => {
-        console.log(refs);
+      .then(res => {
         refs.refresh();
-        console.log(refs);
         refs['#modalCloseBtn'].addEventListener('click', onComicsModalClose);
+        return res;
       })
+      .then(innerModalLinkToCharacter)
       .catch(console.log);
 }
 
@@ -99,6 +98,26 @@ const onComicsModalClose = e => {
   refs.indexComicsModal.classList.add('is-hidden');
   document.body.style.overflowY = 'auto';
   refs.indexComicsModal.innerHTML = '';
-  refs.console.log('click');
+  console.log('click');
   refs['#modalCloseBtn'] = null;
 };
+
+async function innerModalLinkToCharacter({ digitalId }) {
+  const pullCharactersById = await Marvel.getComicsCharactersById(digitalId);
+  const {
+    data: {
+      data: { results },
+    },
+  } = pullCharactersById;
+  const characters = results.map(
+    ({ thumbnail: { image, extension }, name }) => ({ image, extension, name })
+  );
+  console.log(characters);
+  refs['.modal-comics-characters .items'].insertAdjacentHTML(
+    'afterbegin',
+    HBSCharacters(characters)
+  );
+  console.log(refs['.modal-comics-characters .items']);
+
+  console.log(pullCharactersById);
+}

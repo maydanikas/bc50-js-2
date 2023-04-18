@@ -7,6 +7,7 @@ export default {
   //!<=== Modal
   indexComicsModal: document.querySelector('[data-comics-modal]'),
   '#modalCloseBtn': null,
+  '.modal-comics-characters .items': null,
 
   ///!===> Modal
   indexComicsModalOpenRenderHbs: document.querySelector('.modal-comics'),
