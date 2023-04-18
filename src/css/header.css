@@ -131,7 +131,7 @@ input::placeholder {
 .header__icon-search {
   color: #fafafa;
   position: absolute;
-  bottom: 54px;
+  bottom: 14px;
   left: 24px;
   cursor: pointer;
   z-index: 3;
