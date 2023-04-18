@@ -30,7 +30,7 @@ body {
   position: fixed;
   inset: 0;
   padding-top: 96px;
-  padding-bottom: 536px;
+  padding-bottom: 20px;
   min-height: 100vh;
 
   background-image: radial-gradient(
@@ -138,7 +138,7 @@ body {
 
   .error {
     padding-top: 146px;
-    padding-bottom: 578px;
+    /* padding-bottom: 578px; */
   }
 
   .error-container {
@@ -188,7 +188,7 @@ body {
 
   .error {
     padding-top: 278px;
-    padding-bottom: 189px;
+    /* padding-bottom: 189px; */
   }
 
   .error-container {
@@ -208,5 +208,11 @@ body {
 
   .error-message {
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-height: 767px) and (orientation: landscape) {
+  .error {
+    overflow: auto;
   }
 }
