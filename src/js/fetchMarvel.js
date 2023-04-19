@@ -50,6 +50,23 @@ const instanse = axios.create({
     // Loading.change(`${Math.round((progressEvent.loaded * 100) / 0)}`);
   },
 
+  onDownloadProgress: function (progressEvent) {
+    // console.log(progressEvent);
+    // Do whatever you want with the native progress event
+    // console.log(progressEvent.loaded);
+    // console.log(progressEvent.total);
+    // console.log(progressEvent);
+    if (flag) {
+      Loading.dots({
+        svgColor: 'rgba(255,0,0)',
+        backgroundColor: '#171717ba',
+      });
+    }
+    flag = false;
+    Loading.remove(1000);
+    // Loading.change(`${Math.round((progressEvent.loaded * 100) / 0)}`);
+  },
+
   // onDownloadProgress: function (progressEvent) {
   // Do whatever you want with the native progress event
   //   console.log(222);
@@ -85,6 +102,7 @@ export default class Marvel {
     return instanse(url, options);
   }
 
+
   static getRandomCharacter(url = '/characters', options = {}) {
     return instanse(url, options);
   }
@@ -107,6 +125,10 @@ export default class Marvel {
   static getComicById(id = '11111', options = {}) {
     console.log(id);
     return instanse(`/comics/${id}`, options);
+  }
+  static getComicsCharactersById(id = 'spider', options = {}) {
+    console.log(id);
+    return instanse(`/comics/${id}/characters`);
   }
   static getComicsCharactersById(id = 'spider', options = {}) {
     console.log(id);
