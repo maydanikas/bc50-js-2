@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "Этот проект был создан при помощи Parcel. Для знакомства и настройки дополнительных возможностей [обратись к документации](https://parceljs.org/).",
-  "homepage": "https://maydanikas.github.io/bc50-js-2",
+  "homepage": "https://preinspiron.github.io/goit-project-2",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /bc50-js-2/"
+    "build": "parcel build src/*.html --public-url /goit-project-2/"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,11 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
+  },
+  "dependencies": {
+    "lodash.debounce": "^4.0.8",
+    "modern-normalize": "^1.1.0",
+    "slick-carousel": "^1.8.1"
   },
   "dependencies": {
     "lodash.debounce": "^4.0.8",
