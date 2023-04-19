@@ -564,10 +564,10 @@ var _headerColorJs = require("./header-color.js");
 var _fetchMarvel = require("./fetchMarvel");
 var _fetchMarvelDefault = parcelHelpers.interopDefault(_fetchMarvel);
 // import './last-comics';
-var _lastThreeJs = require("./lastThree.js");
+var _lastThree = require("./lastThree");
 var _indexRandom = require("./indexRandom");
 
-},{"./modal-btn":"8LxAo","./modal-slider":"fYFYx","./header-color.js":"fbKbb","./fetchMarvel":"d8ECs","./lastThree.js":"9QsJn","./indexRandom":"ejtMd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8LxAo":[function(require,module,exports) {
+},{"./modal-btn":"8LxAo","./modal-slider":"fYFYx","./header-color.js":"fbKbb","./fetchMarvel":"d8ECs","./lastThree":"9QsJn","./indexRandom":"ejtMd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8LxAo":[function(require,module,exports) {
 const elements = {
     openModalBtn: document.querySelector("[data-modal-open]"),
     closeModalBtn: document.querySelector("[data-modal-close]"),
@@ -623,10 +623,9 @@ function renderImgGallery(path) {
 let header_change = document.querySelector(".header");
 header_change.classList.remove("sticky");
 window.addEventListener("scroll", ()=>{
-    if (document.documentElement.scrollTop > 0.5) header_change.classList.add("sticky");
+    if (!scrollY == 0) header_change.classList.add("sticky");
     else header_change.classList.remove("sticky");
 });
-console.log("header is working");
 
 },{}],"d8ECs":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

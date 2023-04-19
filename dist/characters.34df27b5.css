@@ -178,15 +178,17 @@ body {
   }
 }
 
-header {
-  width: 100%;
-  position: absolute;
+.header {
+  z-index: 100;
+  justify-content: center;
+  position: sticky;
   top: 0;
 }
 
 .header__conteiner {
   background: none;
   justify-content: space-between;
+  align-items: center;
   padding: 24.5px 32px 10px;
   display: flex;
   position: relative;
@@ -195,7 +197,6 @@ header {
 @media screen and (max-width: 768px) {
   header {
     max-width: 480px;
-    padding-bottom: 44px;
   }
 }
 
@@ -203,8 +204,6 @@ header {
   header {
     max-width: 768px;
     max-width: 1200px;
-    padding-bottom: 70px;
-    position: relative;
   }
 }
 
@@ -252,8 +251,8 @@ header.sticky {
   height: 42px;
   color: #fff;
   background: none;
-  border-color: #696969;
-  border-radius: 24px;
+  border: 1px solid #fafafa4d;
+  border-radius: 1000px;
   justify-content: center;
   align-items: center;
   padding: 12px 24px 12px 44px;
@@ -262,9 +261,18 @@ header.sticky {
   font-style: normal;
   font-weight: 500;
   line-height: 1.28571;
-  transition: background-color .15s cubic-bezier(1, -.14, 1, 1.29), color .15s cubic-bezier(1, -.14, 1, 1.29);
   display: flex;
   position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .header__input {
+    max-width: 480px;
+    width: 108px;
+    height: 28px;
+    padding: 12px 14px 12px 43px;
+    font-size: 12px;
+  }
 }
 
 input::placeholder {
@@ -273,21 +281,41 @@ input::placeholder {
 }
 
 .header__input:hover {
-  box-shadow: none 0 0 0 1px #34387f, .3em .3em 1em #0000004d;
+  background-color: #34387f;
   transform: scale(1.01);
 }
 
 .header__icon-search {
   color: #fafafa;
   cursor: pointer;
+  z-index: 3;
   position: absolute;
-  bottom: 12px;
+  bottom: 14px;
   left: 24px;
 }
 
+@media screen and (max-width: 768px) {
+  .header__icon-search {
+    max-width: 480px;
+    width: 16px;
+    height: 16px;
+    top: 5px;
+  }
+}
+
 .icon__home {
+  width: 202px;
+  height: 31px;
   z-index: 2;
   position: relative;
+}
+
+@media screen and (max-width: 766px) {
+  .icon__home {
+    max-width: 480px;
+    width: 98px;
+    height: 15px;
+  }
 }
 
 :root {
@@ -1440,30 +1468,27 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  gap: 10.667vw;
   display: flex;
 }
 
 @media screen and (min-width: 768px) {
   .gallary-comics {
-    width: 100%;
     flex-flow: wrap;
-    gap: 32px;
-    padding-top: 64px;
-    padding-bottom: 64px;
+    gap: 4.167vw;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .gallary-comics {
-    gap: 77px 16px;
+    width: 100%;
+    gap: 16px;
   }
 }
 
 .gallary-comics-container {
-  width: 335px;
+  width: 89.333vw;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
   display: flex;
@@ -1471,37 +1496,27 @@ body {
 
 @media screen and (min-width: 768px) {
   .gallary-comics-container {
-    width: 336px;
+    width: 332px;
+    height: 485px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .gallary-comics-container {
     width: 332px;
-    display: inline-block;
-    overflow: hidden;
-  }
-
-  .gallary-comics-container img {
-    border-radius: 8px;
-    transition: all 1s;
-    display: block;
-  }
-
-  .gallary-comics-container img:hover {
-    transform: scale(1.2);
   }
 }
 
 .gallary-comics-img {
-  width: 335px;
+  width: 90.933vw;
+  height: 121.867vw;
   object-fit: cover;
-  border-radius: 8px;
 }
 
 @media screen and (min-width: 768px) {
   .gallary-comics-img {
-    width: 340px;
+    width: 43.75vw;
+    height: 57.943vw;
   }
 }
 
@@ -1515,47 +1530,49 @@ body {
   letter-spacing: -.02em;
   color: var(--gallary-comics-data);
   justify-content: right;
-  padding-top: 16px;
-  padding-bottom: 4px;
+  padding-top: 4.267vw;
+  padding-bottom: 1.067vw;
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 4.8vw;
   font-style: normal;
   font-weight: 500;
 }
 
 @media screen and (min-width: 768px) {
   .gallary-comics-data {
-    padding-top: 16px;
-    padding-bottom: 8px;
-    font-size: 24px;
+    padding-top: 2.083vw;
+    padding-bottom: 1.042vw;
+    font-size: 3.125vw;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .gallary-comics-data {
-    padding-top: 16px;
-    padding-bottom: 8px;
-    font-size: 24px;
+    padding-top: 1.111vw;
+    padding-bottom: .556vw;
+    font-size: 1.667vw;
+    line-height: 1.667vw;
   }
 }
 
 .gallary-comics-name {
   color: #fafafa80;
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 3.733vw;
   font-style: normal;
   font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {
   .gallary-comics-name {
-    font-size: 16px;
+    font-size: 2.083vw;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .gallary-comics-name {
-    font-size: 16px;
+    font-size: 1.111vw;
+    line-height: 1.25vw;
   }
 }
 
@@ -1680,6 +1697,7 @@ body {
   font-weight: 400;
   line-height: 1.29;
   text-decoration: none;
+  transition: all .25s cubic-bezier(.4, 0, .2, 1);
 }
 
 .footer-social-icon {
@@ -1695,6 +1713,25 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.2;
+}
+
+.footer-social-item {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #fafafa26;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  transition: all .25s cubic-bezier(.4, 0, .2, 1);
+  display: flex;
+}
+
+.footer-links-item:hover, .footer-links-item:focus {
+  color: #34387f;
+}
+
+.footer-social-item:hover, .footer-social-icon:focus {
+  background-color: #34387f;
 }
 
 .footer {
@@ -1778,6 +1815,11 @@ body {
   .footer-privacy-text {
     font-size: 14px;
     line-height: 1.29;
+  }
+
+  .footer-social-item {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -1909,9 +1951,6 @@ body {
   background-color: #171717;
   border-radius: 16px;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   position: absolute;
   overflow-x: hidden;
@@ -1932,6 +1971,11 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .filters-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
   .filters-container {
     max-width: 768px;
     margin: 0 auto;
@@ -2007,8 +2051,243 @@ body {
   }
 }
 
-.class-ghjr {
-  color: #7fffd4;
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.search-title-btn {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #0000;
+  border: none;
+  outline: none;
+  position: absolute;
+  transform: translate(-50px, 7px);
+}
+
+.search-format-btn, .search-order-btn {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #0000;
+  border: none;
+  outline: none;
+  position: absolute;
+  transform: translate(110px, 30px);
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.filters-section-comics {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.filters-container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.filters-form {
+  flex-direction: column;
+  display: flex;
+}
+
+.filters-input-field {
+  margin-bottom: 12px;
+  display: block;
+}
+
+.filters-input-desc {
+  color: #fafafa4d;
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  display: block;
+}
+
+.filters-input {
+  width: 100%;
+  height: 48px;
+  color: #fafafa;
+  box-sizing: border-box;
+  background-color: #171717;
+  border: 2px solid #34387f;
+  border-radius: 100px;
+  outline: none;
+  padding: 14px 24px;
+  font-size: 14px;
+  line-height: 1.28;
+}
+
+.filters-input::placeholder {
+  color: #fafafa;
+  font-size: 14px;
+  line-height: 1.28;
+}
+
+.filters-input:focus {
+  background-color: #34387f;
+}
+
+.select-wrapper {
+  gap: 8px;
+  display: flex;
+  position: relative;
+}
+
+.filters-select {
+  height: 50px;
+  color: #fafafa;
+  box-sizing: border-box;
+  background-color: #171717;
+  border: 2px solid #34387f;
+  border-radius: 100px;
+  outline: none;
+  padding: 14px 24px;
+  font-size: 14px;
+  line-height: 1.28;
+}
+
+.filters-select:focus {
+  background-color: #34387f;
+}
+
+.filters-select-field {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .filters-select-field, .filters-input {
+    width: 100%;
+  }
+}
+
+.options {
+  color: #fafafa;
+  background-color: #171717;
+  border-radius: 30px;
+  font-size: 12px;
+  line-height: 1.16;
+}
+
+.last-filter {
+  width: 156px;
+}
+
+.wrapper {
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.characters-options-list {
+  width: 100%;
+  visibility: hidden;
+  cursor: pointer;
+  background-color: #171717;
+  border-radius: 16px;
+  flex-direction: column;
+  display: flex;
+  position: absolute;
+  overflow-x: hidden;
+  transform: translate(0, 73px);
+}
+
+.characters-list-item {
+  color: #fafafa4d;
+  margin-bottom: 8px;
+  padding: 14px 24px 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+}
+
+.characters-list-item:hover, .characters-list-item:focus {
+  color: #fafafa;
+}
+
+@media screen and (min-width: 768px) {
+  .filters-section-comics {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .filters-container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .filters-form {
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    display: flex;
+  }
+
+  .input-wrapper {
+    gap: 8px;
+    display: flex;
+  }
+
+  .filters-input {
+    height: 50px;
+    font-size: 16px;
+    line-height: 1.12;
+  }
+
+  .filters-input::placeholder {
+    font-size: 16px;
+    line-height: 1.12;
+  }
+
+  .filters-select {
+    width: 100%;
+    height: 52px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.12;
+  }
+
+  .filters-select-field {
+    width: 160px;
+  }
+
+  .characters-options-list {
+    transform: translate(0, 73px);
+  }
+
+  .options {
+    font-size: 16px;
+    line-height: 1.12;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .filters-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .filters-form {
+    width: 861px;
+    margin: 0 auto;
+  }
+
+  .comics-search {
+    width: 268px;
+  }
 }
 
 body {

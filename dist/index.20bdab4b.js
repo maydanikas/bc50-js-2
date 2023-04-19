@@ -576,23 +576,7 @@ function sliderGalleryComics() {
         slidesContainer.scrollLeft -= slideWidth;
     });
 }
-setTimeout(()=>sliderGalleryComics(), 1000); // export function sliderGalleryComics() {
- //   setTimeout(() => {
- //     const slidesContainer = document.getElementById('slides-container');
- //     const slide = document.querySelector('.lastComics-item');
- //     const prevButton = document.getElementById('slide-arrow-prev');
- //     const nextButton = document.getElementById('slide-arrow-next');
- //     nextButton.addEventListener('click', () => {
- //       const slideWidth = slide.clientWidth;
- //       slidesContainer.scrollLeft += slideWidth;
- //     });
- //     prevButton.addEventListener('click', () => {
- //       const slideWidth = slide.clientWidth;
- //       slidesContainer.scrollLeft -= slideWidth;
- //     });
- //   }, 1000);
- // }
- // sliderGalleryComics();
+sliderGalleryComics();
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["5VjGn","cgFmv"], "cgFmv", "parcelRequired7c6")
 
