@@ -60,9 +60,19 @@
   flex-wrap: wrap;
 }
 
+.random-characters-img {
+  display: block;
+  position: relative;
+  width: 335px;
+  height: 388px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (min-width: 375px) {
   .characters-image {
     width: 335px;
+    height: 335px;
     margin-bottom: 32px;
     object-fit: cover;
     margin-right: 32px;
@@ -72,24 +82,25 @@
 @media screen and (min-width: 768px) {
   .characters-image {
     width: 704px;
+    height: 704px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .characters-image {
     width: 496px;
+    height: 704px;
   }
 }
 
 /* .characters-image {
   margin-bottom: 32px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin-right: 32px;
-  /* width: 335px;
+  /* width: 100%;
+  height: 100%; */
+/* object-fit: cover;
+margin-right: 32px; */
+/* width: 335px;
   height: 335px; */
-
 
 .characters-image-container {
   flex-shrink: 0;
@@ -171,10 +182,19 @@
     padding-bottom: 88px;
   }
 
-  .character-title {
+  .characters-title {
     font-size: 44px;
     line-height: 1;
     margin-bottom: 64px;
+  }
+
+  .random-characters-img {
+    display: block;
+    position: relative;
+    width: 704px;
+    height: 704px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /*
@@ -205,7 +225,6 @@
   .container {
     max-width: 100%;
     /* width: 100%; */
-
   }
 
   .random-characters-container {
@@ -225,6 +244,15 @@
     gap: 32px;
   }
 
+  .random-characters-img {
+    display: block;
+    position: relative;
+    width: 496px;
+    height: 704px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .characters-image {
     margin-bottom: 0px;
     margin-right: 0px;
@@ -240,5 +268,36 @@
   .characters-list {
     width: 848px;
     height: 614px;
+  }
+}
+
+/* =======================slider================ */
+.my-slides {
+  display: none;
+}
+
+.characters-small-title,
+.characters-text {
+  /* display: block; */
+  transition: color 0.6s ease;
+}
+
+.active .characters-small-title,
+.active .characters-text {
+  color: #4b50ad;
+}
+
+.characters-text .fade,
+.characters-small-title .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }
