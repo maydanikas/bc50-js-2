@@ -72,13 +72,13 @@
   const listItemsEl = document.querySelector('.characters-options-list');
   const btnFormatEl = document.querySelector('.js-click-format');
   let opened = false;
-  // =====================================
+
   btnFormatEl.addEventListener('click', e => {
     e.preventDefault();
     onBtnFormatElClick();
   });
   selectEl.addEventListener('click', onBtnFormatElClick);
-  // ======================================
+
   function onBtnFormatElClick(e) {
     if (opened === false) {
       selectEl.style.backgroundColor = '#34387F';
@@ -103,13 +103,11 @@
   const listItemsElem = document.querySelector('.title-list');
   const btnOrderByEl = document.querySelector('.js-click-order-by');
   let open = false;
-  // ==========================================
   btnOrderByEl.addEventListener('click', e => {
     e.preventDefault();
     onBtnOrderByElClick();
   });
   selectTitleEl.addEventListener('click', onBtnOrderByElClick);
-  // =========================================
   function onBtnOrderByElClick() {
     if (open === false) {
       selectTitleEl.style.backgroundColor = '#34387F';
