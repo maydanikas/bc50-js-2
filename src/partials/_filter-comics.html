@@ -1,0 +1,129 @@
+<section class="filters-section-comics">
+  <div class="filters-container">
+    <form class="filters-form">
+      <div class="input-wrapper">
+        <div class="filters-input-field">
+          <span class="filters-input-desc">Title Starts With</span>
+          <input
+            class="filters-input comics-search"
+            id="title-start-search"
+            type="text"
+            name="title-start-search"
+            placeholder="Enter text"
+          />
+          <button type="submit" class="search-title-btn">
+            <svg class="icon icon-search" width="18" height="18">
+              <use href="./images/svg/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="select-wrapper">
+        <div class="wrapper filters-select-field">
+          <span class="filters-input-desc">Format</span>
+          <div class="pseudoselect filters-select">Comic</div>
+          <button type="submit" class="search-format-btn js-click-format">
+            <svg class="icon icon-search" width="18" height="18">
+              <use href="./images/svg/sprite.svg#icon-chevron-down"></use>
+            </svg>
+          </button>
+          <ul class="characters-options-list">
+            <li class="characters-list-item options">Comic</li>
+            <li class="characters-list-item options">Magazine</li>
+            <li class="characters-list-item options">Trade paperback</li>
+            <li class="characters-list-item options">Hardcover</li>
+            <li class="characters-list-item options">Digest</li>
+            <li class="characters-list-item options">Graphic novel</li>
+            <li class="characters-list-item options">Digital comic</li>
+            <li class="characters-list-item options">Infinite comic</li>
+          </ul>
+        </div>
+        <div class="wrapper filters-select-field">
+          <span class="filters-input-desc">Order by</span>
+          <div class="pseudoselect-title filters-select">Title</div>
+          <button type="submit" class="search-order-btn js-click-order-by">
+            <svg class="icon icon-search" width="18" height="18">
+              <use href="./images/svg/sprite.svg#icon-chevron-down"></use>
+            </svg>
+          </button>
+          <ul class="characters-options-list title-list">
+            <li class="characters-list-item options">Title</li>
+            <li class="characters-list-item options">On Sale Date</li>
+          </ul>
+        </div>
+      </div>
+      <label class="filters-select-field"
+        ><span class="filters-input-desc">Start Yeart</span
+        ><select
+          id="start-year"
+          name="start-year"
+          class="filters-select last-filter"
+        >
+          <option value="" class="options">01/05/2018</option>
+          <option value="" class="options">12/06/2019</option>
+        </select></label
+      >
+    </form>
+  </div>
+</section>
+
+<script>
+  const selectEl = document.querySelector('.pseudoselect');
+  const listItemsEl = document.querySelector('.characters-options-list');
+  const btnFormatEl = document.querySelector('.js-click-format');
+  let opened = false;
+  // =====================================
+  btnFormatEl.addEventListener('click', e => {
+    e.preventDefault();
+    onBtnFormatElClick();
+  });
+  selectEl.addEventListener('click', onBtnFormatElClick);
+  // ======================================
+  function onBtnFormatElClick(e) {
+    if (opened === false) {
+      selectEl.style.backgroundColor = '#34387F';
+      listItemsEl.style.visibility = 'visible';
+      listItemsEl.addEventListener('click', e => {
+        selectEl.innerHTML = `${e.target.textContent}`;
+        listItemsEl.style.visibility = '';
+        selectEl.style.backgroundColor = '#171717';
+        opened = !opened;
+      });
+    } else {
+      selectEl.style.backgroundColor = '#171717';
+      listItemsEl.style.visibility = '';
+    }
+    opened = !opened;
+  }
+</script>
+
+<!-- Для фільтра по title -->
+<script>
+  const selectTitleEl = document.querySelector('.pseudoselect-title');
+  const listItemsElem = document.querySelector('.title-list');
+  const btnOrderByEl = document.querySelector('.js-click-order-by');
+  let open = false;
+  // ==========================================
+  btnOrderByEl.addEventListener('click', e => {
+    e.preventDefault();
+    onBtnOrderByElClick();
+  });
+  selectTitleEl.addEventListener('click', onBtnOrderByElClick);
+  // =========================================
+  function onBtnOrderByElClick() {
+    if (open === false) {
+      selectTitleEl.style.backgroundColor = '#34387F';
+      listItemsElem.style.visibility = 'visible';
+      listItemsElem.addEventListener('click', e => {
+        selectTitleEl.innerHTML = `${e.target.textContent}`;
+        listItemsElem.style.visibility = '';
+        selectTitleEl.style.backgroundColor = '#171717';
+        open = !open;
+      });
+    } else {
+      selectTitleEl.style.backgroundColor = '#171717';
+      listItemsElem.style.visibility = '';
+    }
+    open = !open;
+  }
+</script>

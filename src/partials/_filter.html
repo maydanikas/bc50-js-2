@@ -1,0 +1,138 @@
+<!-- <div>
+  <div>
+    <label class="filter-top-text" for="format">Title Starts With</label>
+    <form action="">
+      <svg class="filter-lupa-icon">
+        <use href="./images/svg/sprite.svg#icon-search"></use>
+      </svg>
+      <input
+        class="filter-input"
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Enter text"
+        required
+      />
+    </form>
+  </div>
+
+  <div>
+    <label class="filter-top-text" for="format">Format</label>
+    <select name="format" id="format">
+      <option value="1">Comic</option>
+      <option value="2">Magazine</option>
+      <option value="3">Trade paperback</option>
+      <option value="4">Hardcover</option>
+      <option value="5">Digest</option>
+      <option value="6">Graphic novel</option>
+      <option value="6">Digital comic</option>
+      <option value="6">Infinite comic</option>
+    </select>
+  </div>
+
+  <div>
+    <label class="filter-top-text" for="format">Title</label>
+    <select name="title" id="title">
+      <option value="1">Title</option>
+      <option value="2">On Sale Date</option>
+    </select>
+  </div>
+
+  <form>
+    <label class="filter-top-text" for="datepicker">Start Year</label>
+    <input type="text" id="datepicker" name="datepicker" />
+  </form>
+</div> -->
+
+<!-- Characters filters -->
+
+<section class="filters-section">
+  <div class="filters-container">
+    <form class="filters-form">
+      <div class="input-wrapper">
+        <div class="filters-input-field">
+          <span class="filters-input-desc">Comics</span>
+          <input
+            class="filters-input comics-search"
+            id="comics-search"
+            type="text"
+            name="comics-search"
+            placeholder="Enter text"
+          />
+          <button type="submit" class="search-comics-btn">
+            <svg class="icon icon-search" width="18" height="18">
+              <use href="./images/svg/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="filters-input-field">
+          <span class="filters-input-desc">Name Starts With</span>
+          <input
+            class="filters-input"
+            id="name-start-search"
+            type="text"
+            name="name-start-search"
+            placeholder="Enter text"
+          />
+          <button type="submit" class="search-name-btn">
+            <svg class="icon icon-search" width="18" height="18">
+              <use href="./images/svg/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="select-wrapper">
+        <div class="wrapper filters-select-field">
+          <span class="filters-input-desc">Order by</span>
+          <div class="pseudoselect filters-select">Name</div>
+          <button type="submit" class="search-format-btn js-click-order">
+            <svg class="icon icon-search" width="18" height="18">
+              <use href="./images/svg/sprite.svg#icon-chevron-down"></use>
+            </svg>
+          </button>
+          <ul class="characters-options-list">
+            <li class="characters-list-item options">Name</li>
+            <li class="characters-list-item options">Modified</li>
+          </ul>
+        </div>
+        <div class="filters-select-field">
+          <span class="filters-input-desc">Date</span
+          ><select id="date" name="date" class="filters-select">
+            <option value="" class="options">10/03/23</option>
+            <option value="" class="options">12/06/22</option>
+          </select>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script>
+  const selectEl = document.querySelector('.pseudoselect');
+  const listItemsEl = document.querySelector('.characters-options-list');
+  const btnOrderEl = document.querySelector('.js-click-order');
+  let opened = false;
+  // ===============================
+  btnOrderEl.addEventListener('click', e => {
+    e.preventDefault();
+    onBtnOrderElClick();
+  });
+  selectEl.addEventListener('click', onBtnOrderElClick);
+  // ==============================
+  function onBtnOrderElClick(e) {
+    if (opened === false) {
+      selectEl.style.backgroundColor = '#34387F';
+      listItemsEl.style.visibility = 'visible';
+      listItemsEl.addEventListener('click', e => {
+        selectEl.innerHTML = `${e.target.textContent}`;
+        listItemsEl.style.visibility = '';
+        selectEl.style.backgroundColor = '#171717';
+        opened = !opened;
+      });
+    } else {
+      selectEl.style.backgroundColor = '#171717';
+      listItemsEl.style.visibility = '';
+    }
+    opened = !opened;
+  }
+</script>
