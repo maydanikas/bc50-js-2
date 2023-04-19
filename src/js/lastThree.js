@@ -2,6 +2,33 @@ import Marvel from './fetchMarvel';
 import Handlebars from '../hbs/lastThreeComics.hbs';
 import HBSmodal from '../hbs/_modalComics.hbs';
 import refs from './refs';
+// import sliderGalleryComics from './lastComics';
+// console.log(sliderGalleryComics);
+
+function sliderGalleryComics() {
+  // const slidesContainer = document.getElementById('slides-container');
+  // const slide = document.querySelector('.slide');
+  //   // const prevButton = document.getElementById('slide-arrow-prev');
+  //   // const nextButton = document.getElementById('slide-arrow-next');
+  // refs.refresh();
+  refs['#slide-arrow-next'].addEventListener('click', () => {
+    console.log(1);
+    const slideWidth = refs['.slide'].clientWidth;
+
+    refs['.slides-container'].scrollLeft += slideWidth;
+    console.dir(refs['.slides-container']);
+  });
+
+  refs['#slide-arrow-prev'].addEventListener('click', () => {
+    const slideWidth = refs['.slide'].clientWidth;
+    refs['.slides-container'].scrollLeft -= slideWidth;
+    console.log(2);
+  });
+}
+
+// }
+
+// console.log(4);
 
 Marvel.getLastThreeComics('/comics', {
   params: {
@@ -28,8 +55,14 @@ Marvel.getLastThreeComics('/comics', {
     // console.log(newRes);
 
     // return hbsObjRandom;
-
+    // sliderGalleryComics();
     // console.log(res);
+  })
+  .then(() => {
+    console.log(refs);
+    refs.refresh();
+    console.log(refs);
+    sliderGalleryComics();
   })
   .catch(res => console.dir(res));
 
@@ -91,3 +124,5 @@ function onClickLastComics(e) {
     });
   // console.log('111');
 }
+
+// console.log(1);
