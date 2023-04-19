@@ -1,0 +1,188 @@
+/*
+
+.characters-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.image-thumb {
+  height: 445px;
+}
+
+.characters-page-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.characters-page-span {
+  padding-top: 16px;
+}
+
+.characters-page-name {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  color: var(--light-font-color);
+}
+
+.characters-page-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+
+@media screen and (min-width: 375px) {
+  .characters-container {
+    width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .characters-container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .characters-page-list {
+    column-gap: 32px;
+  }
+
+  .characters-page-item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .characters-container {
+    width: 1440px;
+  }
+
+  .characters-page-item {
+    flex-basis: calc((100% - 32px * 3) / 4);
+  }
+} */
+
+.characters-page-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+
+}
+
+.characters-container {
+  /* width: 365px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .characters-container {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-top: 64px;
+    padding-bottom: 64px
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .characters-container {
+    gap: 64px 16px;
+  }
+}
+
+.characters-page-div {
+  width: 335px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+@media screen and (min-width: 768px) {
+  .characters-page-div {
+    width: 336px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .characters-page-div {
+    width: 332px;
+    display: inline-block;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .characters-page-div img {
+    transition: 1s;
+    display: block;
+    border-radius: 8px;
+  }
+
+  .characters-page-div img:hover {
+    transform: scale(1.2);
+  }
+}
+
+
+.characters-page-img {
+  width: 332px;
+  height: 445px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+
+  /* width: 340px; */
+}
+
+
+@media screen and (min-width: 1440px) {
+  .characters-page-img {
+    width: 332px;
+  }
+}
+
+.characters-page-name {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: var(--gallary-comics-data);
+  justify-content: right;
+  padding-top: 16px;
+  padding-bottom: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .characters-page-name {
+    font-size: 24px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .characters-page-name {
+    font-size: 24px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+  }
+}

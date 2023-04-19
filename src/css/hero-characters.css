@@ -147,11 +147,9 @@
 }
 
 .hero-characters-circle {
-  background: radial-gradient(
-    81.15% 81.15% at 50% 18.85%,
-    #34387f 0%,
-    #171717 100%
-  );
+  background: radial-gradient(81.15% 81.15% at 50% 18.85%,
+      #34387f 0%,
+      #171717 100%);
   border-radius: 50%;
   width: 90px;
   height: 90px;
@@ -185,11 +183,9 @@
   top: 235px;
   width: 260px;
   height: 234px;
-  background: linear-gradient(
-    180deg,
-    #34387f 36.46%,
-    rgba(52, 56, 127, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      #34387f 36.46%,
+      rgba(52, 56, 127, 0) 100%);
   filter: blur(47px);
   left: 50%;
   transform: translateX(-50%);
@@ -287,7 +283,7 @@
     display: flex;
     column-gap: 145px;
     justify-content: space-between;
-    /* width: 100%; */
+    width: 100%;
   }
 
   .box-black-pantera {

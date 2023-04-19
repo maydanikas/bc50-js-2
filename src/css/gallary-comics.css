@@ -1,0 +1,118 @@
+.gallary-comics {
+  /* width: 365px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10.667vw;
+}
+
+@media screen and (min-width: 768px) {
+  .gallary-comics {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4.167vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gallary-comics {
+    width: 100%;
+    gap: 16px;
+  }
+}
+
+.gallary-comics-container {
+  width: 89.333vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+@media screen and (min-width: 768px) {
+  .gallary-comics-container {
+    /* width: 43.750vw; */
+    width: 332px;
+    height: 485px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gallary-comics-container {
+    /* width: 23.056vw; */
+    width: 332px;
+  }
+}
+
+.gallary-comics-img {
+  width: 90.933vw;
+  height: 121.867vw;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .gallary-comics-img {
+    width: 43.75vw;
+    height: 57.943vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gallary-comics-img {
+    /* width: 23.056vw; */
+    width: 332px;
+    /* height: 30.903vw; */
+  }
+}
+
+.gallary-comics-data {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.8vw;
+  letter-spacing: -0.02em;
+  color: var(--gallary-comics-data);
+  justify-content: right;
+  padding-top: 4.267vw;
+  padding-bottom: 1.067vw;
+}
+
+@media screen and (min-width: 768px) {
+  .gallary-comics-data {
+    font-size: 3.125vw;
+    padding-top: 2.083vw;
+    padding-bottom: 1.042vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gallary-comics-data {
+    font-size: 1.667vw;
+    line-height: 1.667vw;
+    padding-top: 1.111vw;
+    padding-bottom: 0.556vw;
+  }
+}
+
+.gallary-comics-name {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.733vw;
+  color: rgba(250, 250, 250, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .gallary-comics-name {
+    font-size: 2.083vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gallary-comics-name {
+    font-size: 1.111vw;
+    line-height: 1.25vw;
+  }
+}

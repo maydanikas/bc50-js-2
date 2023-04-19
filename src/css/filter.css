@@ -22,7 +22,7 @@ body {
 /* ================================================ */
 
 .filters-section {
-  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .filters-container {
@@ -73,8 +73,7 @@ body {
   color: #fafafa;
 }
 
-.filters-input:focus,
-.filters-input:hover {
+.filters-input:focus {
   background-color: #34387f;
 }
 
@@ -98,8 +97,7 @@ body {
   box-sizing: border-box;
 }
 
-.filters-select:focus,
-.filters-select:hover {
+.filters-select:focus {
   background-color: #34387f;
 }
 
@@ -168,6 +166,7 @@ body {
 @media screen and (min-width: 768px) {
   .filters-section {
     padding-top: 64px;
+    padding-bottom: 64px;
   }
 
   .filters-container {

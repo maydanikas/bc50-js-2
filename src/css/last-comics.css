@@ -1,0 +1,221 @@
+.lastComics-uppertitle {
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.056vw;
+
+  align-items: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  padding-bottom: 4.444vw;
+  color: var(--light-font-color);
+}
+
+@media screen and (max-width: 480px) {
+  .lastComics-uppertitle {
+    font-size: 5.833vw;
+    padding-bottom: 9.167vw;
+  }
+}
+
+.lastComics-svg {
+  fill: #34387F;
+  cursor: pointer
+}
+
+@media screen and (max-width: 768px) {
+  .lastComics-svg {
+    display: none;
+  }
+}
+
+.lastComics-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lastComics-list {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  column-gap: 1.111vw;
+  margin-bottom: 8.889vw;
+} @media screen and (max-width: 768px) {
+  .lastComics-list {  
+    column-gap: 2.083vw;
+    overflow-x: auto;
+    margin-bottom: 0;
+  }
+}
+
+.lastComics-item {
+  width: 31.111vw;
+  height: 40.625vw;
+  cursor: pointer;
+} @media screen and (max-width: 768px) {
+  .lastComics-item {
+      display: initial;
+      flex-shrink: 0;
+      flex-basis: auto;
+      width: 58.333vw;
+      height: 76.172vw;
+  }
+} @media screen and (max-width: 480px) {
+  .lastComics-item {
+    width: 87.297vw;
+    height: 117.297vw;
+  }
+}
+
+
+.lastComics-img {
+  width: 31.111vw;
+  height:36.042vw;
+} @media screen and (max-width: 768px) {
+  .lastComics-img {
+    width: 58.333vw;
+    height: 67.578vw;
+  }
+} @media screen and (max-width: 480px) {
+  .lastComics-img {
+    width: 87.297vw;
+    height: 101.081vw;
+  }
+}
+
+.lastComics-span {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.111vw;
+} @media screen and (max-width: 480px) {
+  .lastComics-span {
+    padding-top: 2.917vw;
+  }
+}
+
+.lastComics-date {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.667vw;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  padding-bottom: 0.556vw;
+
+  color: var(--light-font-color);
+} @media screen and (max-width: 480px) {
+  .lastComics-date {
+    padding-bottom: 0.833vw;
+    font-size: 3.750vw;
+  }
+}
+
+.lastComics-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.111vw;
+  align-items: center;
+
+  color: rgba(250, 250, 250, 0.5);
+} @media screen and (max-width: 480px) {
+  .lastComics-name {
+    font-size: 2.917vw;
+  }
+}
+
+.lastComics-container-btn {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .lastComics-container-btn {
+    display: flex;
+    flex-direction: inherit;
+    justify-content: center;
+    align-items: center;
+    gap: 2.083vw;
+    padding-top: 4.167vw;
+    padding-bottom: 16.667vw;
+  }
+} @media screen and (max-width: 480px) {
+  .lastComics-container-btn {
+    gap: 2.917vw;
+    padding-top: 4.167vw;
+    padding-bottom: 16.667vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lastComics-scroll-btn {
+    display: grid;
+    place-content: center;
+    border: none;
+    cursor: pointer;
+
+    width: 5.729vw;
+    height: 5.729vw;
+
+    border: 1px solid #fafafa;
+    opacity: 0.3;
+    border-radius: 50%;
+
+    background: transparent url("../images/svg/Vector-11.svg") no-repeat center;
+  }
+  
+  .lastComics-scroll-btn:focus{
+      background: #34387F url("../images/svg/Vector-11-white.svg") no-repeat center;
+      border-color: #34387F;
+    }
+    .lastComics-scroll-btn--right{
+      transform: rotate(180deg);
+    }
+} @media screen and (max-width: 480px) {
+  .lastComics-scroll-btn {
+    background: transparent url("../images/svg/Vector-11.svg") no-repeat center/50%;
+    width: 8.533vw;
+    height: 8.533vw;
+  }  .lastComics-scroll-btn:focus {
+     background: #34387F url("../images/svg/Vector-11-white.svg") no-repeat center/50%;
+     border-color: #34387F;
+   }
+  
+   .lastComics-scroll-btn--right {
+     transform: rotate(180deg);
+   }
+}
+
+@media screen and (max-width: 768px) {
+  .lastComics-scroll {
+      width: 5.729vw;
+      height: 5.729vw;
+  }
+} @media screen and (max-width: 480px) {
+  .lastComics-scroll {
+    width: 6.667vw;
+    height: 6.667vw;
+  }
+}
+
+/* @media(max-width:768px) {
+  .slides-container {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+}
+
+@media(max-width:768px) {
+  .slide {
+    flex: 1 0 100%;
+
+  }
+}
+
+.slides-container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.slides-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+} */
