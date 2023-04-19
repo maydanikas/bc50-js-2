@@ -1,12 +1,8 @@
 import md5 from 'md5';
 import axios from 'axios';
-<<<<<<< HEAD
 import { Loading } from 'notiflix/build/notiflix-loading-aio';
 import '../css/notiflix-3.2.6.min.css';
 let flag = true;
-=======
-
->>>>>>> a8e2b7ca8a24de2251b977310169f8a730f256f8
 const PUBLICK = 'f31807a60270db8c1d9152910dc43c3a';
 const PRIVAT = 'e096f5c83a35e96c2f1b391e0633321a9c1b55af';
 const TS = 1;
