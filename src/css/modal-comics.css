@@ -11,53 +11,13 @@
   overscroll-behavior: contain;
 }
 
-.modal {
-  position: relative;
-  left: 0;
-  min-width: 100%;
-  height: 100%;
-  background-color: black;
-
-
-  /* transform: translate(-50%, -50%); */
-}
-
-.madal-close {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 28px;
-  height: 28px;
-  background-color: transparent;
-  border: none;
-  fill: white;
-  cursor: pointer;
-  /* color: white; */
-
-
-}
-
-.icon-modal-close {
-  width: 20px;
-  height: 20px;
-  fill: white;
-  position: absolute;
-}
-
-
-
 .modal-comics {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1000px;
-  height: 842px;
+  max-width: 1000px;
+  max-height: 842px;
 
   padding-top: 64px;
   padding-bottom: 64px;
@@ -70,10 +30,24 @@
   margin-left: auto;
   display: flex;
   gap: 16px;
+  cursor: pointer;
 
 }
 
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 28px;
+  height: 28px;
+  /* z-index: 2; */
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  /* background-color: transparent; */
 
+
+}
 
 .modal-comics-preview {
   width: 332px;
@@ -228,4 +202,13 @@
   width: 1px;
   height: 1px;
   display: none;
+}
+
+
+
+.super-close {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  color: red;
 }

@@ -1,8 +1,10 @@
 import md5 from 'md5';
 import axios from 'axios';
-
-const PUBLICK = '6683bdd94e0b56fee033e6700e251d09';
-const PRIVAT = '2c4325bfdef42a53885ce646a6819186ba382527';
+import { Loading } from 'notiflix/build/notiflix-loading-aio';
+import '../css/notiflix-3.2.6.min.css';
+let flag = true;
+const PUBLICK = 'f31807a60270db8c1d9152910dc43c3a';
+const PRIVAT = 'e096f5c83a35e96c2f1b391e0633321a9c1b55af';
 const TS = 1;
 const MD5 = md5(TS + PRIVAT + PUBLICK);
 let MARVEL_KEYS = {
@@ -27,7 +29,23 @@ const instanse = axios.create({
     ts: 1,
     // events: 1,
   },
-  // onUploadProgress: e => console.log(111),
+  onDownloadProgress: function (progressEvent) {
+    // console.log(progressEvent);
+    // Do whatever you want with the native progress event
+    // console.log(progressEvent.loaded);
+    // console.log(progressEvent.total);
+    // console.log(progressEvent);
+    if (flag) {
+      Loading.dots({
+        svgColor: 'rgba(255,0,0)',
+        backgroundColor: '#171717ba',
+      });
+    }
+    flag = false;
+    Loading.remove(1000);
+    // Loading.change(`${Math.round((progressEvent.loaded * 100) / 0)}`);
+  },
+
   // onDownloadProgress: function (progressEvent) {
   // Do whatever you want with the native progress event
   //   console.log(222);
@@ -62,6 +80,7 @@ export default class Marvel {
   static getLastThreeComics(url = '/comics', options = {}) {
     return instanse(url, options);
   }
+
   static getRandomCharacter(url = '/characters', options = {}) {
     return instanse(url, options);
   }
@@ -84,5 +103,9 @@ export default class Marvel {
   static getComicById(id = '11111', options = {}) {
     console.log(id);
     return instanse(`/comics/${id}`, options);
+  }
+  static getComicsCharactersById(id = 'spider', options = {}) {
+    console.log(id);
+    return instanse(`/comics/${id}/characters`);
   }
 }
