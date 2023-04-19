@@ -1,34 +1,35 @@
-@media screen and (min-width:375px) {
-    .section-comics-spiderman {
+     .section-comics-spiderman {
+        margin-top: -100px;
+        position: relative;
+        width: 100%;
+        height: 509px;
         background-image: url(/src/images/desktop/Characters/spiderman-jump.mobile.png); 
         background-size: cover;
         background-position: center;
-}
+    }
     .container-comics-spiderman {
-        position: relative;
+        width: 335px;
         padding-top: 172px;
         padding-left: 20px;
         padding-right: 20px;
-}
+    }
     .comics-text-spiderman {
         font-family: 'Poppins';
         font-size: 14px;
-        line-height: 1.3;
         text-transform: uppercase;
         color: rgba(255, 255, 255, 0.7);
         margin-bottom: 14px;
 
-}
+    }
     .comics-title-spiderman {
         font-family: 'Poppins';
         font-weight: 500;
         font-size: 60px;
-        line-height: 1;
         letter-spacing: -0.02em;
         color: #fafafa;
-        margin-bottom: 16px;
+        
 
-}
+    }
     .comics-description-spiderman {
         font-family: 'Poppins';
         padding-left: 0;
@@ -39,7 +40,8 @@
         letter-spacing: 0.02em;
         color: #fafafa;
         padding-bottom: 150px;
-}
+        margin-top: 16px;
+    }
     .back-spiderman {
         position: absolute;
         color: rgba(255, 255, 255, 0.7);
@@ -55,13 +57,15 @@
         color: #fafafa;
     }
 
-}
 @media screen and (min-width:768px) {
     .section-comics-spiderman {
+        margin-top: -100px;
         background-image: url(/src/images/desktop/Characters/spiderman-jump.tablet.png); 
         background-color: var(--praimery-bg-color);
         background-size: cover;
         padding-top: 0;
+        height: 780px;
+        
     }
 
     .container-comics-spiderman {
@@ -75,15 +79,12 @@
     .comics-text-spiderman {
         color: rgba(255, 255, 255, 0.7);
         font-size: 18px;
-        line-height: 1.6;
         margin-bottom: 14px;
 
     }
 
     .comics-title-spiderman {
         font-size: 128px;
-        line-height: 1.28;
-        margin-bottom: 16px;
         color: #fafafa;
         
     }
@@ -93,17 +94,17 @@
         line-height: 1.25;
         color: #fafafa;
         margin-left: 100px;
+        margin-top: 16px;
     }
 
     .back-spiderman {
-        position: absolute;
         right: 32px;
         bottom: 32px;
     }
 } 
 @media screen and (min-width:1440px) {
     .section-comics-spiderman {
-        /* height: 100vh; */
+        margin-top: -100px;
         background-image: url(/src/images/desktop/Characters/spider-jump.png); 
         background-repeat: no-repeat;
         background-size: cover;
@@ -111,8 +112,9 @@
 
     .container-comics-spiderman {
         min-width: 1440px;
+        height: 780px;
         padding-left: 32px;
-        padding-top: 323px;
+        /* padding-top: 323px; */
     }
 
     .comics-text-spiderman {
@@ -120,13 +122,12 @@
         margin-bottom: 16px;
     }
 
-    .comics-title {
+    .comics-title-spiderman {
         font-size: 150px;
-        line-height: 1.5;
+      
     }
 
     .back-spiderman {
-        position: absolute;
         bottom: 64px;
     }
 }

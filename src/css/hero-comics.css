@@ -1,5 +1,7 @@
-@media screen and (min-width:375px) {
+
     .section-comics {
+        margin-top: -100px;
+        position: relative;
         width: 100%;
         height: 461px;
         background-image: url(../images/mobile/batman.mobile.png); 
@@ -7,7 +9,6 @@
         background-position: right bottom;
     }
     .container-comics {
-        position: relative;
         width: 335px;
         padding-top: 172px;
         padding-left: 20px;
@@ -19,13 +20,13 @@
         line-height: 1.3;
         text-transform: uppercase;
         color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 14px;
 
 }
     .comics-title {
         font-family: 'Poppins';
         font-weight: 500;
         font-size: 60px;
-        line-height: 1;
         letter-spacing: -0.02em;
         color: #fafafa;
 
@@ -40,14 +41,15 @@
         letter-spacing: 0.02em;
         color: #fafafa;
         margin: 0;
+        margin-top: 16px;
 }
     .back {
         position: absolute;
         color: rgba(255, 255, 255, 0.7);
         border: 1px solid rgba(250, 250, 250, 0.5);
         border-radius: 1000px;
-        bottom: -110px;
-        right: -20px;
+        bottom: 20px;
+        right: 20px;
         padding: 10px 20px;
         height: 36px;
         font-size: 12px;
@@ -56,9 +58,10 @@
         color: #fafafa;
     }
 
-}
+
 @media screen and (min-width:768px) {
     .section-comics {
+        margin-top: -100px;
         background-image: url(../images/tablet/batman.tablet.png);
         background-color: var(--praimery-bg-color);
         height: 780px;
@@ -75,14 +78,11 @@
     .comics-text {
         color: rgba(255, 255, 255, 0.7);
         font-size: 18px;
-        line-height: 1.6;
         margin-bottom: 16px;
     }
 
     .comics-title {
-        font-size: 100px;
-        line-height: 1;
-        margin-bottom: 16px;
+        font-size: 150px;
         color: #fafafa;
     }
 
@@ -91,16 +91,18 @@
         line-height: 1.25;
         color: #fafafa;
         margin-left: 100px;
+        margin-top: 16px;
     }
 
     .back {
+      bottom: 0px;
         right: 32px;
-        bottom: -120px;
     }
 }
 
 @media screen and (min-width:1440px) {
     .section-comics {
+        margin-top: -100px;
         background-image: url(../images/desktop/Comics/batman.png);
         background-repeat: no-repeat;
     }
@@ -109,14 +111,17 @@
         min-width: 1440px;
         padding-left: 32px;
     }
+    .comics-title{
+        font-size: 150px;
 
+    }
     .comics-text {
         color: rgba(255, 255, 255, 0.7);;
     }
 
     .back {
-        bottom: 75px;
-        right: -60px;
+        bottom: 64px;
+        right: 32px;
     }
 }
 
